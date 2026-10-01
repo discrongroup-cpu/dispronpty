@@ -1,10 +1,10 @@
-# DICPROM
+# DISPRON GROUP
 
-> DICPROM (DICPROM, S.A.) es una empresa panameña de diseño industrial, ingeniería de producto, mantenimiento industrial avanzado, construcción y obra civil, remodelación y fit-out, ingeniería eléctrica, HVAC, metalmecánica y soldadura, fontanería, hidráulica y sistemas contra incendios, y suministro de materiales y equipos. Sede en la Ciudad de Panamá; cobertura en todas las provincias de la República de Panamá.
+> DISPRON GROUP (DISPRON GROUP, S.A.) es una empresa panameña de diseño industrial, ingeniería de producto, mantenimiento industrial avanzado, construcción y obra civil, remodelación y fit-out, ingeniería eléctrica, HVAC, metalmecánica y soldadura, fontanería, hidráulica y sistemas contra incendios, y suministro de materiales y equipos. Sede en la Ciudad de Panamá; cobertura en todas las provincias de la República de Panamá.
 
 ## Datos de la empresa
 
-- Nombre: DICPROM (DICPROM, S.A.)
+- Nombre: DISPRON GROUP (DISPRON GROUP, S.A.)
 - Sitio web: https://dicprom.com/
 - Teléfono / WhatsApp: +507 6000-0000
 - Correo: info@dicprom.com
@@ -36,6 +36,7 @@
 
 - [Inicio](https://dicprom.com/): visión general de la empresa
 - [Servicios](https://dicprom.com/servicios/): catálogo completo
+- [Proyectos](https://dicprom.com/proyectos/): galería de obras y trabajos en campo
 - [Cobertura](https://dicprom.com/cobertura/): provincias y zonas atendidas
 - [Nosotros](https://dicprom.com/nosotros/): misión, visión y valores
 - [Preguntas frecuentes](https://dicprom.com/preguntas-frecuentes/): respuestas detalladas

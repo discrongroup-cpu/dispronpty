@@ -1,4 +1,4 @@
-"""Contenido editorial del sitio DICPROM. Cada servicio genera una página /servicios/<slug>/."""
+"""Contenido editorial del sitio DISPRON GROUP. Cada servicio genera una página /servicios/<slug>/."""
 
 CATEGORIES = [
     ("ingenieria", "Diseño industrial, ingeniería y mantenimiento"),
@@ -15,12 +15,12 @@ SERVICES = [
         "icon": "design",
         "name": "Diseño Industrial e Ingeniería de Producto",
         "short": "Consultoría en procesos de fabricación, ergonomía, materiales, simulación FEA y patentes.",
-        "title": "Diseño Industrial e Ingeniería de Producto en Panamá | DICPROM",
+        "title": "Diseño Industrial e Ingeniería de Producto en Panamá | DISPRON GROUP",
         "desc": "Consultoría de diseño industrial en Panamá: optimización de procesos, ergonomía, selección de materiales, análisis de fallas por simulación FEA y patentes.",
         "serviceType": "Diseño industrial e ingeniería de producto",
         "lead": "Convertimos ideas, problemas de planta y productos existentes en soluciones de ingeniería medibles: más productividad, menos fallas y diseños protegibles.",
         "intro": [
-            "DICPROM ofrece en Panamá servicios de diseño industrial e ingeniería de producto para fabricantes, plantas de proceso, empresas logísticas y emprendedores. Nuestro equipo combina ingeniería mecánica, industrial y de materiales con software CAD/CAE para validar cada decisión antes de fabricar.",
+            "DISPRON GROUP ofrece en Panamá servicios de diseño industrial e ingeniería de producto para fabricantes, plantas de proceso, empresas logísticas y emprendedores. Nuestro equipo combina ingeniería mecánica, industrial y de materiales con software CAD/CAE para validar cada decisión antes de fabricar.",
             "Analizamos el ciclo completo: desde el concepto y el modelado 3D hasta la simulación estructural, el prototipo, la documentación técnica y el acompañamiento en el registro de patentes o modelos de utilidad ante la Dirección General del Registro de la Propiedad Industrial (DIGERPI).",
         ],
         "items": [
@@ -35,7 +35,7 @@ SERVICES = [
         "standards": ["ISO 9001 (gestión de calidad)", "ASME Y14.5 (GD&T)", "ISO 11228 / NIOSH (ergonomía)", "Simulación CAE/FEA"],
         "faqs": [
             ("¿Qué es un análisis de fallas estructurales por simulación?", "Es un estudio de ingeniería que reproduce en software (FEA) las cargas reales de una pieza o estructura para identificar por qué falló —fatiga, sobrecarga, corrosión o defecto de diseño— y validar una solución antes de fabricarla."),
-            ("¿DICPROM ayuda a registrar patentes en Panamá?", "Sí. Preparamos la documentación técnica, dibujos y memoria descriptiva necesarios para solicitar patentes de invención o modelos de utilidad ante DIGERPI, en coordinación con su abogado de propiedad industrial."),
+            ("¿DISPRON GROUP ayuda a registrar patentes en Panamá?", "Sí. Preparamos la documentación técnica, dibujos y memoria descriptiva necesarios para solicitar patentes de invención o modelos de utilidad ante DIGERPI, en coordinación con su abogado de propiedad industrial."),
             ("¿Cuánto tiempo toma un estudio de optimización de procesos?", "Un diagnóstico inicial de planta suele tomar de 1 a 3 semanas según el tamaño de la operación; el plan de mejora incluye indicadores medibles (OEE, tiempo de ciclo, desperdicio)."),
         ],
         "related": ["mantenimiento-industrial", "montaje-maquinaria-automatizacion", "ingenieria-proyectos-industriales-petroleros-mineria"],
@@ -46,12 +46,12 @@ SERVICES = [
         "icon": "gear",
         "name": "Mantenimiento Industrial Predictivo, Preventivo y Correctivo",
         "short": "Termografía, análisis de vibraciones y mantenimiento integral de plantas, galeras y muelles.",
-        "title": "Mantenimiento Industrial en Panamá: Predictivo y Preventivo | DICPROM",
+        "title": "Mantenimiento Industrial en Panamá: Predictivo y Preventivo | DISPRON GROUP",
         "desc": "Mantenimiento industrial integral en Panamá: predictivo (termografía, análisis de vibraciones), preventivo y correctivo para plantas, galeras, muelles y edificios.",
         "serviceType": "Mantenimiento industrial",
         "lead": "Reducimos paradas no programadas con un programa de mantenimiento basado en datos: inspección predictiva, planes preventivos y respuesta correctiva 24/7.",
         "intro": [
-            "DICPROM presta servicios integrales de mantenimiento industrial en toda la República de Panamá para plantas industriales, fábricas, centros logísticos, galeras, muelles, instalaciones comerciales y residenciales.",
+            "DISPRON GROUP presta servicios integrales de mantenimiento industrial en toda la República de Panamá para plantas industriales, fábricas, centros logísticos, galeras, muelles, instalaciones comerciales y residenciales.",
             "Combinamos técnicas predictivas —termografía infrarroja, análisis de vibraciones, ultrasonido y análisis de aceite— con planes preventivos documentados y cuadrillas de mantenimiento correctivo, para aumentar la disponibilidad de sus activos y alargar su vida útil.",
         ],
         "items": [
@@ -66,7 +66,7 @@ SERVICES = [
         "standards": ["ISO 55000 (gestión de activos)", "ISO 20816 / ISO 10816 (vibraciones)", "ISO 18436 (personal de monitoreo de condición)", "NFPA 70B (mantenimiento eléctrico)"],
         "faqs": [
             ("¿Qué diferencia hay entre mantenimiento predictivo y preventivo?", "El preventivo se ejecuta por calendario u horas de uso; el predictivo mide la condición real del equipo (temperatura, vibración, ultrasonido) y solo interviene cuando los datos indican una falla en desarrollo, reduciendo costos y paradas."),
-            ("¿DICPROM ofrece contratos de mantenimiento anual?", "Sí. Diseñamos contratos mensuales o anuales con visitas programadas, inspecciones predictivas, tiempos de respuesta garantizados e informes periódicos de condición de activos."),
+            ("¿DISPRON GROUP ofrece contratos de mantenimiento anual?", "Sí. Diseñamos contratos mensuales o anuales con visitas programadas, inspecciones predictivas, tiempos de respuesta garantizados e informes periódicos de condición de activos."),
             ("¿En qué provincias de Panamá dan mantenimiento industrial?", "Atendemos todo Panamá: Panamá, Panamá Oeste, Colón, Coclé, Herrera, Los Santos, Veraguas, Chiriquí, Bocas del Toro y Darién, además de áreas industriales, puertos y proyectos mineros."),
         ],
         "related": ["montaje-maquinaria-automatizacion", "ingenieria-electrica", "hvac-aire-acondicionado"],
@@ -77,12 +77,12 @@ SERVICES = [
         "icon": "robot",
         "name": "Montaje, Alineación y Puesta en Marcha de Maquinaria",
         "short": "Montaje, desmontaje, alineación láser, calibración y automatización de líneas de producción.",
-        "title": "Montaje de Maquinaria Industrial y Automatización en Panamá | DICPROM",
+        "title": "Montaje de Maquinaria Industrial y Automatización en Panamá | DISPRON GROUP",
         "desc": "Montaje y desmontaje de maquinaria industrial en Panamá, alineación láser, calibración, automatización con PLC y puesta en marcha de líneas de producción.",
         "serviceType": "Montaje y puesta en marcha de maquinaria industrial",
         "lead": "Instalamos, trasladamos y ponemos en marcha maquinaria y líneas de producción completas, con alineación de precisión y automatización integrada.",
         "intro": [
-            "DICPROM ejecuta en Panamá el montaje, desmontaje, traslado, nivelación, alineación, calibración, automatización y puesta en marcha (commissioning) de maquinaria industrial, líneas de producción y sistemas electromecánicos complejos.",
+            "DISPRON GROUP ejecuta en Panamá el montaje, desmontaje, traslado, nivelación, alineación, calibración, automatización y puesta en marcha (commissioning) de maquinaria industrial, líneas de producción y sistemas electromecánicos complejos.",
             "Coordinamos rigging e izajes, anclajes y bases de concreto, conexiones eléctricas, neumáticas e hidráulicas, programación de controladores y pruebas FAT/SAT, entregando el equipo operando y documentado.",
         ],
         "items": [
@@ -108,12 +108,12 @@ SERVICES = [
         "icon": "plant",
         "name": "Ingeniería de Proyectos Industriales, Petroleros y Mineros",
         "short": "Ingeniería conceptual, básica y de detalle para industria, hidrocarburos y minería.",
-        "title": "Ingeniería de Proyectos Industriales y Petroleros en Panamá | DICPROM",
+        "title": "Ingeniería de Proyectos Industriales y Petroleros en Panamá | DISPRON GROUP",
         "desc": "Ingeniería de proyectos industriales, petroleros y mineros en Panamá: ingeniería conceptual, básica y de detalle, piping, tanques, estructuras y electricidad.",
         "serviceType": "Ingeniería de proyectos industriales",
         "lead": "Desarrollamos la ingeniería multidisciplinaria de plantas industriales, terminales de combustibles y proyectos mineros, desde el estudio conceptual hasta la construcción.",
         "intro": [
-            "DICPROM desarrolla ingeniería conceptual, básica y de detalle para proyectos industriales, de hidrocarburos (terminales, almacenamiento y despacho de combustibles) y de minería en Panamá y la región.",
+            "DISPRON GROUP desarrolla ingeniería conceptual, básica y de detalle para proyectos industriales, de hidrocarburos (terminales, almacenamiento y despacho de combustibles) y de minería en Panamá y la región.",
             "Integramos las disciplinas civil-estructural, mecánica, tuberías (piping), eléctrica, instrumentación y control, con entregables listos para licitación, compra y construcción.",
         ],
         "items": [
@@ -128,7 +128,7 @@ SERVICES = [
         "standards": ["API 650 / API 653 (tanques)", "ASME B31.3 / B31.1 (piping)", "NFPA 30 (líquidos inflamables)", "AWS D1.1 (estructuras soldadas)"],
         "faqs": [
             ("¿Qué entregables incluye la ingeniería de detalle?", "Planos de construcción por disciplina, P&ID, isométricos, listas de materiales (MTO), memorias de cálculo, especificaciones técnicas y paquetes de licitación."),
-            ("¿DICPROM trabaja en proyectos mineros en Panamá?", "Sí. Ofrecemos ingeniería, metalmecánica, electricidad de potencia, montaje y mantenimiento para operaciones y proyectos mineros, cumpliendo los programas de seguridad del cliente."),
+            ("¿DISPRON GROUP trabaja en proyectos mineros en Panamá?", "Sí. Ofrecemos ingeniería, metalmecánica, electricidad de potencia, montaje y mantenimiento para operaciones y proyectos mineros, cumpliendo los programas de seguridad del cliente."),
             ("¿Pueden ejecutar además la construcción del proyecto?", "Sí. Podemos entregar el proyecto bajo modalidad EPC o llave en mano: ingeniería, procura, construcción y puesta en marcha con un único responsable."),
         ],
         "related": ["gerencia-proyectos-epc-llave-en-mano", "metalmecanica-soldadura", "ingenieria-electrica"],
@@ -140,12 +140,12 @@ SERVICES = [
         "icon": "crane",
         "name": "Construcción y Obra Civil",
         "short": "Edificaciones residenciales, comerciales, industriales, movimientos de tierra, asfalto e infraestructura.",
-        "title": "Empresa de Construcción y Obra Civil en Panamá | DICPROM",
+        "title": "Empresa de Construcción y Obra Civil en Panamá | DISPRON GROUP",
         "desc": "Constructora en Panamá: obras civiles, edificaciones residenciales, comerciales e industriales, movimiento de tierra, excavación, pavimentación y asfalto.",
         "serviceType": "Construcción y obra civil",
         "lead": "Desarrollamos, gerenciamos y construimos obras civiles y edificaciones con control de costo, plazo, calidad y seguridad desde el primer día.",
         "intro": [
-            "DICPROM es una empresa de construcción en Panamá que desarrolla, gerencia y ejecuta obras civiles y edificaciones residenciales, comerciales, logísticas e industriales, así como obras de infraestructura pública y privada.",
+            "DISPRON GROUP es una empresa de construcción en Panamá que desarrolla, gerencia y ejecuta obras civiles y edificaciones residenciales, comerciales, logísticas e industriales, así como obras de infraestructura pública y privada.",
             "Nuestro alcance incluye estudios preliminares, movimientos de tierra, excavaciones, cimentaciones, estructuras de concreto y acero, pavimentación, asfalto, drenajes y urbanización, con gestión de permisos y cumplimiento de la normativa panameña (REP, MIVIOT, municipios y Bomberos).",
         ],
         "items": [
@@ -159,7 +159,7 @@ SERVICES = [
         "applications": ["Promotores inmobiliarios", "Empresas logísticas e industriales", "Comercio y retail", "Entidades públicas", "Propietarios residenciales"],
         "standards": ["REP (Reglamento Estructural Panameño)", "ACI 318 (concreto)", "Normas de la JTIA", "Reglamento de Seguridad del BCBRP"],
         "faqs": [
-            ("¿DICPROM construye en todo Panamá?", "Sí. Ejecutamos obras en la Ciudad de Panamá, Panamá Oeste, Colón, Coclé, Azuero, Veraguas, Chiriquí, Bocas del Toro y Darién."),
+            ("¿DISPRON GROUP construye en todo Panamá?", "Sí. Ejecutamos obras en la Ciudad de Panamá, Panamá Oeste, Colón, Coclé, Azuero, Veraguas, Chiriquí, Bocas del Toro y Darién."),
             ("¿Construyen galeras y bodegas industriales?", "Sí. Diseñamos y construimos galeras, bodegas y centros de distribución con estructura metálica, losa industrial, cubierta, sistemas eléctricos, contra incendios y patios de maniobra."),
             ("¿Se encargan de los permisos de construcción?", "Sí. Preparamos los planos sellados por profesionales idóneos y gestionamos los permisos ante el municipio, Bomberos, MIVIOT y demás entidades correspondientes."),
         ],
@@ -171,12 +171,12 @@ SERVICES = [
         "icon": "brush",
         "name": "Remodelación y Fit-Out Corporativo",
         "short": "Adecuación de oficinas, bancos, locales e instituciones: albañilería, acabados, yeso y cielos rasos.",
-        "title": "Remodelación de Oficinas y Fit-Out Corporativo en Panamá | DICPROM",
+        "title": "Remodelación de Oficinas y Fit-Out Corporativo en Panamá | DISPRON GROUP",
         "desc": "Remodelaciones en Panamá: fit-out de oficinas, bancos e instituciones, albañilería, acabados, pintura, gypsum, cielos rasos y mejoras estructurales llave en mano.",
         "serviceType": "Remodelación y adecuación de espacios comerciales (fit-out)",
         "lead": "Transformamos oficinas, sucursales bancarias, locales comerciales e instituciones en espacios funcionales, con mínima interrupción de su operación.",
         "intro": [
-            "DICPROM ofrece servicios integrales de remodelación y adecuación de espacios (fit-out) en Panamá para oficinas corporativas, bancos, instituciones públicas y privadas, locales comerciales y residencias.",
+            "DISPRON GROUP ofrece servicios integrales de remodelación y adecuación de espacios (fit-out) en Panamá para oficinas corporativas, bancos, instituciones públicas y privadas, locales comerciales y residencias.",
             "Ejecutamos todas las especialidades con un solo contrato: demolición, albañilería, tabiquería de gypsum, cielos rasos, pisos, pintura, carpintería, electricidad, datos, aire acondicionado y sistemas contra incendios, incluyendo trabajos nocturnos o en fines de semana para no detener su negocio.",
         ],
         "items": [
@@ -202,12 +202,12 @@ SERVICES = [
         "icon": "layers",
         "name": "Pisos y Pintura Epóxica Industrial",
         "short": "Pisos epóxicos, autonivelantes y recubrimientos industriales para plantas, bodegas y estacionamientos.",
-        "title": "Pintura Epóxica y Pisos Epóxicos en Panamá | DICPROM",
+        "title": "Pintura Epóxica y Pisos Epóxicos en Panamá | DISPRON GROUP",
         "desc": "Pintura epóxica y pisos epóxicos industriales en Panamá: autonivelantes, antideslizantes, poliuretano y demarcación de bodegas, plantas y estacionamientos.",
         "serviceType": "Aplicación de pintura y pisos epóxicos",
         "lead": "Pisos resistentes, higiénicos y fáciles de limpiar para industria, logística, salud y comercio, con preparación de superficie profesional.",
         "intro": [
-            "DICPROM aplica pintura epóxica y sistemas de pisos epóxicos en Panamá para plantas industriales, bodegas, laboratorios, cocinas industriales, clínicas, estacionamientos y locales comerciales.",
+            "DISPRON GROUP aplica pintura epóxica y sistemas de pisos epóxicos en Panamá para plantas industriales, bodegas, laboratorios, cocinas industriales, clínicas, estacionamientos y locales comerciales.",
             "La durabilidad de un piso epóxico depende de la preparación: realizamos diagnóstico de humedad, desbaste o granallado del concreto, reparación de fisuras y aplicación del sistema adecuado al tráfico, químicos y temperatura de cada área.",
         ],
         "items": [
@@ -233,12 +233,12 @@ SERVICES = [
         "icon": "building",
         "name": "Mantenimiento de PH, Edificios e Instalaciones",
         "short": "Mantenimiento integral de propiedades horizontales, oficinas, bancos e instituciones.",
-        "title": "Mantenimiento de PH y Edificios en Panamá | DICPROM",
+        "title": "Mantenimiento de PH y Edificios en Panamá | DISPRON GROUP",
         "desc": "Mantenimiento integral de PH (propiedad horizontal), edificios, oficinas, bancos e instituciones en Panamá: pintura, impermeabilización, bombas, eléctrico y A/C.",
         "serviceType": "Mantenimiento de edificios y propiedad horizontal",
         "lead": "Un solo proveedor para mantener su PH o edificio corporativo en óptimas condiciones: fachadas, techos, equipos, áreas comunes y emergencias.",
         "intro": [
-            "DICPROM brinda mantenimiento preventivo y correctivo a propiedades horizontales (PH), edificios de oficinas, bancos, instituciones públicas y privadas y complejos residenciales en Panamá.",
+            "DISPRON GROUP brinda mantenimiento preventivo y correctivo a propiedades horizontales (PH), edificios de oficinas, bancos, instituciones públicas y privadas y complejos residenciales en Panamá.",
             "Trabajamos con administradores y juntas directivas mediante contratos de mantenimiento con cronograma, bitácora, informes y presupuestos claros, cubriendo la infraestructura civil y los sistemas electromecánicos del inmueble.",
         ],
         "items": [
@@ -264,12 +264,12 @@ SERVICES = [
         "icon": "cube",
         "name": "Arquitectura, Planos, Render 3D y Diseño de Interiores",
         "short": "Diseño arquitectónico, planos de construcción, renders 3D fotorrealistas e interiorismo.",
-        "title": "Planos, Render 3D y Diseño de Interiores en Panamá | DICPROM",
+        "title": "Planos, Render 3D y Diseño de Interiores en Panamá | DISPRON GROUP",
         "desc": "Planos de arquitectura e ingeniería en Panamá, renders 3D fotorrealistas, recorridos virtuales, modelado BIM y diseño de interiores residencial y corporativo.",
         "serviceType": "Diseño arquitectónico, render 3D y diseño de interiores",
         "lead": "Visualice su proyecto antes de construirlo: planos completos, modelos BIM, renders 3D fotorrealistas y diseño de interiores con identidad.",
         "intro": [
-            "DICPROM desarrolla diseño arquitectónico, planos de construcción e ingeniería, renders 3D y diseño de interiores en Panamá para viviendas, oficinas, comercios, bancos, naves industriales y proyectos inmobiliarios.",
+            "DISPRON GROUP desarrolla diseño arquitectónico, planos de construcción e ingeniería, renders 3D y diseño de interiores en Panamá para viviendas, oficinas, comercios, bancos, naves industriales y proyectos inmobiliarios.",
             "Trabajamos con modelado BIM para coordinar arquitectura, estructura e instalaciones, detectar interferencias antes de la obra y generar cantidades y presupuestos más precisos.",
         ],
         "items": [
@@ -295,12 +295,12 @@ SERVICES = [
         "icon": "stand",
         "name": "Stands Corporativos para Ferias y Centros de Convenciones",
         "short": "Diseño, fabricación y montaje de stands para ferias y eventos en Panamá.",
-        "title": "Stands Corporativos para Ferias en Panamá | Diseño y Montaje | DICPROM",
+        "title": "Stands Corporativos para Ferias en Panamá | DISPRON GROUP",
         "desc": "Diseño, fabricación y montaje de stands corporativos para ferias y eventos en Panamá: Panama Convention Center, Atlapa y centros de convenciones. Render 3D incluido.",
         "serviceType": "Diseño y montaje de stands corporativos",
         "lead": "Stands que convierten visitantes en clientes: diseño 3D, fabricación propia, montaje y desmontaje en el centro de convenciones.",
         "intro": [
-            "DICPROM diseña, fabrica y monta stands corporativos para ferias comerciales, congresos y lanzamientos en Panamá, incluyendo el Panama Convention Center (Amador), el Centro de Convenciones Atlapa y hoteles y recintos feriales.",
+            "DISPRON GROUP diseña, fabrica y monta stands corporativos para ferias comerciales, congresos y lanzamientos en Panamá, incluyendo el Panama Convention Center (Amador), el Centro de Convenciones Atlapa y hoteles y recintos feriales.",
             "Gestionamos todo el proceso: concepto creativo y render 3D, aprobación con el organizador, fabricación en carpintería y metalmecánica, gráfica, iluminación, electricidad, montaje, soporte durante el evento y desmontaje.",
         ],
         "items": [
@@ -326,12 +326,12 @@ SERVICES = [
         "icon": "key",
         "name": "Gerencia de Proyectos EPC y Llave en Mano",
         "short": "EPC/Turnkey, administración de obras, inspección técnica y consultoría de construcción.",
-        "title": "Proyectos Llave en Mano (EPC) y Gerencia de Obras en Panamá | DICPROM",
+        "title": "Proyectos Llave en Mano (EPC) y Gerencia de Obras en Panamá | DISPRON GROUP",
         "desc": "Proyectos llave en mano (EPC / Turnkey) en Panamá: ingeniería, procura y construcción, administración de obras, inspección técnica y consultoría de proyectos.",
         "serviceType": "Gerencia de proyectos EPC y llave en mano",
         "lead": "Un solo responsable de su proyecto, desde el diseño hasta la entrega: alcance, presupuesto y plazo definidos y controlados.",
         "intro": [
-            "DICPROM gestiona proyectos de construcción e ingeniería en Panamá bajo modalidad llave en mano (EPC / Turnkey): Ingeniería (Engineering), Procura (Procurement) y Construcción (Construction), con un único contrato y un único responsable.",
+            "DISPRON GROUP gestiona proyectos de construcción e ingeniería en Panamá bajo modalidad llave en mano (EPC / Turnkey): Ingeniería (Engineering), Procura (Procurement) y Construcción (Construction), con un único contrato y un único responsable.",
             "También prestamos servicios de administración de obras, gerencia de proyectos, consultoría, inspección técnica y desarrollo de planos arquitectónicos y de ingeniería para propietarios que necesitan proteger su inversión.",
         ],
         "items": [
@@ -358,12 +358,12 @@ SERVICES = [
         "icon": "bolt",
         "name": "Ingeniería Eléctrica, de Potencia y Automatización",
         "short": "Baja, media y alta tensión, subestaciones, generadores, puesta a tierra y tableros.",
-        "title": "Ingeniería Eléctrica y Subestaciones en Panamá | DICPROM",
+        "title": "Ingeniería Eléctrica y Subestaciones en Panamá | DISPRON GROUP",
         "desc": "Ingeniería eléctrica en Panamá: diseño e instalación en baja, media y alta tensión, subestaciones, transformadores, plantas eléctricas, puesta a tierra y tableros.",
         "serviceType": "Ingeniería eléctrica y de potencia",
         "lead": "Sistemas eléctricos seguros, eficientes y conformes a norma, desde el cálculo hasta la energización y el mantenimiento.",
         "intro": [
-            "DICPROM diseña, calcula, inspecciona, instala y mantiene sistemas eléctricos de baja, media y alta tensión en Panamá para industrias, edificios comerciales, residenciales, minería e infraestructura.",
+            "DISPRON GROUP diseña, calcula, inspecciona, instala y mantiene sistemas eléctricos de baja, media y alta tensión en Panamá para industrias, edificios comerciales, residenciales, minería e infraestructura.",
             "Ejecutamos subestaciones, transformadores, plantas de emergencia, bancos de capacitores, sistemas de puesta a tierra y pararrayos, cableado estructurado, iluminación, tableros y sistemas de automatización y control industrial.",
         ],
         "items": [
@@ -389,12 +389,12 @@ SERVICES = [
         "icon": "snow",
         "name": "Aire Acondicionado, Ventilación y Refrigeración (HVAC)",
         "short": "Chillers, VRF, ductería, manejadoras, splits, calderas, cuartos fríos y refrigeración industrial.",
-        "title": "Aire Acondicionado Industrial y Comercial (HVAC) en Panamá | DICPROM",
+        "title": "Aire Acondicionado Industrial y Comercial (HVAC) en Panamá | DISPRON GROUP",
         "desc": "HVAC en Panamá: diseño, instalación y mantenimiento de aire acondicionado industrial, comercial y residencial, chillers, VRF, ductos, cuartos fríos y refrigeración.",
         "serviceType": "Sistemas HVAC y refrigeración",
         "lead": "Confort térmico, calidad de aire y refrigeración confiable para el clima tropical de Panamá, con eficiencia energética.",
         "intro": [
-            "DICPROM diseña, suministra, instala, aísla térmicamente y mantiene sistemas de aire acondicionado industrial, comercial y residencial en Panamá: chillers, sistemas VRF/VRV, ductería, unidades manejadoras de aire (UMA) y splits.",
+            "DISPRON GROUP diseña, suministra, instala, aísla térmicamente y mantiene sistemas de aire acondicionado industrial, comercial y residencial en Panamá: chillers, sistemas VRF/VRV, ductería, unidades manejadoras de aire (UMA) y splits.",
             "También instalamos y mantenemos calderas, intercambiadores de calor, sistemas de refrigeración industrial, cuartos fríos y sistemas de control de temperatura y humedad para procesos críticos.",
         ],
         "items": [
@@ -420,12 +420,12 @@ SERVICES = [
         "icon": "weld",
         "name": "Metalmecánica, Estructuras Metálicas y Soldadura",
         "short": "Estructuras pesadas y livianas, soldadura SMAW/MIG/TIG, tanques, piping, silos y tolvas.",
-        "title": "Estructuras Metálicas y Soldadura Industrial en Panamá | DICPROM",
+        "title": "Estructuras Metálicas y Soldadura Industrial en Panamá | DISPRON GROUP",
         "desc": "Metalmecánica en Panamá: estructuras metálicas, galeras y puentes, soldadura SMAW, MIG y TIG, tanques, piping de alta presión, silos y tolvas.",
         "serviceType": "Metalmecánica y soldadura industrial",
         "lead": "Fabricamos y montamos estructuras y piezas metálicas con soldadura calificada y control de calidad documentado.",
         "intro": [
-            "DICPROM fabrica, diseña, ensambla, erige y monta estructuras metálicas pesadas y livianas en Panamá para edificios, galeras, puentes, naves industriales y obras civiles.",
+            "DISPRON GROUP fabrica, diseña, ensambla, erige y monta estructuras metálicas pesadas y livianas en Panamá para edificios, galeras, puentes, naves industriales y obras civiles.",
             "Ofrecemos soldadura especializada (SMAW, GMAW/MIG, GTAW/TIG), oxicorte, corte por plasma y metalurgia, además de fabricación, reparación y mantenimiento de piezas metálicas, herrería industrial, tanques de almacenamiento, tuberías de alta presión (piping), silos y tolvas.",
         ],
         "items": [
@@ -451,12 +451,12 @@ SERVICES = [
         "icon": "drop",
         "name": "Fontanería, Hidráulica y Sistemas Contra Incendios",
         "short": "Agua potable, bombeo, aguas residuales, rociadores, bombas contra incendio, gas y plantas de tratamiento.",
-        "title": "Sistemas Contra Incendios, Plomería e Hidráulica en Panamá | DICPROM",
+        "title": "Sistemas Contra Incendios, Plomería e Hidráulica en Panamá | DISPRON GROUP",
         "desc": "Fontanería e hidráulica en Panamá: redes de agua potable, bombeo, aguas residuales, sistemas contra incendios (rociadores, bombas), gas GLP y plantas de tratamiento.",
         "serviceType": "Fontanería, hidráulica y protección contra incendios",
         "lead": "Redes de agua, drenaje, gas y protección contra incendios diseñadas, instaladas y mantenidas conforme a norma.",
         "intro": [
-            "DICPROM diseña, instala y mantiene en Panamá redes de agua potable, sistemas de bombeo, aguas residuales, pluviales y sanitarias a nivel industrial, comercial y residencial.",
+            "DISPRON GROUP diseña, instala y mantiene en Panamá redes de agua potable, sistemas de bombeo, aguas residuales, pluviales y sanitarias a nivel industrial, comercial y residencial.",
             "Instalamos y mantenemos sistemas contra incendios —redes de rociadores, gabinetes, bombas contra incendio y sistemas de extinción— así como tuberías hidráulicas y neumáticas, sistemas de gas natural o GLP, plantas de tratamiento de agua y redes de fluidos en general.",
         ],
         "items": [
@@ -483,12 +483,12 @@ SERVICES = [
         "icon": "box",
         "name": "Suministro de Materiales, Herramientas, Repuestos y Equipos",
         "short": "Importación, distribución, venta y alquiler de materiales y equipos industriales y de construcción.",
-        "title": "Suministro de Materiales y Equipos Industriales en Panamá | DICPROM",
+        "title": "Suministro de Materiales y Equipos Industriales en Panamá | DISPRON GROUP",
         "desc": "Venta, importación y alquiler de materiales de construcción, herramientas, repuestos y equipos industriales en Panamá, al por mayor y al detal.",
         "serviceType": "Suministro y comercialización de materiales y equipos",
         "lead": "Abastecemos sus proyectos y su planta con materiales, repuestos y equipos de calidad, al por mayor y al detal.",
         "intro": [
-            "DICPROM compra, vende, importa, exporta, distribuye, arrienda y comercializa al por mayor y al por menor materiales, herramientas, repuestos, materias primas y equipos relacionados con la construcción, la ingeniería eléctrica, HVAC, metalmecánica, fontanería y el mantenimiento industrial.",
+            "DISPRON GROUP compra, vende, importa, exporta, distribuye, arrienda y comercializa al por mayor y al por menor materiales, herramientas, repuestos, materias primas y equipos relacionados con la construcción, la ingeniería eléctrica, HVAC, metalmecánica, fontanería y el mantenimiento industrial.",
             "Aprovechamos la posición logística de Panamá para importar equipos y repuestos especializados y entregarlos en obra o en planta en todo el país.",
         ],
         "items": [
@@ -531,14 +531,14 @@ INDUSTRIES = [
 ]
 
 GENERAL_FAQS = [
-    ("¿Qué hace DICPROM?", "DICPROM es una empresa panameña de ingeniería, construcción y mantenimiento industrial. Ofrece diseño industrial e ingeniería de producto, mantenimiento predictivo y preventivo, montaje de maquinaria, obra civil, remodelaciones y fit-out, ingeniería eléctrica, HVAC, metalmecánica y soldadura, fontanería y sistemas contra incendios, además del suministro de materiales y equipos."),
-    ("¿En qué parte de Panamá trabaja DICPROM?", "DICPROM tiene sede en la Ciudad de Panamá y ejecuta proyectos en todas las provincias de la República de Panamá, incluyendo Panamá Oeste, Colón, Coclé, Herrera, Los Santos, Veraguas, Chiriquí, Bocas del Toro, Darién y comarcas."),
-    ("¿DICPROM realiza proyectos llave en mano?", "Sí. DICPROM ejecuta proyectos bajo modalidad llave en mano (EPC / Turnkey), asumiendo ingeniería, procura, construcción y puesta en marcha con un único contrato y responsable."),
-    ("¿Cómo solicito una cotización a DICPROM?", "Puede solicitar una cotización gratuita desde el formulario de contacto de dicprom.com, por WhatsApp o por correo electrónico a info@dicprom.com. Un ingeniero revisa su solicitud y agenda una visita técnica si es necesario."),
-    ("¿DICPROM atiende emergencias de mantenimiento?", "Sí. DICPROM ofrece atención de emergencias 24/7 para fallas eléctricas, mecánicas, hidráulicas y de aire acondicionado a clientes con contrato de mantenimiento."),
-    ("¿Qué tipo de clientes atiende DICPROM?", "Plantas industriales, empresas logísticas y portuarias, minería, sector petrolero, bancos, oficinas corporativas, instituciones públicas y privadas, propiedades horizontales (PH), comercios y clientes residenciales."),
-    ("¿Los trabajos de DICPROM cumplen las normas de Panamá?", "Sí. DICPROM trabaja con profesionales idóneos y conforme al Reglamento Estructural Panameño (REP), la normativa de la JTIA, el reglamento del Benemérito Cuerpo de Bomberos y estándares internacionales como NFPA, ASHRAE, AWS, ASME, API e ISO."),
-    ("¿DICPROM vende materiales y equipos?", "Sí. DICPROM importa, distribuye, vende y arrienda al por mayor y al detal materiales de construcción, material eléctrico, equipos HVAC, tuberías, herramientas, repuestos y equipos industriales."),
+    ("¿Qué hace DISPRON GROUP?", "DISPRON GROUP es una empresa panameña de ingeniería, construcción y mantenimiento industrial. Ofrece diseño industrial e ingeniería de producto, mantenimiento predictivo y preventivo, montaje de maquinaria, obra civil, remodelaciones y fit-out, ingeniería eléctrica, HVAC, metalmecánica y soldadura, fontanería y sistemas contra incendios, además del suministro de materiales y equipos."),
+    ("¿En qué parte de Panamá trabaja DISPRON GROUP?", "DISPRON GROUP tiene sede en la Ciudad de Panamá y ejecuta proyectos en todas las provincias de la República de Panamá, incluyendo Panamá Oeste, Colón, Coclé, Herrera, Los Santos, Veraguas, Chiriquí, Bocas del Toro, Darién y comarcas."),
+    ("¿DISPRON GROUP realiza proyectos llave en mano?", "Sí. DISPRON GROUP ejecuta proyectos bajo modalidad llave en mano (EPC / Turnkey), asumiendo ingeniería, procura, construcción y puesta en marcha con un único contrato y responsable."),
+    ("¿Cómo solicito una cotización a DISPRON GROUP?", "Puede solicitar una cotización gratuita desde el formulario de contacto de dicprom.com, por WhatsApp o por correo electrónico a info@dicprom.com. Un ingeniero revisa su solicitud y agenda una visita técnica si es necesario."),
+    ("¿DISPRON GROUP atiende emergencias de mantenimiento?", "Sí. DISPRON GROUP ofrece atención de emergencias 24/7 para fallas eléctricas, mecánicas, hidráulicas y de aire acondicionado a clientes con contrato de mantenimiento."),
+    ("¿Qué tipo de clientes atiende DISPRON GROUP?", "Plantas industriales, empresas logísticas y portuarias, minería, sector petrolero, bancos, oficinas corporativas, instituciones públicas y privadas, propiedades horizontales (PH), comercios y clientes residenciales."),
+    ("¿Los trabajos de DISPRON GROUP cumplen las normas de Panamá?", "Sí. DISPRON GROUP trabaja con profesionales idóneos y conforme al Reglamento Estructural Panameño (REP), la normativa de la JTIA, el reglamento del Benemérito Cuerpo de Bomberos y estándares internacionales como NFPA, ASHRAE, AWS, ASME, API e ISO."),
+    ("¿DISPRON GROUP vende materiales y equipos?", "Sí. DISPRON GROUP importa, distribuye, vende y arrienda al por mayor y al detal materiales de construcción, material eléctrico, equipos HVAC, tuberías, herramientas, repuestos y equipos industriales."),
 ]
 
 PROCESS = [
@@ -556,3 +556,119 @@ VALUES = [
     ("Seguridad primero", "Análisis de riesgos, permisos de trabajo, EPP y procedimientos de trabajo en altura y espacios confinados."),
     ("Respuesta 24/7", "Atención de emergencias para clientes con contrato de mantenimiento."),
 ]
+
+# ---------------------------------------------------------------- FOTOGRAFÍAS DE OBRA
+# Rutas relativas a public/img del paquete fotográfico DISPRON (tools/import_assets.py las optimiza en static/img/obras/).
+HERO_PHOTOS = [
+    ("svc/dispron-hero-1.webp", "Estructura en construcción con grúas torre"),
+    ("svc/dispron-electrica-5.webp", "Izaje de transformador en subestación eléctrica"),
+    ("soldadura/soldadura-14.webp", "Soldadura de tanque metálico en taller"),
+    ("obra-civil/obra-civil-17.webp", "Montaje de galera de estructura metálica"),
+    ("fire/fire-16.webp", "Cuarto de bombas y red contra incendios"),
+]
+
+PHOTOS = {
+    "diseno-industrial-ingenieria-de-producto": [
+        ("svc/dispron-industrial-8.webp", "Ensamble de colector de válvulas diseñado a medida"),
+        ("soldadura/soldadura-10.webp", "Corte CNC por plasma de piezas de ingeniería"),
+        ("soldadura/soldadura-29.webp", "Inspección dimensional de pieza mecanizada"),
+        ("obra-civil/obra-civil-08.webp", "Ingeniera revisando modelo digital en planta"),
+    ],
+    "mantenimiento-industrial": [
+        ("svc/dispron-mantenimiento-4.webp", "Diagnóstico de tablero eléctrico con equipo de medición"),
+        ("svc/dispron-mantenimiento-3.webp", "Mantenimiento de sala de bombas y tanques"),
+        ("plomeria/plomeria-03.webp", "Técnico registrando parámetros de operación"),
+        ("fire/fire-14.webp", "Mantenimiento preventivo de equipos de bombeo"),
+    ],
+    "montaje-maquinaria-automatizacion": [
+        ("soldadura/soldadura-30.webp", "Montaje y alineación de maquinaria industrial"),
+        ("soldadura/soldadura-22.webp", "Ajuste de eje y componentes mecánicos"),
+        ("soldadura/soldadura-09.webp", "Puesta en marcha de equipo de corte automatizado"),
+        ("svc/dispron-electrica-3.webp", "Centro de control y automatización de planta"),
+    ],
+    "ingenieria-proyectos-industriales-petroleros-mineria": [
+        ("fire/fire-33.webp", "Izaje de tanque de almacenamiento en proyecto industrial"),
+        ("obra-civil/obra-civil-09.webp", "Levantamiento topográfico de proyecto"),
+        ("soldadura/soldadura-14.webp", "Fabricación de tanque para planta de proceso"),
+        ("obra-civil/obra-civil-26.webp", "Movimiento de tierras en proyecto de gran escala"),
+    ],
+    "construccion-obra-civil": [
+        ("obra-civil/obra-civil-04.webp", "Vaciado de concreto con bomba en obra"),
+        ("obra-civil/obra-civil-05.webp", "Excavación y movimiento de tierras"),
+        ("obra-civil/obra-civil-16.webp", "Armado de acero de refuerzo para losa"),
+        ("obra-civil/obra-civil-24.webp", "Pavimentación con asfalto"),
+        ("obra-civil/obra-civil-23.webp", "Estructura de edificio en construcción"),
+    ],
+    "remodelacion-fit-out": [
+        ("svc/dispron-remodelacion-3.webp", "Fit-out de oficina corporativa con divisiones de vidrio"),
+        ("svc/dispron-remodelacion-4.webp", "Instalación de tabiquería y cielo raso"),
+        ("svc/dispron-remodelacion-5.webp", "Remodelación de local con andamios"),
+        ("svc/dispron-ebanisteria-2.webp", "Acabados de drywall y pintura en oficina"),
+    ],
+    "pisos-pintura-epoxica": [
+        ("svc/dispron-epoxi-2.webp", "Piso epóxico con señalización en bodega"),
+        ("svc/dispron-epoxi-1.webp", "Aplicación de recubrimiento epóxico"),
+        ("svc/dispron-epoxi-5.webp", "Acabado de piso epóxico autonivelante"),
+        ("svc/dispron-epoxi-4.webp", "Piso industrial de alto tráfico para montacargas"),
+    ],
+    "mantenimiento-ph-edificios": [
+        ("svc/dispron-restauracion-3.webp", "Mantenimiento de fachada en edificio de Panamá"),
+        ("svc/dispron-restauracion-5.webp", "Lavado a presión de fachada con acceso por cuerda"),
+        ("svc/dispron-restauracion-6.webp", "Trabajo en plataforma suspendida en torre"),
+        ("svc/dispron-mantenimiento-1.webp", "Mantenimiento de áreas comunes en edificio"),
+    ],
+    "arquitectura-planos-render-3d": [
+        ("svc/dispron-eventos-5.webp", "Sala de reuniones con diseño interior corporativo"),
+        ("obra-civil/obra-civil-10.webp", "Espacio interior diseñado y construido"),
+        ("svc/dispron-remodelacion-3.webp", "Diseño de oficinas con planta abierta"),
+        ("obra-civil/obra-civil-28.webp", "Ejecución de proyecto de interiorismo"),
+    ],
+    "stands-corporativos": [
+        ("svc/dispron-eventos-2.webp", "Stand corporativo para feria en centro de convenciones"),
+        ("svc/dispron-eventos-6.webp", "Stand de exhibición con estructura elevada"),
+        ("svc/dispron-eventos-3.webp", "Escenario para evento corporativo"),
+        ("svc/dispron-eventos-1.webp", "Montaje de stand institucional"),
+    ],
+    "gerencia-proyectos-epc-llave-en-mano": [
+        ("obra-civil/obra-civil-20.webp", "Complejo logístico entregado llave en mano"),
+        ("obra-civil/obra-civil-17.webp", "Montaje de estructura de galera industrial"),
+        ("svc/dispron-industrial-4.webp", "Supervisión de obra de nave industrial"),
+        ("obra-civil/obra-civil-02.webp", "Inspección técnica de estructura metálica"),
+    ],
+    "ingenieria-electrica": [
+        ("svc/dispron-electrica-1.webp", "Mantenimiento de transformador en subestación"),
+        ("svc/dispron-electrica-2.webp", "Pruebas en transformador de potencia"),
+        ("svc/dispron-electrica-4.webp", "Conexionado de tablero eléctrico industrial"),
+        ("svc/dispron-electrica-6.webp", "Mantenimiento de planta eléctrica de emergencia"),
+        ("svc/dispron-electrica-3.webp", "Celdas de media tensión y control"),
+    ],
+    "hvac-aire-acondicionado": [
+        ("svc/dispron-industrial-7.webp", "Unidad enfriadora (chiller) para edificio"),
+        ("svc/dispron-mantenimiento-5.webp", "Cambio de filtros en unidad manejadora de aire"),
+        ("svc/dispron-plomeria-4.webp", "Tuberías de agua helada en cuarto de máquinas"),
+        ("svc/dispron-industrial-3.webp", "Ductería y ventilación en nave industrial"),
+    ],
+    "metalmecanica-soldadura": [
+        ("soldadura/soldadura-17.webp", "Soldadura estructural en taller metalmecánico"),
+        ("soldadura/soldadura-16.webp", "Soldadura TIG de tubería de acero inoxidable"),
+        ("soldadura/soldadura-26.webp", "Montaje y soldadura de estructura en altura"),
+        ("soldadura/soldadura-06.webp", "Taller de fabricación de estructuras metálicas"),
+        ("soldadura/soldadura-03.webp", "Cubierta metálica fabricada e instalada"),
+    ],
+    "fontaneria-hidraulica-contra-incendios": [
+        ("fire/fire-16.webp", "Cuarto de bombas contra incendio"),
+        ("fire/fire-26.webp", "Red de rociadores y tubería contra incendios"),
+        ("svc/dispron-plomeria-2.webp", "Sistema de bombeo de agua potable"),
+        ("fire/fire-05.webp", "Prueba de hidrante contra incendios"),
+        ("plomeria/plomeria-08.webp", "Instalación de tubería hidrosanitaria"),
+    ],
+    "suministro-equipos-materiales": [
+        ("soldadura/soldadura-07.webp", "Inventario de perfiles y tubería de acero"),
+        ("plomeria/plomeria-18.webp", "Equipos de tratamiento de agua"),
+        ("fire/fire-12.webp", "Suministro de equipos eléctricos y de control"),
+        ("soldadura/soldadura-28.webp", "Almacén de materiales metálicos"),
+    ],
+}
+
+for _s in SERVICES:
+    _s["photos"] = PHOTOS[_s["slug"]]

@@ -1,11 +1,11 @@
 {
-  "name": "DICPROM – Ingeniería, construcción y mantenimiento industrial en Panamá",
-  "short_name": "DICPROM",
+  "name": "DISPRON GROUP – Ingeniería, construcción y mantenimiento industrial en Panamá",
+  "short_name": "DISPRON GROUP",
   "start_url": "/",
   "display": "standalone",
   "lang": "es-PA",
-  "background_color": "#0b1f3a",
-  "theme_color": "#0b1f3a",
+  "background_color": "#0f1a2b",
+  "theme_color": "#0f1a2b",
   "icons": [
     {
       "src": "/img/icon-192.png",
@@ -15,12 +15,8 @@
     {
       "src": "/img/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "src": "/img/logo-dicprom.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }

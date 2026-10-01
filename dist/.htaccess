@@ -1,4 +1,4 @@
-# Apache / cPanel – dicprom.com
+# Apache / cPanel – DISPRON GROUP (dicprom.com)
 Options -Indexes
 ErrorDocument 404 /404.html
 RewriteEngine On

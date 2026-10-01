@@ -1,11 +1,12 @@
 {
-  "_LEEME": "Datos NAP (Nombre, Dirección, Teléfono) de la empresa. Deben ser IDÉNTICOS a Google Business Profile, Bing Places y directorios. Reemplace todos los valores que contienen REEMPLAZAR y ejecute: python3 build.py",
-  "brand": "DICPROM",
-  "legalName": "DICPROM, S.A.",
+  "_LEEME": "Datos NAP (Nombre, Dirección, Teléfono) de la empresa. Deben ser IDÉNTICOS a Google Business Profile, Bing Places y directorios. Reemplace todos los valores que contienen REEMPLAZAR y ejecute: python3 build.py · legalName: confirmar razón social exacta. sameAs: agregar URLs reales de LinkedIn, Facebook, Instagram, YouTube.",
+  "brand": "DISPRON GROUP",
+  "legalName": "DISPRON GROUP, S.A.",
   "alternateNames": [
-    "Dicprom",
-    "Dicprom Panamá",
-    "DICPROM Ingeniería y Construcción"
+    "DISPRON",
+    "Dispron Group",
+    "Dispron Group Panamá",
+    "DISPRON Ingeniería y Construcción"
   ],
   "domain": "https://dicprom.com",
   "tagline": "Ingeniería, construcción y mantenimiento industrial en Panamá",
@@ -48,12 +49,8 @@
     }
   ],
   "hoursDisplay": "Lunes a viernes 8:00 a. m. – 5:00 p. m. · Sábados 8:00 a. m. – 12:00 m. · Emergencias 24/7",
-  "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=DICPROM+Panam%C3%A1",
-  "sameAs": [
-    "https://www.linkedin.com/company/dicprom",
-    "https://www.facebook.com/dicprom",
-    "https://www.instagram.com/dicprom"
-  ],
+  "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=DISPRON+GROUP+Panam%C3%A1",
+  "sameAs": [],
   "googleSiteVerification": "",
   "bingSiteVerification": "",
   "gaMeasurementId": "",

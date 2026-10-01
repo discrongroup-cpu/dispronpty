@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generador estático del sitio dicprom.com. Uso: python3 build.py  ->  dist/"""
+"""Generador estático del sitio de DISPRON GROUP (dicprom.com). Uso: python3 build.py  ->  dist/"""
 import datetime
 import html
 import json
@@ -7,20 +7,23 @@ import shutil
 import sys
 from pathlib import Path
 
+from PIL import Image
+
 ROOT = Path(__file__).parent
 sys.path.insert(0, str(ROOT / "data"))
-from content import (CATEGORIES, GENERAL_FAQS, INDUSTRIES, PROCESS,  # noqa: E402
-                     PROVINCES, SERVICES, VALUES)
+from content import (CATEGORIES, GENERAL_FAQS, HERO_PHOTOS, INDUSTRIES,  # noqa: E402
+                     PROCESS, PROVINCES, SERVICES, VALUES)
 
 S = json.loads((ROOT / "data" / "site.json").read_text(encoding="utf-8"))
 DIST = ROOT / "dist"
 D = S["domain"].rstrip("/")
 TODAY = datetime.date.today().isoformat()
+BUILD_ID = datetime.datetime.now().strftime("%Y%m%d%H%M")
 SVC = {s["slug"]: s for s in SERVICES}
 ORG_ID = f"{D}/#organization"
 SITE_ID = f"{D}/#website"
 LOGO_ID = f"{D}/#logo"
-OG_IMAGE = f"{D}/img/og-dicprom.png"
+OG_IMAGE = f"{D}/img/og-dispron.jpg"
 
 
 def e(text):
@@ -95,9 +98,10 @@ def organization_node():
         "legalName": S["legalName"],
         "alternateName": S["alternateNames"],
         "url": f"{D}/",
-        "logo": {"@type": "ImageObject", "@id": LOGO_ID, "url": f"{D}/img/logo-dicprom.png", "width": 512, "height": 512, "caption": S["brand"]},
-        "image": [OG_IMAGE, f"{D}/img/logo-dicprom.png"],
-        "description": ("DICPROM es una empresa panameña de diseño industrial, ingeniería de producto, mantenimiento industrial "
+        "logo": {"@type": "ImageObject", "@id": LOGO_ID, "url": f"{D}/img/logo-dispron-vertical.png", "contentUrl": f"{D}/img/logo-dispron-vertical.png",
+                 "width": 765, "height": 526, "caption": f"Logotipo {S['brand']}"},
+        "image": [OG_IMAGE, f"{D}/img/logo-dispron-horizontal.png"] + [f"{D}/img/hero/hero-{i + 1}.webp" for i in range(len(HERO_PHOTOS))],
+        "description": ("DISPRON GROUP es una empresa panameña de diseño industrial, ingeniería de producto, mantenimiento industrial "
                         "predictivo, construcción y obra civil, remodelación y fit-out, ingeniería eléctrica, HVAC, metalmecánica, "
                         "soldadura, fontanería y sistemas contra incendios, con cobertura en toda la República de Panamá."),
         "slogan": S["slogan"],
@@ -122,7 +126,7 @@ def organization_node():
                           "availableLanguage": ["Spanish"], "hoursAvailable": {"@type": "OpeningHoursSpecification",
                           "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "00:00", "closes": "23:59"}}],
         "hasOfferCatalog": {
-            "@type": "OfferCatalog", "name": "Servicios de ingeniería, construcción y mantenimiento DICPROM",
+            "@type": "OfferCatalog", "name": "Servicios de ingeniería, construcción y mantenimiento DISPRON GROUP",
             "itemListElement": [{"@type": "OfferCatalog", "name": cname, "itemListElement": [
                 {"@type": "Offer", "itemOffered": {"@id": f"{D}{svc_url(s['slug'])}#service"}} for s in SERVICES if s["cat"] == ckey]}
                 for ckey, cname in CATEGORIES]},
@@ -152,7 +156,8 @@ def service_node(s):
         "hasOfferCatalog": {"@type": "OfferCatalog", "name": s["name"], "itemListElement": [
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": h, "description": p}} for h, p in s["items"]]},
         "termsOfService": f"{D}/politica-de-privacidad/",
-        "image": OG_IMAGE,
+        "image": [{"@type": "ImageObject", "contentUrl": f"{D}/img/obras/{s['slug']}-{i + 1}.webp", "caption": cap}
+                  for i, (_src, cap) in enumerate(s["photos"])],
     }
 
 
@@ -175,32 +180,70 @@ def webpage_node(url, title, desc, ptype="WebPage", extra=None):
     return node
 
 
+# ------------------------------------------------------------------ imágenes
+PHOTO_DIMS = {}
+LOAD_EAGER = 'fetchpriority="high"'
+LOAD_LAZY = 'loading="lazy"'
+
+
+def photo_url(slug, i, small=False):
+    return f"/img/obras/{slug}-{i}{'-sm' if small else ''}.webp"
+
+
+def dims(url):
+    if url not in PHOTO_DIMS:
+        with Image.open(ROOT / "static" / url.lstrip("/")) as im:
+            PHOTO_DIMS[url] = im.size
+    return PHOTO_DIMS[url]
+
+
+def picture(url, alt, cls="", eager=False, sizes="(max-width: 700px) 100vw, 400px"):
+    small = url.replace(".webp", "-sm.webp")
+    w, h = dims(url)
+    sw = dims(small)[0]
+    load = 'fetchpriority="high" decoding="async"' if eager else 'loading="lazy" decoding="async"'
+    c = f' class="{cls}"' if cls else ""
+    return (f'<img{c} src="{url}" srcset="{small} {sw}w, {url} {w}w" sizes="{sizes}" width="{w}" height="{h}" '
+            f'alt="{e(alt)}" {load}>')
+
+
+def svc_photos(s):
+    return [(photo_url(s["slug"], i + 1), cap) for i, (_src, cap) in enumerate(s["photos"])]
+
+
+def svc_cover(s):
+    return svc_photos(s)[0][0]
+
+
 # ------------------------------------------------------------------ layout
+NAV = [("/", "Inicio"), ("/servicios/", "Servicios"), ("/proyectos/", "Proyectos"), ("/cobertura/", "Cobertura"),
+       ("/nosotros/", "Nosotros"), ("/preguntas-frecuentes/", "Preguntas"), ("/contacto/", "Contacto")]
+
+
 def nav_html(active):
     groups = ""
     for ckey, cname in CATEGORIES:
-        links = "".join(f'<li><a href="{svc_url(s["slug"])}">{e(s["name"])}</a></li>' for s in SERVICES if s["cat"] == ckey)
+        links = "".join(f'<li><a href="{svc_url(s["slug"])}">{icon(s["icon"])}<span>{e(s["name"])}</span></a></li>'
+                        for s in SERVICES if s["cat"] == ckey)
         groups += f'<div class="mega-col"><p class="mega-title">{e(cname)}</p><ul>{links}</ul></div>'
-
-    def item(path, label):
+    items = ""
+    for path, label in NAV:
         cur = ' aria-current="page"' if active == path else ""
-        return f'<li><a href="{path}"{cur}>{label}</a></li>'
-    return f'''<header class="site-header">
+        if path == "/servicios/":
+            items += (f'<li class="has-mega"><a href="{path}"{cur}>{label}<svg class="chev" viewBox="0 0 24 24" aria-hidden="true">'
+                      f'<path d="M6 9l6 6 6-6"/></svg></a><div class="mega"><div class="mega-inner">{groups}</div></div></li>')
+        else:
+            items += f'<li><a href="{path}"{cur}>{label}</a></li>'
+    return f'''<header class="site-header" id="top">
+  <div class="topbar"><div class="container topbar-inner">
+    <span>{icon("pin")} Cobertura en toda la República de Panamá</span>
+    <span class="topbar-r"><a href="tel:{e(S["phone"])}">{icon("phone")} {e(S["phoneDisplay"])}</a><a href="mailto:{e(S["email"])}">{icon("mail")} {e(S["email"])}</a><span class="badge-24">{icon("clock")} Emergencias 24/7</span></span>
+  </div></div>
   <div class="container header-inner">
-    <a class="brand" href="/" aria-label="{e(S["brand"])} inicio"><img src="/img/logo-dicprom.svg" alt="{e(S["brand"])}" width="40" height="40"><span>{e(S["brand"])}</span></a>
+    <a class="brand" href="/" aria-label="{e(S["brand"])} – inicio"><img src="/img/logo-dispron-horizontal.png" alt="Logotipo {e(S["brand"])}" width="1114" height="416"></a>
+    <nav id="nav" class="nav" aria-label="Principal"><ul class="nav-list">{items}</ul>
+      <a class="btn btn-gold nav-cta" href="/contacto/">Cotizar proyecto {icon("arrow")}</a></nav>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú"><span></span><span></span><span></span></button>
-    <nav id="nav" class="nav" aria-label="Principal">
-      <ul class="nav-list">
-        {item("/", "Inicio")}
-        <li class="has-mega"><a href="/servicios/"{' aria-current="page"' if active == "/servicios/" else ""}>Servicios</a>
-          <div class="mega">{groups}</div></li>
-        {item("/cobertura/", "Cobertura")}
-        {item("/nosotros/", "Nosotros")}
-        {item("/preguntas-frecuentes/", "Preguntas")}
-        {item("/contacto/", "Contacto")}
-      </ul>
-      <a class="btn btn-accent nav-cta" href="/contacto/">Solicitar cotización</a>
-    </nav>
   </div>
 </header>'''
 
@@ -214,9 +257,13 @@ def footer_html():
     street = f'{e(a["street"])}, ' if real(a["street"]) else ""
     social = "".join(f'<li><a href="{e(u)}" rel="noopener me" target="_blank">{e(u.split("/")[2].replace("www.", "").split(".")[0].capitalize())}</a></li>' for u in S["sameAs"] if u)
     return f'''<footer class="site-footer">
+  <div class="footer-cta container">
+    <div><p class="eyebrow">Hablemos de su proyecto</p><p class="footer-cta-t">Un solo responsable técnico, de la ingeniería al mantenimiento.</p></div>
+    <a class="btn btn-gold" href="/contacto/">Solicitar cotización {icon("arrow")}</a>
+  </div>
   <div class="container footer-grid">
     <div class="f-brand">
-      <a class="brand" href="/"><img src="/img/logo-dicprom.svg" alt="" width="40" height="40" loading="lazy"><span>{e(S["brand"])}</span></a>
+      <a class="f-logo" href="/" aria-label="{e(S["brand"])}"><img src="/img/logo-dispron-mark-light.png" alt="" width="243" height="256" loading="lazy"><span>DISPRON <b>GROUP</b></span></a>
       <p>{e(S["tagline"])}. Diseño industrial, mantenimiento, obra civil, electricidad, HVAC, metalmecánica e hidráulica en toda la República de Panamá.</p>
       <address>
         <p>{icon("pin")} {street}{e(a["locality"])}, Panamá</p>
@@ -233,7 +280,8 @@ def footer_html():
     <p><a href="/politica-de-privacidad/">Política de privacidad</a> · <a href="/sitemap.xml">Mapa del sitio</a> · <a href="/llms.txt">llms.txt</a></p>
   </div>
 </footer>
-<a class="wa-float" href="https://wa.me/{e(S["whatsapp"])}?text={e("Hola DICPROM, quiero solicitar una cotización.")}" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">{WA_SVG}</a>'''
+<a class="wa-float" href="https://wa.me/{e(S["whatsapp"])}?text={e("Hola DISPRON GROUP, quiero solicitar una cotización.")}" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">{WA_SVG}</a>
+<a class="to-top" href="#top" aria-label="Volver arriba">{icon("arrow")}</a>'''
 
 
 def breadcrumbs_html(crumbs):
@@ -242,10 +290,10 @@ def breadcrumbs_html(crumbs):
     parts = []
     for i, (n, p) in enumerate(crumbs):
         parts.append(f'<li><span aria-current="page">{e(n)}</span></li>' if i == len(crumbs) - 1 else f'<li><a href="{p}">{e(n)}</a></li>')
-    return f'<nav class="breadcrumbs container" aria-label="Migas de pan"><ol>{"".join(parts)}</ol></nav>'
+    return f'<nav class="breadcrumbs" aria-label="Migas de pan"><ol>{"".join(parts)}</ol></nav>'
 
 
-def page(path, title, desc, body, graph, crumbs, active=None, og_type="website", robots="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"):
+def page(path, title, desc, body, graph, crumbs, active=None, og_type="website", robots="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", images=None):
     url = f"{D}{path}"
     ld = {"@context": "https://schema.org", "@graph": [organization_node(), website_node()] + graph + ([breadcrumb_node(url, crumbs)] if crumbs else [])}
     verif = ""
@@ -289,100 +337,169 @@ def page(path, title, desc, body, graph, crumbs, active=None, og_type="website",
 <meta name="twitter:title" content="{e(title)}">
 <meta name="twitter:description" content="{e(desc)}">
 <meta name="twitter:image" content="{OG_IMAGE}">
-<meta name="theme-color" content="#0b1f3a">
-{verif}<link rel="icon" href="/favicon.ico" sizes="32x32">
-<link rel="icon" href="/img/logo-dicprom.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0f1a2b">
+{verif}<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/img/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.webmanifest">
-<link rel="stylesheet" href="/css/styles.css?v={TODAY}">
+<link rel="preload" href="/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/styles.css?v={BUILD_ID}">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False, separators=(",", ":"))}</script>
 {ga}</head>
 <body>
 <a class="skip" href="#main">Saltar al contenido</a>
 {nav_html(active or path)}
-{breadcrumbs_html(crumbs)}
 <main id="main">
 {body}
 </main>
 {footer_html()}
-<script src="/js/main.js?v={TODAY}" defer></script>
+<script src="/js/main.js?v={BUILD_ID}" defer></script>
 </body>
 </html>
 '''
+    doc = doc.replace("<!--CRUMBS-->", breadcrumbs_html(crumbs))
     out = DIST / path.strip("/") / "index.html" if path.endswith("/") else DIST / path.lstrip("/")
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(doc, encoding="utf-8")
     PAGES.append(path)
+    PAGE_IMAGES[path] = images or []
 
 
 PAGES = []
+PAGE_IMAGES = {}
 
 
 # ------------------------------------------------------------------ bloques reutilizables
+def page_hero(h1, lead, bg=None, eyebrow="", extra="", aside=""):
+    style = f' style="--hero-bg:url(\'{bg}\')"' if bg else ""
+    eb = f'<p class="eyebrow">{e(eyebrow)}</p>' if eyebrow else ""
+    return f'''<section class="page-hero{' has-bg' if bg else ''}"{style}>
+  <div class="hero-lines" aria-hidden="true">{chevrons_svg()}</div>
+  <div class="container page-hero-inner{' with-aside' if aside else ''}">
+    <div class="reveal"><!--CRUMBS-->{eb}<h1>{h1}</h1><p class="lead">{lead}</p>{extra}</div>
+    {aside}
+  </div>
+</section>'''
+
+
+def chevrons_svg():
+    return ('<svg viewBox="0 0 600 600" preserveAspectRatio="xMaxYMid slice"><g fill="none" stroke-width="2">'
+            '<path class="l1" d="M80 60 L80 420 L300 560 L520 420 L520 140"/>'
+            '<path class="l2" d="M160 120 L160 380 L300 470 L440 380 L440 220 L360 220"/>'
+            '<path class="l3" d="M520 60 L300 200 L300 300"/></g></svg>')
+
+
 def cta_block(title="¿Tiene un proyecto en Panamá?", text="Cuéntenos su necesidad y reciba una propuesta técnica y económica sin compromiso."):
-    return f'''<section class="cta"><div class="container cta-inner">
-  <div><h2>{e(title)}</h2><p>{e(text)}</p></div>
-  <div class="cta-actions"><a class="btn btn-accent" href="/contacto/">Solicitar cotización {icon("arrow")}</a>
+    return f'''<section class="cta"><div class="container cta-inner reveal">
+  <div class="cta-mark" aria-hidden="true"><img src="/img/logo-dispron-mark-light.png" alt="" width="243" height="256" loading="lazy"></div>
+  <div class="cta-text"><h2>{e(title)}</h2><p>{e(text)}</p></div>
+  <div class="cta-actions"><a class="btn btn-gold" href="/contacto/">Solicitar cotización {icon("arrow")}</a>
   <a class="btn btn-ghost" href="https://wa.me/{e(S["whatsapp"])}" target="_blank" rel="noopener">{WA_SVG} WhatsApp</a></div>
 </div></section>'''
 
 
-def faq_html(faqs, title="Preguntas frecuentes"):
-    items = "".join(f'<details class="faq"><summary><h3>{e(q)}</h3></summary><p>{e(a)}</p></details>' for q, a in faqs)
-    return f'<section class="section" id="faq"><div class="container narrow"><h2 class="section-title">{e(title)}</h2>{items}</div></section>'
+def faq_html(faqs, title="Preguntas frecuentes", eyebrow="Respuestas claras"):
+    items = "".join(f'<details class="faq"><summary><h3>{e(q)}</h3><span class="faq-i" aria-hidden="true"></span></summary><div class="faq-a"><p>{e(a)}</p></div></details>' for q, a in faqs)
+    return f'<section class="section" id="faq"><div class="container narrow"><div class="sec-head center reveal"><p class="eyebrow dk">{e(eyebrow)}</p><h2>{e(title)}</h2></div>{items}</div></section>'
 
 
-def service_card(s):
-    return (f'<a class="card svc-card" href="{svc_url(s["slug"])}">{icon(s["icon"], "ico ico-lg")}'
-            f'<h3>{e(s["name"])}</h3><p>{e(s["short"])}</p><span class="more">Ver servicio {icon("arrow")}</span></a>')
+def service_card(s, n=None):
+    num = f'<span class="num">{n:02d}</span>' if n else ""
+    return (f'<a class="svc-card reveal" href="{svc_url(s["slug"])}"><div class="svc-ph">'
+            f'{picture(svc_cover(s), s["photos"][0][1] + " – " + s["name"] + " en Panamá", sizes="(max-width: 700px) 100vw, (max-width: 1080px) 50vw, 380px")}{num}</div>'
+            f'<div class="svc-body"><span class="svc-ico">{icon(s["icon"])}</span><h3>{e(s["name"])}</h3><p>{e(s["short"])}</p>'
+            f'<span class="more">Ver servicio {icon("arrow")}</span></div></a>')
 
 
 def process_html():
-    steps = "".join(f'<li><span class="step-n">{i + 1}</span><h3>{e(t)}</h3><p>{e(d)}</p></li>' for i, (t, d) in enumerate(PROCESS))
-    return f'<section class="section alt"><div class="container"><h2 class="section-title">Cómo trabajamos</h2><ol class="steps">{steps}</ol></div></section>'
+    steps = "".join(f'<li class="reveal"><span class="step-n">{i + 1:02d}</span><h3>{e(t)}</h3><p>{e(d)}</p></li>' for i, (t, d) in enumerate(PROCESS))
+    return f'''<section class="section dark process"><div class="container">
+  <div class="sec-head reveal"><p class="eyebrow">Metodología</p><h2>Cómo trabajamos</h2><p class="sec-lead">Un proceso claro, documentado y con un solo responsable técnico desde la primera visita hasta el mantenimiento.</p></div>
+  <ol class="steps">{steps}</ol></div></section>'''
+
+
+def gallery_html(photos, label):
+    items = "".join(f'<figure class="g-item reveal"><a href="{u}" data-lightbox data-caption="{e(c)}">{picture(u, c + " – " + label, sizes="(max-width: 700px) 100vw, 400px")}</a><figcaption>{e(c)}</figcaption></figure>' for u, c in photos)
+    return f'<div class="gallery">{items}</div>'
 
 
 # ------------------------------------------------------------------ páginas
 def build_home():
     path = "/"
-    title = "DICPROM | Ingeniería, Construcción y Mantenimiento Industrial en Panamá"
+    title = "DISPRON GROUP | Ingeniería, Construcción y Mantenimiento en Panamá"
     desc = ("Empresa panameña de ingeniería, construcción y mantenimiento industrial: obra civil, fit-out, electricidad, "
             "HVAC, soldadura y contra incendios en todo Panamá.")
-    cats = ""
-    for ckey, cname in CATEGORIES:
-        cards = "".join(service_card(s) for s in SERVICES if s["cat"] == ckey)
-        cats += f'<h3 class="cat-title">{e(cname)}</h3><div class="grid grid-3">{cards}</div>'
-    values = "".join(f'<div class="value">{icon("shield")}<h3>{e(t)}</h3><p>{e(d)}</p></div>' for t, d in VALUES)
+    slides = "".join(
+        f'<img class="slide" src="/img/hero/hero-{i + 1}.webp" srcset="/img/hero/hero-{i + 1}-sm.webp 800w, /img/hero/hero-{i + 1}.webp 1600w" '
+        f'sizes="100vw" alt="" {LOAD_EAGER if i == 0 else LOAD_LAZY} decoding="async" style="--i:{i}">' for i in range(len(HERO_PHOTOS)))
+    ticker = "".join(f'<li>{icon(s["icon"])}{e(s["serviceType"])}</li>' for s in SERVICES)
+    bento = ""
+    for idx, (ckey, cname) in enumerate(CATEGORIES):
+        svcs = [s for s in SERVICES if s["cat"] == ckey]
+        links = "".join(f'<li><a href="{svc_url(s["slug"])}">{e(s["name"])}</a></li>' for s in svcs)
+        bento += (f'<article class="bento-tile t{idx + 1} reveal">{picture(svc_cover(svcs[0]), cname, sizes="(max-width: 700px) 100vw, 600px")}'
+                  f'<div class="bento-body"><span class="bento-n">{idx + 1:02d} · {len(svcs)} servicios</span><h3>{e(cname)}</h3><ul>{links}</ul></div></article>')
+    cards = "".join(service_card(s, i + 1) for i, s in enumerate(SERVICES))
+    values = "".join(f'<div class="value reveal">{icon("shield")}<h3>{e(t)}</h3><p>{e(d)}</p></div>' for t, d in VALUES)
     inds = "".join(f"<li>{icon('check')}{e(i)}</li>" for i in INDUSTRIES)
-    provs = "".join(f"<li><strong>{e(p)}</strong></li>" for p, _ in PROVINCES)
+    provs = "".join(f"<li>{e(p)}</li>" for p, _ in PROVINCES)
+    strip_photos = [p for s in SERVICES for p in svc_photos(s)[1:2]]
+    strip = "".join(f'<figure>{picture(u, c, sizes="320px")}</figure>' for u, c in strip_photos)
     body = f'''<section class="hero">
+  <div class="hero-slides" aria-hidden="true">{slides}</div>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="hero-lines" aria-hidden="true">{chevrons_svg()}</div>
   <div class="container hero-inner">
     <div class="hero-copy">
-      <p class="eyebrow">Ingeniería · Construcción · Mantenimiento · Panamá</p>
-      <h1>Ingeniería, construcción y mantenimiento industrial en Panamá</h1>
-      <p class="lead"><strong>DICPROM</strong> es una empresa panameña multidisciplinaria que diseña, construye, instala y mantiene infraestructura industrial, comercial y residencial: diseño industrial, obra civil, remodelaciones, electricidad, HVAC, metalmecánica, hidráulica y sistemas contra incendios, con proyectos llave en mano en toda la República de Panamá.</p>
-      <div class="hero-actions"><a class="btn btn-accent" href="/contacto/">Solicitar cotización {icon("arrow")}</a><a class="btn btn-ghost" href="/servicios/">Ver servicios</a></div>
-      <ul class="hero-facts"><li><strong>15</strong> líneas de servicio</li><li><strong>10</strong> provincias + comarcas</li><li><strong>24/7</strong> emergencias</li><li><strong>EPC</strong> llave en mano</li></ul>
+      <p class="eyebrow pill"><span class="dot"></span>Ingeniería · Construcción · Mantenimiento · Panamá</p>
+      <h1>Ingeniería, construcción y mantenimiento industrial <span class="gold-text">en Panamá</span></h1>
+      <p class="lead"><strong>DISPRON GROUP</strong> es una empresa panameña multidisciplinaria que diseña, construye, instala y mantiene infraestructura industrial, comercial y residencial —obra civil, remodelaciones, electricidad, HVAC, metalmecánica, hidráulica y sistemas contra incendios— con proyectos llave en mano en toda la República de Panamá.</p>
+      <div class="hero-actions"><a class="btn btn-gold" href="/contacto/">Solicitar cotización {icon("arrow")}</a><a class="btn btn-ghost" href="/servicios/">Explorar servicios</a></div>
     </div>
-    <div class="hero-art" aria-hidden="true">{hero_svg()}</div>
+    <aside class="hero-panel" aria-label="DISPRON GROUP en cifras">
+      <img class="hero-panel-logo" src="/img/logo-dispron-mark-light.png" alt="" width="243" height="256">
+      <ul class="stats">
+        <li><strong data-count="{len(SERVICES)}">{len(SERVICES)}</strong><span>líneas de servicio</span></li>
+        <li><strong data-count="10">10</strong><span>provincias + comarcas</span></li>
+        <li><strong>24/7</strong><span>atención de emergencias</span></li>
+        <li><strong>EPC</strong><span>proyectos llave en mano</span></li>
+      </ul>
+    </aside>
   </div>
+  <div class="ticker" aria-hidden="true"><ul>{ticker}{ticker}</ul></div>
 </section>
-<section class="section" id="servicios"><div class="container">
-  <h2 class="section-title">Servicios de ingeniería y construcción en Panamá</h2>
-  <p class="section-lead">Un solo aliado para todo el ciclo de vida de su infraestructura: diseño, construcción, instalación, puesta en marcha, mantenimiento y suministro.</p>
-  {cats}
+<section class="section intro"><div class="container split">
+  <div class="reveal"><p class="eyebrow dk">Un solo aliado técnico</p><h2>Diseñamos, construimos y mantenemos la infraestructura que mueve a Panamá</h2>
+  <p>Integramos ingeniería, obra civil, instalaciones electromecánicas, metalmecánica y suministro bajo una misma gerencia. Menos interfaces entre contratistas, plazos más cortos y un responsable único por resultados, seguridad y calidad.</p>
+  <ul class="checklist">{"".join(f"<li>{icon('check')}{e(t)}</li>" for t, _ in VALUES[:4])}</ul>
+  <a class="link" href="/nosotros/">Conozca DISPRON GROUP {icon("arrow")}</a></div>
+  <div class="split-media reveal">{picture(svc_photos(SVC["construccion-obra-civil"])[0][0], "Obra civil ejecutada por DISPRON GROUP en Panamá", sizes="(max-width: 960px) 100vw, 560px")}
+    <div class="float-card">{icon("shield")}<div><strong>Seguridad y calidad</strong><span>Normas REP, NFPA, ASHRAE, AWS y API</span></div></div></div>
 </div></section>
-<section class="section alt"><div class="container">
-  <h2 class="section-title">¿Por qué elegir DICPROM?</h2>
-  <div class="grid grid-3 values">{values}</div>
+<section class="section alt" id="areas"><div class="container">
+  <div class="sec-head reveal"><p class="eyebrow dk">Áreas de negocio</p><h2>Cuatro divisiones, una sola operación</h2></div>
+  <div class="bento">{bento}</div>
+</div></section>
+<section class="section" id="servicios"><div class="container">
+  <div class="sec-head row reveal"><div><p class="eyebrow dk">Servicios</p><h2>Servicios de ingeniería y construcción en Panamá</h2></div><a class="link" href="/servicios/">Ver todos {icon("arrow")}</a></div>
+  <div class="svc-grid four">{cards}</div>
 </div></section>
 {process_html()}
-<section class="section"><div class="container two-col">
-  <div><h2>Industrias que atendemos</h2><ul class="checklist cols-2">{inds}</ul></div>
-  <div><h2>Cobertura en toda Panamá</h2><p>Ejecutamos proyectos desde la Ciudad de Panamá hacia todas las provincias:</p><ul class="pill-list">{provs}</ul><p><a class="link" href="/cobertura/">Ver cobertura detallada {icon("arrow")}</a></p></div>
+<section class="section"><div class="container">
+  <div class="sec-head center reveal"><p class="eyebrow dk">Por qué elegirnos</p><h2>¿Por qué elegir DISPRON GROUP?</h2></div>
+  <div class="values">{values}</div>
 </div></section>
-<section class="section alt"><div class="container narrow summary">
-  <h2>DICPROM en resumen</h2>
+<section class="section alt works"><div class="container sec-head row reveal"><div><p class="eyebrow dk">Proyectos</p><h2>Trabajo real en campo</h2></div><a class="link" href="/proyectos/">Ver galería de proyectos {icon("arrow")}</a></div>
+  <div class="marquee" aria-label="Fotografías de proyectos"><div class="marquee-track">{strip}{strip.replace('alt="', 'aria-hidden="true" alt="" data-alt="')}</div></div>
+</section>
+<section class="section"><div class="container two-col">
+  <div class="reveal"><p class="eyebrow dk">Sectores</p><h2>Industrias que atendemos</h2><ul class="checklist cols-2">{inds}</ul></div>
+  <div class="reveal coverage-card"><p class="eyebrow">Cobertura nacional</p><h2>Presentes en toda Panamá</h2><p>Movilizamos cuadrillas, equipos e ingenieros desde la Ciudad de Panamá hacia todas las provincias y comarcas.</p><ul class="pill-list">{provs}</ul><a class="link light" href="/cobertura/">Ver cobertura detallada {icon("arrow")}</a></div>
+</div></section>
+<section class="section alt"><div class="container narrow summary reveal">
+  <p class="eyebrow dk">Ficha de empresa</p>
+  <h2>DISPRON GROUP en resumen</h2>
   <dl class="facts">
     <dt>Qué es</dt><dd>Empresa panameña de diseño industrial, ingeniería, construcción, mantenimiento industrial y suministro de equipos.</dd>
     <dt>Sede</dt><dd>{e(S["address"]["locality"])}, República de Panamá.</dd>
@@ -396,95 +513,122 @@ def build_home():
 {cta_block()}'''
     url = f"{D}/"
     graph = [webpage_node(url, title, desc, extra={"mainEntity": {"@id": ORG_ID}}), faq_node(url, GENERAL_FAQS[:6]),
-             {"@type": "ItemList", "@id": f"{url}#servicios", "name": "Servicios DICPROM", "itemListElement": [
+             {"@type": "ItemList", "@id": f"{url}#servicios", "name": "Servicios DISPRON GROUP", "itemListElement": [
                  {"@type": "ListItem", "position": i + 1, "url": f"{D}{svc_url(s['slug'])}", "name": s["name"]} for i, s in enumerate(SERVICES)]}]
-    page(path, title, desc, body, graph, [("Inicio", "/")])
-
-
-def hero_svg():
-    return '''<svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg" role="img">
-<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f59e0b"/><stop offset="1" stop-color="#ea580c"/></linearGradient></defs>
-<g fill="none" stroke="#7dd3fc" stroke-opacity=".35" stroke-width="1"><path d="M0 360h480M40 0v400M440 0v400"/></g>
-<g stroke="#e2e8f0" stroke-width="3" fill="none" stroke-linejoin="round">
-<path d="M70 360V90h14v270M84 100h250l-40 40M84 90l250 10M150 100v-40l-66 30M300 140v70"/>
-<rect x="282" y="210" width="36" height="26" fill="url(#g1)" stroke="none"/>
-<path d="M200 360V250l60-40 60 40v110"/><path d="M220 360v-50h30v50M275 280h25v25h-25z"/>
-<path d="M340 360V200h90v160M355 220h20M395 220h20M355 250h20M395 250h20M355 280h20M395 280h20M355 310h20M395 310h20"/>
-</g>
-<g transform="translate(120 250)"><circle r="34" fill="none" stroke="url(#g1)" stroke-width="10" stroke-dasharray="14 8"/><circle r="12" fill="#f59e0b"/></g>
-<path d="M150 330l20-30h-14l10-24" stroke="#f59e0b" stroke-width="4" fill="none" stroke-linecap="round"/>
-</svg>'''
+    page(path, title, desc, body, graph, [("Inicio", "/")], images=[(f"/img/hero/hero-{i + 1}.webp", c) for i, (_s, c) in enumerate(HERO_PHOTOS)])
 
 
 def build_services_hub():
     path = "/servicios/"
-    title = "Servicios de Ingeniería, Construcción y Mantenimiento en Panamá | DICPROM"
-    desc = "Servicios DICPROM en Panamá: diseño industrial, mantenimiento, montaje, obra civil, fit-out, eléctrico, HVAC, metalmecánica, hidráulica y suministro."
+    title = "Servicios de Ingeniería y Construcción en Panamá | DISPRON GROUP"
+    desc = "Servicios DISPRON GROUP en Panamá: diseño industrial, mantenimiento, montaje, obra civil, fit-out, eléctrico, HVAC, metalmecánica, hidráulica y suministro."
     sections = ""
+    n = 0
     for ckey, cname in CATEGORIES:
-        cards = "".join(service_card(s) for s in SERVICES if s["cat"] == ckey)
-        sections += f'<section class="section"><div class="container"><h2 class="section-title">{e(cname)}</h2><div class="grid grid-3">{cards}</div></div></section>'
-    body = f'''<section class="page-hero"><div class="container"><h1>Servicios de ingeniería, construcción y mantenimiento en Panamá</h1>
-<p class="lead">DICPROM integra {len(SERVICES)} líneas de servicio para que su empresa tenga un único aliado técnico durante todo el ciclo de vida de sus instalaciones.</p></div></section>
+        cards = ""
+        for s in SERVICES:
+            if s["cat"] == ckey:
+                n += 1
+                cards += service_card(s, n)
+        sections += f'<section class="section"><div class="container"><div class="sec-head reveal"><p class="eyebrow dk">División</p><h2>{e(cname)}</h2></div><div class="svc-grid">{cards}</div></div></section>'
+    body = f'''{page_hero("Servicios de ingeniería, construcción y mantenimiento en Panamá",
+                      f"DISPRON GROUP integra {len(SERVICES)} líneas de servicio para que su empresa tenga un único aliado técnico durante todo el ciclo de vida de sus instalaciones.",
+                      bg="/img/hero/hero-4.webp", eyebrow="Catálogo de servicios")}
 {sections}{process_html()}{cta_block()}'''
     url = f"{D}{path}"
     graph = [webpage_node(url, title, desc, "CollectionPage", {"mainEntity": {"@id": f"{url}#lista"}}),
-             {"@type": "ItemList", "@id": f"{url}#lista", "name": "Servicios DICPROM", "numberOfItems": len(SERVICES), "itemListElement": [
+             {"@type": "ItemList", "@id": f"{url}#lista", "name": "Servicios DISPRON GROUP", "numberOfItems": len(SERVICES), "itemListElement": [
                  {"@type": "ListItem", "position": i + 1, "url": f"{D}{svc_url(s['slug'])}", "name": s["name"]} for i, s in enumerate(SERVICES)]}]
-    page(path, title, desc, body, graph, [("Inicio", "/"), ("Servicios", path)], active="/servicios/")
+    page(path, title, desc, body, graph, [("Inicio", "/"), ("Servicios", path)], active="/servicios/",
+         images=[(svc_cover(s), s["photos"][0][1]) for s in SERVICES])
 
 
 def build_service(s):
     path = svc_url(s["slug"])
     url = f"{D}{path}"
+    photos = svc_photos(s)
     intro = "".join(f"<p>{e(p)}</p>" for p in s["intro"])
-    items = "".join(f'<article class="card item">{icon("check")}<h3>{e(h)}</h3><p>{e(p)}</p></article>' for h, p in s["items"])
+    items = "".join(f'<article class="item reveal"><span class="item-n">{i + 1:02d}</span><h3>{e(h)}</h3><p>{e(p)}</p></article>' for i, (h, p) in enumerate(s["items"]))
     apps = "".join(f"<li>{icon('check')}{e(a)}</li>" for a in s["applications"])
     stds = "".join(f"<li>{icon('shield')}{e(a)}</li>" for a in s["standards"])
     rel = "".join(service_card(SVC[r]) for r in s["related"])
-    body = f'''<section class="page-hero"><div class="container hero-svc">
-  <div>{icon(s["icon"], "ico ico-xl")}<h1>{e(s["name"])} en Panamá</h1><p class="lead">{e(s["lead"])}</p>
-  <div class="hero-actions"><a class="btn btn-accent" href="/contacto/?servicio={e(s["slug"])}">Cotizar este servicio {icon("arrow")}</a>
-  <a class="btn btn-ghost" href="https://wa.me/{e(S["whatsapp"])}?text={e("Hola DICPROM, necesito información sobre " + s["name"])}" target="_blank" rel="noopener">{WA_SVG} WhatsApp</a></div></div>
-  <aside class="facts-card" aria-label="Datos clave">
-    <p class="facts-title">Datos clave</p>
+    actions = (f'<div class="hero-actions"><a class="btn btn-gold" href="/contacto/?servicio={e(s["slug"])}">Cotizar este servicio {icon("arrow")}</a>'
+               f'<a class="btn btn-ghost" href="https://wa.me/{e(S["whatsapp"])}?text={e("Hola DISPRON GROUP, necesito información sobre " + s["name"])}" target="_blank" rel="noopener">{WA_SVG} WhatsApp</a></div>')
+    aside = f'''<aside class="facts-card reveal" aria-label="Datos clave">
+    <p class="facts-title">{icon(s["icon"])} Datos clave</p>
     <dl class="facts">
       <dt>Servicio</dt><dd>{e(s["serviceType"])}</dd>
-      <dt>Proveedor</dt><dd>{e(S["brand"])} ({e(S["legalName"])})</dd>
+      <dt>Proveedor</dt><dd>{e(S["brand"])}</dd>
       <dt>Cobertura</dt><dd>Toda la República de Panamá</dd>
       <dt>Sectores</dt><dd>{e(", ".join(s["applications"][:3]))}</dd>
       <dt>Normas</dt><dd>{e(", ".join(x.split(" (")[0] for x in s["standards"][:3]))}</dd>
     </dl>
-  </aside>
-</div></section>
-<section class="section"><div class="container narrow prose">
-  <h2>¿Qué ofrece DICPROM en {e(s["serviceType"].lower())}?</h2>
-  {intro}
+  </aside>'''
+    body = f'''{page_hero(e(s["name"]) + ' <span class="gold-text">en Panamá</span>', e(s["lead"]), bg=photos[0][0], eyebrow=dict(CATEGORIES)[s["cat"]], extra=actions, aside=aside)}
+<section class="section"><div class="container split">
+  <div class="prose reveal"><p class="eyebrow dk">Descripción del servicio</p><h2>¿Qué ofrece DISPRON GROUP en {e(s["serviceType"].lower())}?</h2>{intro}</div>
+  <div class="split-media reveal">{picture(photos[1][0], photos[1][1] + " – " + s["name"], sizes="(max-width: 960px) 100vw, 560px")}</div>
 </div></section>
 <section class="section alt"><div class="container">
-  <h2 class="section-title">Servicios incluidos</h2>
-  <div class="grid grid-3">{items}</div>
+  <div class="sec-head reveal"><p class="eyebrow dk">Alcance</p><h2>Servicios incluidos</h2></div>
+  <div class="items">{items}</div>
 </div></section>
 <section class="section"><div class="container two-col">
-  <div><h2>Sectores y aplicaciones</h2><ul class="checklist">{apps}</ul></div>
-  <div><h2>Normas y buenas prácticas</h2><ul class="checklist">{stds}</ul><p class="note">Trabajamos conforme a la normativa panameña aplicable y a los estándares internacionales indicados según el alcance de cada proyecto.</p></div>
+  <div class="reveal"><p class="eyebrow dk">Aplicaciones</p><h2>Sectores y aplicaciones</h2><ul class="checklist">{apps}</ul></div>
+  <div class="reveal"><p class="eyebrow dk">Calidad</p><h2>Normas y buenas prácticas</h2><ul class="checklist">{stds}</ul><p class="note">Trabajamos conforme a la normativa panameña aplicable y a los estándares internacionales indicados según el alcance de cada proyecto.</p></div>
+</div></section>
+<section class="section alt"><div class="container">
+  <div class="sec-head row reveal"><div><p class="eyebrow dk">Proyectos</p><h2>{e(s["name"])}: trabajo en campo</h2></div><a class="link" href="/proyectos/">Ver todos los proyectos {icon("arrow")}</a></div>
+  {gallery_html(photos, s["name"] + " en Panamá – DISPRON GROUP")}
 </div></section>
 {process_html()}
 {faq_html(s["faqs"], "Preguntas frecuentes sobre " + s["serviceType"].lower())}
-<section class="section"><div class="container"><h2 class="section-title">Servicios relacionados</h2><div class="grid grid-3">{rel}</div></div></section>
+<section class="section alt"><div class="container"><div class="sec-head reveal"><p class="eyebrow dk">Complementos</p><h2>Servicios relacionados</h2></div><div class="svc-grid">{rel}</div></div></section>
 {cta_block("Cotice " + s["serviceType"].lower() + " en Panamá")}'''
-    graph = [webpage_node(url, s["title"], s["desc"], extra={"mainEntity": {"@id": f"{url}#service"}}),
+    graph = [webpage_node(url, s["title"], s["desc"], extra={"mainEntity": {"@id": f"{url}#service"},
+                                                             "primaryImageOfPage": {"@type": "ImageObject", "url": f"{D}{photos[0][0]}", "caption": photos[0][1]}}),
              service_node(s), faq_node(url, s["faqs"])]
-    page(path, s["title"], s["desc"], body, graph, [("Inicio", "/"), ("Servicios", "/servicios/"), (s["name"], path)], active="/servicios/", og_type="article")
+    page(path, s["title"], s["desc"], body, graph, [("Inicio", "/"), ("Servicios", "/servicios/"), (s["name"], path)], active="/servicios/", og_type="article",
+         images=photos)
+
+
+def build_projects():
+    path = "/proyectos/"
+    title = "Proyectos y Galería de Obras en Panamá | DISPRON GROUP"
+    desc = "Galería de proyectos de DISPRON GROUP en Panamá: obra civil, estructuras metálicas, electricidad, HVAC, contra incendios, epóxicos, fit-out y stands."
+    filters = '<button class="chip active" data-filter="all" aria-pressed="true">Todos</button>' + "".join(
+        f'<button class="chip" data-filter="{ckey}" aria-pressed="false">{e(cname)}</button>' for ckey, cname in CATEGORIES)
+    items, all_photos, seen = "", [], set()
+    for s in SERVICES:
+        for u, c in svc_photos(s):
+            if c in seen:
+                continue
+            seen.add(c)
+            all_photos.append((u, c, s))
+            items += (f'<figure class="g-item reveal" data-cat="{s["cat"]}"><a href="{u}" data-lightbox data-caption="{e(c)} · {e(s["name"])}">'
+                      f'{picture(u, c + " – " + s["name"] + " en Panamá", sizes="(max-width: 700px) 100vw, 400px")}</a>'
+                      f'<figcaption><strong>{e(c)}</strong><a href="{svc_url(s["slug"])}">{e(s["name"])}</a></figcaption></figure>')
+    body = f'''{page_hero("Proyectos y obras en Panamá", "Fotografías de trabajos en campo de DISPRON GROUP: construcción, montaje, instalaciones electromecánicas, mantenimiento y acabados.", bg="/img/hero/hero-3.webp", eyebrow="Galería de proyectos")}
+<section class="section"><div class="container">
+  <div class="filters" role="group" aria-label="Filtrar proyectos por división">{filters}</div>
+  <div class="gallery masonry" id="project-grid">{items}</div>
+</div></section>{cta_block("¿Quiere un resultado así en su instalación?")}'''
+    url = f"{D}{path}"
+    gallery_node = {"@type": "ImageGallery", "@id": f"{url}#galeria", "name": "Proyectos DISPRON GROUP en Panamá", "url": url,
+                    "about": {"@id": ORG_ID}, "inLanguage": "es-PA",
+                    "image": [{"@type": "ImageObject", "contentUrl": f"{D}{u}", "caption": f"{c} – {s['name']}", "creator": {"@id": ORG_ID},
+                               "copyrightHolder": {"@id": ORG_ID}, "contentLocation": {"@type": "Country", "name": "Panamá"}} for u, c, s in all_photos]}
+    graph = [webpage_node(url, title, desc, "CollectionPage", {"mainEntity": {"@id": f"{url}#galeria"}}), gallery_node]
+    page(path, title, desc, body, graph, [("Inicio", "/"), ("Proyectos", path)], images=[(u, c) for u, c, _s in all_photos])
 
 
 def build_coverage():
     path = "/cobertura/"
-    title = "Cobertura en Toda Panamá: Provincias y Ciudades | DICPROM"
-    desc = "DICPROM ejecuta ingeniería, construcción y mantenimiento en todas las provincias de Panamá: Panamá, Colón, Chiriquí, Coclé, Veraguas, Azuero, Bocas y Darién."
+    title = "Cobertura en Toda Panamá: Provincias y Ciudades | DISPRON GROUP"
+    desc = "DISPRON GROUP ejecuta ingeniería, construcción y mantenimiento en todas las provincias de Panamá: Panamá, Colón, Chiriquí, Coclé, Veraguas, Azuero, Bocas y Darién."
     rows = "".join(f'<article class="card prov">{icon("pin")}<h2>{e(p)}</h2><p>{e(c)}.</p></article>' for p, c in PROVINCES)
-    body = f'''<section class="page-hero"><div class="container"><h1>Ingeniería, construcción y mantenimiento en toda Panamá</h1>
-<p class="lead">Desde nuestra sede en la Ciudad de Panamá movilizamos cuadrillas, equipos e ingenieros a cualquier provincia, zona franca, puerto o proyecto minero del país.</p></div></section>
+    body = f'''<section class="page-hero"><div class="hero-lines" aria-hidden="true">{chevrons_svg()}</div><div class="container page-hero-inner"><div class="reveal"><!--CRUMBS--><h1>Ingeniería, construcción y mantenimiento en toda Panamá</h1>
+<p class="lead">Desde nuestra sede en la Ciudad de Panamá movilizamos cuadrillas, equipos e ingenieros a cualquier provincia, zona franca, puerto o proyecto minero del país.</p></div></div></section>
 <section class="section"><div class="container"><div class="grid grid-3">{rows}</div></div></section>
 <section class="section alt"><div class="container narrow prose">
 <h2>Áreas industriales y logísticas</h2>
@@ -498,14 +642,14 @@ def build_coverage():
 
 def build_about():
     path = "/nosotros/"
-    title = "Nosotros: Empresa de Ingeniería y Construcción en Panamá | DICPROM"
-    desc = "Conozca a DICPROM, empresa panameña de diseño industrial, ingeniería, construcción, mantenimiento y suministro industrial. Misión, visión y valores."
+    title = "Nosotros: Empresa de Ingeniería y Construcción en Panamá | DISPRON GROUP"
+    desc = "Conozca a DISPRON GROUP, empresa panameña de diseño industrial, ingeniería, construcción, mantenimiento y suministro industrial. Misión, visión y valores."
     values = "".join(f'<div class="value">{icon("shield")}<h3>{e(t)}</h3><p>{e(d)}</p></div>' for t, d in VALUES)
-    body = f'''<section class="page-hero"><div class="container"><h1>Sobre DICPROM</h1>
-<p class="lead">{e(S["slogan"])}</p></div></section>
+    body = f'''<section class="page-hero"><div class="hero-lines" aria-hidden="true">{chevrons_svg()}</div><div class="container page-hero-inner"><div class="reveal"><!--CRUMBS--><h1>Sobre DISPRON GROUP</h1>
+<p class="lead">{e(S["slogan"])}</p></div></div></section>
 <section class="section"><div class="container narrow prose">
 <h2>Quiénes somos</h2>
-<p><strong>{e(S["legalName"])}</strong> (DICPROM) es una empresa panameña de ingeniería, construcción y servicios industriales con sede en la Ciudad de Panamá. Integramos diseño industrial e ingeniería de producto, mantenimiento industrial avanzado, construcción y obra civil, remodelación, ingeniería eléctrica y de potencia, HVAC, metalmecánica y soldadura, fontanería e hidráulica, y el suministro de materiales y equipos relacionados.</p>
+<p><strong>{e(S["legalName"])}</strong> (DISPRON) es una empresa panameña de ingeniería, construcción y servicios industriales con sede en la Ciudad de Panamá. Integramos diseño industrial e ingeniería de producto, mantenimiento industrial avanzado, construcción y obra civil, remodelación, ingeniería eléctrica y de potencia, HVAC, metalmecánica y soldadura, fontanería e hidráulica, y el suministro de materiales y equipos relacionados.</p>
 <p>Nuestro modelo multidisciplinario permite a industrias, empresas logísticas, mineras, bancos, instituciones y propietarios contratar con un solo responsable técnico, reduciendo interfaces, tiempos y sobrecostos.</p>
 <h2>Misión</h2>
 <p>Diseñar, construir y mantener infraestructura segura, eficiente y duradera para nuestros clientes en Panamá, aplicando ingeniería basada en datos y los más altos estándares de calidad y seguridad.</p>
@@ -523,16 +667,16 @@ def build_about():
 
 def build_faq():
     path = "/preguntas-frecuentes/"
-    title = "Preguntas Frecuentes sobre Ingeniería y Construcción en Panamá | DICPROM"
-    desc = "Respuestas sobre los servicios de DICPROM en Panamá: cobertura, cotizaciones, proyectos llave en mano, mantenimiento, normas, emergencias y suministro de equipos."
+    title = "Preguntas Frecuentes: Ingeniería y Construcción en Panamá | DISPRON GROUP"
+    desc = "Respuestas sobre DISPRON GROUP en Panamá: cobertura, cotizaciones, proyectos llave en mano, mantenimiento, normas, emergencias y suministro de equipos."
     all_faqs = list(GENERAL_FAQS)
-    blocks = faq_html(GENERAL_FAQS, "Sobre DICPROM")
+    blocks = faq_html(GENERAL_FAQS, "Sobre DISPRON GROUP")
     for s in SERVICES:
         all_faqs += s["faqs"]
         items = "".join(f'<details class="faq"><summary><h3>{e(q)}</h3></summary><p>{e(a)} <a href="{svc_url(s["slug"])}">Más sobre {e(s["serviceType"].lower())}</a>.</p></details>' for q, a in s["faqs"])
         blocks += f'<section class="section tight"><div class="container narrow"><h2 class="section-title sm">{e(s["name"])}</h2>{items}</div></section>'
-    body = f'''<section class="page-hero"><div class="container"><h1>Preguntas frecuentes</h1>
-<p class="lead">Todo lo que necesita saber antes de contratar ingeniería, construcción o mantenimiento con DICPROM en Panamá.</p></div></section>
+    body = f'''<section class="page-hero"><div class="hero-lines" aria-hidden="true">{chevrons_svg()}</div><div class="container page-hero-inner"><div class="reveal"><!--CRUMBS--><h1>Preguntas frecuentes</h1>
+<p class="lead">Todo lo que necesita saber antes de contratar ingeniería, construcción o mantenimiento con DISPRON GROUP en Panamá.</p></div></div></section>
 {blocks}{cta_block("¿No encontró su respuesta?", "Escríbanos y un ingeniero le responderá en menos de 24 horas hábiles.")}'''
     url = f"{D}{path}"
     graph = [webpage_node(url, title, desc, extra={"mainEntity": {"@id": f"{url}#faq"}}), faq_node(url, all_faqs)]
@@ -541,14 +685,14 @@ def build_faq():
 
 def build_contact():
     path = "/contacto/"
-    title = "Contacto y Cotizaciones | DICPROM Panamá"
+    title = "Contacto y Cotizaciones | DISPRON GROUP Panamá"
     desc = f"Solicite una cotización de ingeniería, construcción o mantenimiento en Panamá. Llame al {S['phoneDisplay']}, escriba por WhatsApp o a {S['email']}."
     opts = "".join(f'<option value="{e(s["slug"])}">{e(s["name"])}</option>' for s in SERVICES)
     provs = "".join(f"<option>{e(p)}</option>" for p, _ in PROVINCES)
     a = S["address"]
     street = f'{e(a["street"])}, ' if real(a["street"]) else ""
-    body = f'''<section class="page-hero"><div class="container"><h1>Contacto y cotizaciones</h1>
-<p class="lead">Cuéntenos sobre su proyecto. Un ingeniero de DICPROM le responderá en menos de 24 horas hábiles.</p></div></section>
+    body = f'''<section class="page-hero"><div class="hero-lines" aria-hidden="true">{chevrons_svg()}</div><div class="container page-hero-inner"><div class="reveal"><!--CRUMBS--><h1>Contacto y cotizaciones</h1>
+<p class="lead">Cuéntenos sobre su proyecto. Un ingeniero de DISPRON GROUP le responderá en menos de 24 horas hábiles.</p></div></div></section>
 <section class="section"><div class="container two-col contact">
   <form class="form card" id="quote-form" action="{e(S.get("formEndpoint") or "#")}" method="post" data-wa="{e(S["whatsapp"])}" data-email="{e(S["email"])}">
     <h2>Solicitar cotización</h2>
@@ -582,9 +726,9 @@ def build_contact():
 
 def build_privacy():
     path = "/politica-de-privacidad/"
-    title = "Política de Privacidad | DICPROM"
-    desc = "Política de privacidad y tratamiento de datos personales de DICPROM conforme a la Ley 81 de 2019 de Protección de Datos Personales de Panamá."
-    body = f'''<section class="page-hero"><div class="container"><h1>Política de privacidad</h1></div></section>
+    title = "Política de Privacidad | DISPRON GROUP"
+    desc = "Política de privacidad y tratamiento de datos personales de DISPRON GROUP conforme a la Ley 81 de 2019 de Protección de Datos Personales de Panamá."
+    body = f'''<section class="page-hero"><div class="hero-lines" aria-hidden="true">{chevrons_svg()}</div><div class="container page-hero-inner"><div class="reveal"><!--CRUMBS--><h1>Política de privacidad</h1></div></div></section>
 <section class="section"><div class="container narrow prose">
 <p>En {e(S["legalName"])} respetamos su privacidad y tratamos sus datos personales conforme a la Ley 81 de 2019 sobre Protección de Datos Personales de la República de Panamá y su reglamentación.</p>
 <h2>Datos que recopilamos</h2><p>Nombre, empresa, teléfono, correo electrónico, provincia y la información que usted nos proporciona voluntariamente al solicitar una cotización o contactarnos.</p>
@@ -599,11 +743,11 @@ def build_privacy():
 
 
 def build_404():
-    title = "Página no encontrada | DICPROM"
+    title = "Página no encontrada | DISPRON GROUP"
     desc = "La página solicitada no existe."
     cards = "".join(service_card(s) for s in SERVICES[:6])
-    body = f'''<section class="page-hero"><div class="container"><h1>Página no encontrada</h1><p class="lead">La página que busca no existe o fue movida. Estos son algunos de nuestros servicios:</p>
-<p><a class="btn btn-accent" href="/">Ir al inicio</a></p></div></section>
+    body = f'''<section class="page-hero"><div class="hero-lines" aria-hidden="true">{chevrons_svg()}</div><div class="container page-hero-inner"><div class="reveal"><!--CRUMBS--><h1>Página no encontrada</h1><p class="lead">La página que busca no existe o fue movida. Estos son algunos de nuestros servicios:</p>
+<p><a class="btn btn-accent" href="/">Ir al inicio</a></p></div></div></section>
 <section class="section"><div class="container"><div class="grid grid-3">{cards}</div></div></section>'''
     page("/404.html", title, desc, body, [], [], robots="noindex, follow")
     PAGES.remove("/404.html")
@@ -615,7 +759,8 @@ def build_sitemap():
     urls = "".join(
         f"<url><loc>{D}{p}</loc><lastmod>{TODAY}</lastmod><changefreq>{'weekly' if p in prio else 'monthly'}</changefreq>"
         f"<priority>{prio.get(p, '0.8' if p.startswith('/servicios/') else '0.6')}</priority>"
-        f"<image:image><image:loc>{OG_IMAGE}</image:loc></image:image></url>\n" for p in PAGES)
+        + "".join(f"<image:image><image:loc>{D}{u}</image:loc></image:image>" for u, c in (PAGE_IMAGES.get(p) or [(OG_IMAGE.replace(D, ""), S["brand"])]))
+        + "</url>\n" for p in PAGES)
     (DIST / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
         'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n' + urls + "</urlset>\n", encoding="utf-8")
@@ -645,7 +790,7 @@ def build_llms():
     for s in SERVICES:
         lines.append(f"- [{s['name']}]({D}{svc_url(s['slug'])}): {s['short']}")
     lines += ["", "## Páginas principales", "",
-              f"- [Inicio]({D}/): visión general de la empresa", f"- [Servicios]({D}/servicios/): catálogo completo",
+              f"- [Inicio]({D}/): visión general de la empresa", f"- [Servicios]({D}/servicios/): catálogo completo", f"- [Proyectos]({D}/proyectos/): galería de obras y trabajos en campo",
               f"- [Cobertura]({D}/cobertura/): provincias y zonas atendidas", f"- [Nosotros]({D}/nosotros/): misión, visión y valores",
               f"- [Preguntas frecuentes]({D}/preguntas-frecuentes/): respuestas detalladas", f"- [Contacto]({D}/contacto/): cotizaciones", "",
               "## Optional", "", f"- [Contenido completo]({D}/llms-full.txt): texto completo de todos los servicios y preguntas frecuentes", ""]
@@ -665,10 +810,9 @@ def build_llms():
 def build_misc():
     (DIST / "manifest.webmanifest").write_text(json.dumps({
         "name": f"{S['brand']} – {S['tagline']}", "short_name": S["brand"], "start_url": "/", "display": "standalone", "lang": "es-PA",
-        "background_color": "#0b1f3a", "theme_color": "#0b1f3a",
+        "background_color": "#0f1a2b", "theme_color": "#0f1a2b",
         "icons": [{"src": "/img/icon-192.png", "sizes": "192x192", "type": "image/png"},
-                  {"src": "/img/icon-512.png", "sizes": "512x512", "type": "image/png"},
-                  {"src": "/img/logo-dicprom.svg", "sizes": "any", "type": "image/svg+xml"}]}, ensure_ascii=False, indent=2), encoding="utf-8")
+                  {"src": "/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}]}, ensure_ascii=False, indent=2), encoding="utf-8")
     (DIST / "humans.txt").write_text(f"/* TEAM */\nEmpresa: {S['legalName']}\nSitio: {D}\nContacto: {S['email']}\nUbicación: Ciudad de Panamá, Panamá\n\n/* SITE */\nÚltima actualización: {TODAY}\nIdioma: Español (Panamá)\nEstándares: HTML5, CSS3, Schema.org JSON-LD\n", encoding="utf-8")
     if S.get("indexNowKey"):
         (DIST / f"{S['indexNowKey']}.txt").write_text(S["indexNowKey"], encoding="utf-8")
@@ -685,6 +829,7 @@ def main():
     build_services_hub()
     for s in SERVICES:
         build_service(s)
+    build_projects()
     build_coverage()
     build_about()
     build_faq()
