@@ -4,59 +4,116 @@
 User-agent: *
 Allow: /
 Disallow: /404.html
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: GPTBot
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: Perplexity-User
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: Claude-User
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: Applebot
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: CCBot
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: DuckAssistBot
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: meta-externalagent
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: Amazonbot
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: cohere-ai
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 User-agent: MistralAI-User
 Allow: /
+Disallow: /crm/
+Disallow: /acceso/
+Disallow: /api/
 
 Sitemap: https://dicprom.com/sitemap.xml

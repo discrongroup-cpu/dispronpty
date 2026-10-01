@@ -54,7 +54,9 @@ Lo ideal es que la marca y el dominio coincidan. Si el dominio dice *dicprom* y 
 
 ---
 
-## 3. Arquitectura del sitio (24 URL indexables)
+## 3. Arquitectura del sitio (58 URL indexables)
+
+Además de las páginas de la tabla: `/sectores/` y 5 sectores (bancario, hotelero, PH, industrial, eventos), `/blog/` y 25 artículos técnicos (BlogPosting), `/recursos/` (guías para cotizar), `/cotizar/` (cotizador en 3 pasos), `/acceso/` y `/crm/` (privadas, `noindex`), `knowledge.json` y `/.well-known/ai-plugin-info.json`.
 
 | URL | Tipo Schema | Palabra clave principal |
 |---|---|---|
@@ -262,11 +264,21 @@ Editar `data/site.json` y ejecutar `python3 build.py`:
 
 ---
 
-## 14. Relación con la plataforma DISPRON (Node/Express: CRM, cotizador, Sofía)
+## 14. Plataforma integrada (Node/Express)
 
-- **Sitio público** (`dicprom.com`): este sitio estático. Es la mejor opción para SEO y para la IA: rápido, sin JavaScript obligatorio y fácil de alojar.
-- **Plataforma interna:** `app.dicprom.com` o `crm.dicprom.com`, con CRM, panel y asistente. Debe llevar `noindex` para no competir con el sitio público.
-- **Integración:** apuntar `formEndpoint` a un endpoint del CRM que acepte POST con los campos `nombre`, `empresa`, `telefono`, `email`, `servicio`, `provincia` y `mensaje`. Así las cotizaciones entran directo al CRM y WhatsApp queda como respaldo.
+El mismo servidor (`server/index.js`) publica el sitio estático y la plataforma:
+
+| Función | Ruta / API |
+|---|---|
+| Cotizador 3 pasos y formularios | `/cotizar/`, `POST /api/leads` (honeypot, validación, límite de envíos) |
+| Sofía (calificación de leads) | `POST /api/sofia/lead` |
+| Acceso y usuarios | `/acceso/`, `/api/auth/*`, `/api/users` (primer usuario = admin; resto pendiente) |
+| CRM Kanban (6 etapas, notas, valor, CSV) | `/crm/`, `/api/leads`, `/api/leads.csv` |
+| Alfred (12 agentes, 30 herramientas, confirmación en acciones de riesgo) | botón en el CRM, `/api/alfred/*` |
+
+Seguridad: contraseñas con scrypt y sal, cookies HttpOnly/SameSite (Secure con `FORCE_HTTPS=1`), CSP y cabeceras de seguridad, límites de peticiones, CSV protegido contra inyección de fórmulas y escritura atómica de la base de datos. `/crm/` y `/acceso/` llevan `noindex`.
+
+Si se publica solo `dist/` en un hosting estático, los formularios y Sofía ofrecen WhatsApp como respaldo.
 
 ---
 
@@ -279,7 +291,16 @@ python3 tools/check.py           # auditoría SEO: JSON-LD, enlaces, H1, título
 cd dist && python3 -m http.server 8080   # vista previa local
 ```
 
-Subir **el contenido de `dist/`** a la raíz del hosting.
+**Opción recomendada (plataforma completa):** servidor con Node 20+ (VPS, Render, Railway, Fly.io):
+
+```bash
+npm install --omit=dev && python3 build.py
+PORT=8000 DATA_DIR=/var/lib/dispron FORCE_HTTPS=1 npm start
+```
+
+Detrás de Nginx/Cloudflare con HTTPS; respaldar `DATA_DIR` a diario. `npm test` valida API, seguridad y Alfred.
+
+**Opción solo sitio estático:** subir **el contenido de `dist/`** a la raíz del hosting.
 
 - **Cloudflare Pages / Netlify:** directorio de publicación `dist`. Comando: `python3 build.py`, con Pillow disponible.
 - **cPanel / Apache:** subir `dist/*` a `public_html`, incluido `.htaccess`.

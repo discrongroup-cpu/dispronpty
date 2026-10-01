@@ -1,0 +1,42 @@
+/* CRM comercial DISPRON GROUP */
+body.crm{background:radial-gradient(1000px 400px at 100% 0,rgba(201,164,92,.12),transparent 60%),#eceff4;font-size:15px}
+#crm-app{min-height:100vh}.loading{padding:3rem;text-align:center;color:var(--steel)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.crm-top{display:flex;align-items:center;gap:1rem;padding:.6rem 1.2rem;flex-wrap:wrap;background:linear-gradient(110deg,#0a1220,var(--navy) 55%,var(--navy-3));color:#fff;border-bottom:3px solid var(--gold)}
+.crm-top img{height:44px;width:auto;background:#fff;border-radius:8px;padding:3px 8px}
+.crm-top strong{font-family:var(--f-head);letter-spacing:.04em}
+.crm-top .sp{flex:1}
+.crm-top a,.crm-top button{color:#fff;text-decoration:none;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.12);border-radius:9px;padding:.5rem .9rem;font:inherit;cursor:pointer;min-height:40px;display:inline-flex;align-items:center}
+.crm-top a:hover,.crm-top button:hover{background:rgba(227,201,143,.2);color:#fff}
+.crm-body{padding:1.2rem}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.9rem;margin-bottom:1.1rem}
+.kpi{background:#fff;border-radius:14px;padding:1rem 1.1rem;border-top:3px solid var(--gold);box-shadow:0 10px 22px -16px rgba(15,26,43,.6)}
+.kpi small{display:block;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-size:.7rem;font-weight:700}
+.kpi strong{font:800 1.5rem var(--f-head);color:var(--navy)}
+.tools{display:flex;gap:.6rem;margin-bottom:1rem;flex-wrap:wrap}
+.tools input,.tools select,.drawer input,.drawer select,.drawer textarea{font:inherit;padding:.65rem .8rem;border:1.5px solid #c7d0dc;border-radius:10px;background:#fff;min-height:42px}
+.tools input,.tools select{flex:1;min-width:160px}
+.board{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,1fr);gap:.9rem;overflow-x:auto;padding-bottom:1rem;align-items:start}
+.col{background:#dde3eb;border-radius:16px;padding:.7rem;min-height:300px}
+.col.over{outline:3px dashed var(--gold);background:#efe6cf}
+.col h3{display:flex;justify-content:space-between;align-items:center;font-size:.88rem;margin:.2rem .3rem .7rem}
+.col h3 span{background:var(--navy);color:var(--gold-2);border-radius:99px;padding:0 .6rem;font-size:.78rem}
+.col .sum{font-size:.78rem;color:var(--muted);margin:-.4rem .3rem .6rem}
+.lead-c{display:block;width:100%;text-align:left;font:inherit;background:#fff;border:0;border-left:4px solid #93a3b4;border-radius:12px;padding:.8rem;margin-bottom:.6rem;box-shadow:0 2px 6px rgba(15,26,43,.1);cursor:grab}
+.lead-c:focus-visible{outline:3px solid var(--gold)}
+.lead-c.dragging{opacity:.4}.lead-c.u-Crítica{border-left-color:#c0392b}.lead-c.u-Prioritaria{border-left-color:var(--gold)}
+.lead-c strong{display:block;color:var(--navy)}.lead-c small{display:block;color:var(--muted)}
+.lead-c .tags{margin-top:.4rem;display:flex;gap:.3rem;flex-wrap:wrap}
+.tag{font-size:.7rem;background:#f1f4f8;border-radius:99px;padding:.1rem .5rem;border:1px solid var(--line)}.tag.src{background:#fff6e0}
+.drawer{position:fixed;inset:0 0 0 auto;width:min(540px,100%);background:#fff;z-index:100;box-shadow:-20px 0 50px rgba(0,0,0,.3);overflow:auto;padding:1.4rem}
+.drawer h2{font-size:1.4rem}.drawer h3{margin-top:1.4rem}
+.drawer .x{float:right;background:none;border:0;font-size:1.8rem;cursor:pointer;min-width:44px;min-height:44px}
+.drawer label{display:block;font-weight:600;font-size:.85rem;color:var(--navy);margin-bottom:.25rem}
+.drawer input,.drawer select,.drawer textarea{width:100%}
+.f{margin-bottom:.9rem}.dl{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}.dl .f{margin:0}
+.hist{font-size:.85rem;color:var(--muted);padding-left:1rem}
+.drawer .note{background:#f1f4f8;border-radius:8px;padding:.6rem .8rem;margin:.4rem 0;font-size:.9rem}
+.tbl{width:100%;border-collapse:collapse}.tbl th,.tbl td{padding:.6rem .8rem;text-align:left;border-bottom:1px solid var(--line)}
+.btn-navy{background:var(--navy);color:#fff}.btn-navy:hover{background:var(--navy-3);color:var(--gold-2)}
+@media (max-width:640px){.dl{grid-template-columns:1fr}.board{grid-auto-columns:minmax(230px,85vw)}}
+body.crm .mini-header{display:none}

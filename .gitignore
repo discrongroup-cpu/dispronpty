@@ -1,2 +1,5 @@
 shots/
 __pycache__/
+node_modules/
+server/data/
+server/public/openapi.json

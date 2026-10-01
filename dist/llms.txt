@@ -40,7 +40,40 @@
 - [Cobertura](https://dicprom.com/cobertura/): provincias y zonas atendidas
 - [Nosotros](https://dicprom.com/nosotros/): misión, visión y valores
 - [Preguntas frecuentes](https://dicprom.com/preguntas-frecuentes/): respuestas detalladas
-- [Contacto](https://dicprom.com/contacto/): cotizaciones
+- [Contacto](https://dicprom.com/contacto/): datos de contacto
+- [Cotizador](https://dicprom.com/cotizar/): solicitud de visita técnica en 3 pasos
+- [Sectores](https://dicprom.com/sectores/): banca, hotelería, PH, eventos e industria
+- [Recursos](https://dicprom.com/recursos/): guías y checklists técnicos
+- [Blog técnico](https://dicprom.com/blog/): artículos con respuesta directa
+- [Ficha estructurada](https://dicprom.com/knowledge.json): datos de entidad en JSON
+
+## Blog técnico
+
+- [Remodelación de sucursales bancarias en Panamá sin detener la operación](https://dicprom.com/blog/remodelacion-oficinas-bancarias-panama-sin-detener-operacion/): Cómo planificar la remodelación de una sucursal bancaria en Panamá por fases, con trabajo nocturno y de fin de semana, sin cerrar la atención al público.
+- [¿Cuánto cuesta remodelar una sucursal bancaria en Panamá? Factores que definen el presupuesto](https://dicprom.com/blog/cuanto-cuesta-remodelar-sucursal-bancaria-en-panama/): Los factores reales que determinan el costo de remodelar una sucursal bancaria en Panamá: área, alcance, horario de trabajo y acabados.
+- [Remodelación de áreas comunes en propiedad horizontal (PH) en Panamá: por dónde empezar](https://dicprom.com/blog/remodelacion-areas-comunes-propiedad-horizontal-panama/): Guía para administradores y juntas directivas de PH en Panamá sobre cómo priorizar y planificar la remodelación de áreas comunes.
+- [Detección de fugas de agua en edificios de Panamá: señales de alerta tempranas](https://dicprom.com/blog/deteccion-fugas-de-agua-en-edificios-panama-senales-de-alerta/): Señales tempranas de una fuga de agua en edificios comerciales o residenciales de Panamá y cómo actuar antes de que el daño sea mayor.
+- [Mantenimiento preventivo de cuartos de bombas en Panamá: qué revisar y con qué frecuencia](https://dicprom.com/blog/mantenimiento-preventivo-cuarto-de-bombas-panama/): Qué debe revisarse en el mantenimiento preventivo de un cuarto de bombas de agua en hoteles y edificios de Panamá.
+- [Tratamiento de agua y agua caliente continua en hoteles de Panamá](https://dicprom.com/blog/tratamiento-de-agua-y-agua-caliente-continua-en-hoteles-panama/): Cómo garantizar agua caliente continua y un sistema de tratamiento de agua confiable en hoteles de Panamá.
+- [Tubería de termofusión vs. tubería tradicional en Panamá: diferencias prácticas](https://dicprom.com/blog/tuberia-termofusion-vs-tuberia-tradicional-en-panama/): Comparación práctica entre tubería de termofusión (PPR) y tubería metálica tradicional para proyectos en Panamá.
+- [Mobiliario a medida: counters de recepción y acabados para oficinas en Panamá](https://dicprom.com/blog/mobiliario-a-medida-counters-recepcion-oficinas-panama/): Qué considerar al encargar mobiliario a medida y counters de recepción para oficinas corporativas o sucursales en Panamá.
+- [Contratos de mantenimiento integral para bancos, hoteles y PH en Panamá: qué deben incluir](https://dicprom.com/blog/contrato-de-mantenimiento-integral-bancos-hoteles-ph-panama/): Qué debe incluir un contrato de mantenimiento integral recurrente para bancos, hoteles y propiedades horizontales en Panamá.
+- [Checklist de mantenimiento preventivo anual para edificios comerciales en Panamá](https://dicprom.com/blog/checklist-mantenimiento-preventivo-anual-edificios-panama/): Lista de verificación para planificar el mantenimiento preventivo anual de un edificio comercial o PH en Panamá.
+- [Montaje de stands en centros de convenciones de Panamá: guía para expositores](https://dicprom.com/blog/montaje-de-stands-en-centros-de-convenciones-de-panama/): Qué debe saber un expositor sobre el montaje de un stand en un centro de convenciones de Panamá: diseño, estructura y normas del recinto.
+- [¿Cuánto tiempo antes se debe contratar el montaje de un stand para un evento en Panamá?](https://dicprom.com/blog/cuanto-tiempo-antes-contratar-montaje-de-stand-para-un-evento/): Plazos recomendados para contratar el diseño y montaje de un stand corporativo o social en Panamá.
+- [Restauración de fachadas de edificios en Panamá: guía técnica paso a paso](https://dicprom.com/blog/restauracion-de-fachadas-de-edificios-en-panama-guia-tecnica/): Pasos técnicos para diagnosticar y restaurar la fachada de un edificio en Panamá: patologías, impermeabilización y pintura.
+- [Impermeabilización de losas y azoteas en Panamá: por qué el clima tropical lo exige](https://dicprom.com/blog/impermeabilizacion-de-losas-y-azoteas-en-panama-clima-tropical/): Por qué la impermeabilización de losas y azoteas es crítica en el clima tropical de Panamá y qué sistemas se usan.
+- [Pintura de edificios en altura en Panamá: acceso por andamio, plataforma o cuerda](https://dicprom.com/blog/pintura-de-edificios-en-altura-en-panama-acceso-por-andamio-o-cuerda/): Qué método de acceso conviene para pintar un edificio en altura en Panamá: andamio, plataforma suspendida o acceso por cuerda.
+- [Subestaciones eléctricas y tableros de media tensión en Panamá: qué debe saber un gerente de operaciones](https://dicprom.com/blog/subestaciones-electricas-y-tableros-de-media-tension-en-panama/): Conceptos básicos sobre subestaciones eléctricas y tableros de media tensión para gerentes de operaciones en Panamá.
+- [Mantenimiento preventivo de tableros eléctricos y termografía en Panamá](https://dicprom.com/blog/mantenimiento-preventivo-de-tableros-electricos-y-termografia/): Cómo la termografía ayuda a prevenir fallas eléctricas en tableros de edificios comerciales en Panamá.
+- [Plantas de emergencia y UPS: cómo garantizar continuidad eléctrica en Panamá](https://dicprom.com/blog/plantas-de-emergencia-y-ups-para-continuidad-electrica-en-panama/): Diferencias entre plantas de emergencia y UPS, y cómo combinarlas para dar continuidad eléctrica a un edificio en Panamá.
+- [Pisos epóxicos industriales en Panamá: guía completa para almacenes y plantas](https://dicprom.com/blog/pisos-epoxicos-industriales-en-panama-guia-completa/): Qué considerar al instalar pisos epóxicos industriales en almacenes, plantas y estacionamientos en Panamá.
+- [¿Piso epóxico o poliuretano? Cómo elegir el recubrimiento correcto en Panamá](https://dicprom.com/blog/piso-epoxico-o-poliuretano-cual-elegir-en-panama/): Diferencias prácticas entre pisos epóxicos y de poliuretano para elegir el sistema correcto en Panamá según el uso.
+- [Sistemas contra incendios con rociadores en Panamá: qué debe saber un administrador de edificio](https://dicprom.com/blog/sistemas-contra-incendios-con-rociadores-en-panama-que-debe-saber/): Componentes básicos de un sistema contra incendios con rociadores: bombeo, tanques y tomas de bomberos, para administradores de edificios en Panamá.
+- [Mantenimiento de sistemas contra incendios y cuarto de bombeo en Panamá](https://dicprom.com/blog/mantenimiento-de-sistemas-contra-incendios-y-cuarto-de-bombeo/): Qué incluye el mantenimiento de un cuarto de bombeo contra incendios y por qué es crítico mantenerlo operativo.
+- [Soldadura de estructuras metálicas industriales en Panamá: procesos y aplicaciones](https://dicprom.com/blog/soldadura-de-estructuras-metalicas-industriales-en-panama/): Procesos de soldadura y aplicaciones típicas en estructuras metálicas, tuberías industriales y tanques en Panamá.
+- [Obra civil industrial y galeras en Panamá: qué incluye un proyecto típico](https://dicprom.com/blog/obra-civil-industrial-y-galeras-en-panama-que-incluye/): Qué incluye un proyecto de obra civil industrial o construcción de galeras en Panamá, de la cimentación a la entrega.
+- [Cómo elegir un contratista integral para su banco, hotel o PH en Panamá](https://dicprom.com/blog/como-elegir-un-contratista-integral-para-banco-hotel-o-ph-en-panama/): Criterios prácticos para elegir un contratista integral de construcción y mantenimiento para bancos, hoteles o PH en Panamá.
 
 ## Optional
 

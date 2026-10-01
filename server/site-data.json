@@ -1,0 +1,1976 @@
+{
+ "SERVICES": [
+  {
+   "slug": "diseno-industrial-ingenieria-de-producto",
+   "name": "Diseño Industrial e Ingeniería de Producto",
+   "short": "Consultoría en procesos de fabricación, ergonomía, materiales, simulación FEA y patentes.",
+   "sectors": [
+    "industrial"
+   ],
+   "photos": [
+    "/img/obras/diseno-industrial-ingenieria-de-producto-1.webp",
+    "/img/obras/diseno-industrial-ingenieria-de-producto-2.webp",
+    "/img/obras/diseno-industrial-ingenieria-de-producto-3.webp",
+    "/img/obras/diseno-industrial-ingenieria-de-producto-4.webp"
+   ],
+   "scope": [
+    "Optimización de procesos de fabricación",
+    "Ergonomía industrial",
+    "Selección de materiales",
+    "Análisis de fallas estructurales y simulación",
+    "Diseño y desarrollo de producto",
+    "Patentes y modelos de utilidad"
+   ],
+   "faq": [
+    [
+     "¿Qué es un análisis de fallas estructurales por simulación?",
+     "Es un estudio de ingeniería que reproduce en software (FEA) las cargas reales de una pieza o estructura para identificar por qué falló —fatiga, sobrecarga, corrosión o defecto de diseño— y validar una solución antes de fabricarla."
+    ],
+    [
+     "¿DISPRON GROUP ayuda a registrar patentes en Panamá?",
+     "Sí. Preparamos la documentación técnica, dibujos y memoria descriptiva necesarios para solicitar patentes de invención o modelos de utilidad ante DIGERPI, en coordinación con su abogado de propiedad industrial."
+    ],
+    [
+     "¿Cuánto tiempo toma un estudio de optimización de procesos?",
+     "Un diagnóstico inicial de planta suele tomar de 1 a 3 semanas según el tamaño de la operación; el plan de mejora incluye indicadores medibles (OEE, tiempo de ciclo, desperdicio)."
+    ]
+   ]
+  },
+  {
+   "slug": "mantenimiento-industrial",
+   "name": "Mantenimiento Industrial Predictivo, Preventivo y Correctivo",
+   "short": "Termografía, análisis de vibraciones y mantenimiento integral de plantas, galeras y muelles.",
+   "sectors": [
+    "bancario",
+    "industrial"
+   ],
+   "photos": [
+    "/img/obras/mantenimiento-industrial-1.webp",
+    "/img/obras/mantenimiento-industrial-2.webp",
+    "/img/obras/mantenimiento-industrial-3.webp",
+    "/img/obras/mantenimiento-industrial-4.webp",
+    "/img/galeria/svc-dispron-industrial-1.webp",
+    "/img/galeria/svc-dispron-industrial-2.webp",
+    "/img/galeria/svc-dispron-industrial-3.webp",
+    "/img/galeria/svc-dispron-industrial-4.webp",
+    "/img/galeria/svc-dispron-industrial-5.webp",
+    "/img/galeria/svc-dispron-industrial-6.webp",
+    "/img/galeria/svc-dispron-industrial-7.webp",
+    "/img/galeria/svc-dispron-industrial-8.webp"
+   ],
+   "scope": [
+    "Termografía infrarroja",
+    "Análisis de vibraciones",
+    "Mantenimiento preventivo",
+    "Mantenimiento correctivo y emergencias",
+    "Mantenimiento de galeras, muelles y edificaciones",
+    "Gestión de mantenimiento (CMMS)"
+   ],
+   "faq": [
+    [
+     "¿Qué diferencia hay entre mantenimiento predictivo y preventivo?",
+     "El preventivo se ejecuta por calendario u horas de uso; el predictivo mide la condición real del equipo (temperatura, vibración, ultrasonido) y solo interviene cuando los datos indican una falla en desarrollo, reduciendo costos y paradas."
+    ],
+    [
+     "¿DISPRON GROUP ofrece contratos de mantenimiento anual?",
+     "Sí. Diseñamos contratos mensuales o anuales con visitas programadas, inspecciones predictivas, tiempos de respuesta garantizados e informes periódicos de condición de activos."
+    ],
+    [
+     "¿En qué provincias de Panamá dan mantenimiento industrial?",
+     "Atendemos todo Panamá: Panamá, Panamá Oeste, Colón, Coclé, Herrera, Los Santos, Veraguas, Chiriquí, Bocas del Toro y Darién, además de áreas industriales, puertos y proyectos mineros."
+    ]
+   ]
+  },
+  {
+   "slug": "montaje-maquinaria-automatizacion",
+   "name": "Montaje, Alineación y Puesta en Marcha de Maquinaria",
+   "short": "Montaje, desmontaje, alineación láser, calibración y automatización de líneas de producción.",
+   "sectors": [
+    "industrial"
+   ],
+   "photos": [
+    "/img/obras/montaje-maquinaria-automatizacion-1.webp",
+    "/img/obras/montaje-maquinaria-automatizacion-2.webp",
+    "/img/obras/montaje-maquinaria-automatizacion-3.webp",
+    "/img/obras/montaje-maquinaria-automatizacion-4.webp"
+   ],
+   "scope": [
+    "Montaje y desmontaje de maquinaria",
+    "Alineación láser y nivelación",
+    "Calibración de equipos e instrumentos",
+    "Automatización industrial",
+    "Puesta en marcha (commissioning)",
+    "Sistemas electromecánicos complejos"
+   ],
+   "faq": [
+    [
+     "¿Pueden trasladar una planta completa dentro de Panamá?",
+     "Sí. Planificamos el desmontaje, identificación de piezas, transporte, montaje, alineación y puesta en marcha de líneas completas, minimizando el tiempo fuera de producción."
+    ],
+    [
+     "¿Qué incluye la puesta en marcha de una máquina?",
+     "Verificación mecánica y eléctrica, pruebas en vacío y con carga, ajuste de parámetros de control, protocolo de entrega firmado y capacitación del personal operativo y de mantenimiento."
+    ],
+    [
+     "¿Trabajan con PLC de distintas marcas?",
+     "Sí, integramos controladores y HMI de las principales marcas industriales del mercado y documentamos la programación para su equipo de mantenimiento."
+    ]
+   ]
+  },
+  {
+   "slug": "ingenieria-proyectos-industriales-petroleros-mineria",
+   "name": "Ingeniería de Proyectos Industriales, Petroleros y Mineros",
+   "short": "Ingeniería conceptual, básica y de detalle para industria, hidrocarburos y minería.",
+   "sectors": [
+    "industrial"
+   ],
+   "photos": [
+    "/img/obras/ingenieria-proyectos-industriales-petroleros-mineria-1.webp",
+    "/img/obras/ingenieria-proyectos-industriales-petroleros-mineria-2.webp",
+    "/img/obras/ingenieria-proyectos-industriales-petroleros-mineria-3.webp",
+    "/img/obras/ingenieria-proyectos-industriales-petroleros-mineria-4.webp"
+   ],
+   "scope": [
+    "Ingeniería conceptual y factibilidad",
+    "Ingeniería básica y de detalle",
+    "Tanques y sistemas de almacenamiento",
+    "Piping de proceso y alta presión",
+    "Proyectos mineros",
+    "Inspección y supervisión técnica"
+   ],
+   "faq": [
+    [
+     "¿Qué entregables incluye la ingeniería de detalle?",
+     "Planos de construcción por disciplina, P&ID, isométricos, listas de materiales (MTO), memorias de cálculo, especificaciones técnicas y paquetes de licitación."
+    ],
+    [
+     "¿DISPRON GROUP trabaja en proyectos mineros en Panamá?",
+     "Sí. Ofrecemos ingeniería, metalmecánica, electricidad de potencia, montaje y mantenimiento para operaciones y proyectos mineros, cumpliendo los programas de seguridad del cliente."
+    ],
+    [
+     "¿Pueden ejecutar además la construcción del proyecto?",
+     "Sí. Podemos entregar el proyecto bajo modalidad EPC o llave en mano: ingeniería, procura, construcción y puesta en marcha con un único responsable."
+    ]
+   ]
+  },
+  {
+   "slug": "construccion-obra-civil",
+   "name": "Construcción y Obra Civil",
+   "short": "Edificaciones residenciales, comerciales, industriales, movimientos de tierra, asfalto e infraestructura.",
+   "sectors": [
+    "bancario",
+    "industrial"
+   ],
+   "photos": [
+    "/img/obras/construccion-obra-civil-1.webp",
+    "/img/obras/construccion-obra-civil-2.webp",
+    "/img/obras/construccion-obra-civil-3.webp",
+    "/img/obras/construccion-obra-civil-4.webp",
+    "/img/obras/construccion-obra-civil-5.webp",
+    "/img/galeria/obra-civil-obra-civil-01.webp",
+    "/img/galeria/obra-civil-obra-civil-02.webp",
+    "/img/galeria/obra-civil-obra-civil-03.webp",
+    "/img/galeria/obra-civil-obra-civil-04.webp",
+    "/img/galeria/obra-civil-obra-civil-05.webp",
+    "/img/galeria/obra-civil-obra-civil-06.webp",
+    "/img/galeria/obra-civil-obra-civil-07.webp",
+    "/img/galeria/obra-civil-obra-civil-08.webp",
+    "/img/galeria/obra-civil-obra-civil-09.webp",
+    "/img/galeria/obra-civil-obra-civil-10.webp",
+    "/img/galeria/obra-civil-obra-civil-11.webp",
+    "/img/galeria/obra-civil-obra-civil-12.webp",
+    "/img/galeria/obra-civil-obra-civil-13.webp",
+    "/img/galeria/obra-civil-obra-civil-14.webp",
+    "/img/galeria/obra-civil-obra-civil-15.webp",
+    "/img/galeria/obra-civil-obra-civil-16.webp",
+    "/img/galeria/obra-civil-obra-civil-17.webp",
+    "/img/galeria/obra-civil-obra-civil-18.webp",
+    "/img/galeria/obra-civil-obra-civil-19.webp",
+    "/img/galeria/obra-civil-obra-civil-20.webp",
+    "/img/galeria/obra-civil-obra-civil-21.webp",
+    "/img/galeria/obra-civil-obra-civil-22.webp",
+    "/img/galeria/obra-civil-obra-civil-23.webp",
+    "/img/galeria/obra-civil-obra-civil-24.webp",
+    "/img/galeria/obra-civil-obra-civil-25.webp",
+    "/img/galeria/obra-civil-obra-civil-26.webp",
+    "/img/galeria/obra-civil-obra-civil-27.webp",
+    "/img/galeria/obra-civil-obra-civil-28.webp",
+    "/img/galeria/obra-civil-obra-civil-29.webp",
+    "/img/galeria/obra-civil-obra-civil-30.webp",
+    "/img/galeria/svc-dispron-hero-1.webp"
+   ],
+   "scope": [
+    "Edificaciones",
+    "Movimiento de tierra y excavaciones",
+    "Pavimentación y asfalto",
+    "Infraestructura pública y privada",
+    "Cimentaciones y estructuras",
+    "Gestión de permisos"
+   ],
+   "faq": [
+    [
+     "¿DISPRON GROUP construye en todo Panamá?",
+     "Sí. Ejecutamos obras en la Ciudad de Panamá, Panamá Oeste, Colón, Coclé, Azuero, Veraguas, Chiriquí, Bocas del Toro y Darién."
+    ],
+    [
+     "¿Construyen galeras y bodegas industriales?",
+     "Sí. Diseñamos y construimos galeras, bodegas y centros de distribución con estructura metálica, losa industrial, cubierta, sistemas eléctricos, contra incendios y patios de maniobra."
+    ],
+    [
+     "¿Se encargan de los permisos de construcción?",
+     "Sí. Preparamos los planos sellados por profesionales idóneos y gestionamos los permisos ante el municipio, Bomberos, MIVIOT y demás entidades correspondientes."
+    ]
+   ]
+  },
+  {
+   "slug": "remodelacion-fit-out",
+   "name": "Remodelación y Fit-Out Corporativo",
+   "short": "Adecuación de oficinas, bancos, locales e instituciones: albañilería, acabados, yeso y cielos rasos.",
+   "sectors": [
+    "bancario",
+    "hotelero",
+    "ph",
+    "eventos"
+   ],
+   "photos": [
+    "/img/obras/remodelacion-fit-out-1.webp",
+    "/img/obras/remodelacion-fit-out-2.webp",
+    "/img/obras/remodelacion-fit-out-3.webp",
+    "/img/obras/remodelacion-fit-out-4.webp",
+    "/img/galeria/svc-dispron-ebanisteria-1.webp",
+    "/img/galeria/svc-dispron-ebanisteria-2.webp",
+    "/img/galeria/svc-dispron-ebanisteria-3.webp",
+    "/img/galeria/svc-dispron-remodelacion-1.webp",
+    "/img/galeria/svc-dispron-remodelacion-2.webp",
+    "/img/galeria/svc-dispron-remodelacion-3.webp",
+    "/img/galeria/svc-dispron-remodelacion-4.webp",
+    "/img/galeria/svc-dispron-remodelacion-5.webp",
+    "/img/galeria/svc-dispron-remodelacion-6.webp"
+   ],
+   "scope": [
+    "Fit-out de oficinas corporativas",
+    "Sucursales bancarias e instituciones",
+    "Albañilería y mejoras estructurales",
+    "Acabados arquitectónicos",
+    "Yeso, gypsum y cielos rasos",
+    "Pintura arquitectónica"
+   ],
+   "faq": [
+    [
+     "¿Qué es un fit-out de oficinas?",
+     "Es el proceso de adecuar un espacio comercial vacío (obra gris) o existente para que quede listo para operar: divisiones, cielos, pisos, electricidad, datos, aire acondicionado, iluminación, contra incendios y acabados."
+    ],
+    [
+     "¿Pueden remodelar sin detener la operación de mi oficina o banco?",
+     "Sí. Planificamos por fases y trabajamos en horarios nocturnos o fines de semana, con control de polvo, ruido y seguridad para que su operación continúe."
+    ],
+    [
+     "¿Cuánto tarda una remodelación de oficina?",
+     "Depende del área y alcance; un fit-out típico de 200 a 500 m² suele completarse entre 4 y 10 semanas después de aprobar diseño y permisos."
+    ]
+   ]
+  },
+  {
+   "slug": "pisos-pintura-epoxica",
+   "name": "Pisos y Pintura Epóxica Industrial",
+   "short": "Pisos epóxicos, autonivelantes y recubrimientos industriales para plantas, bodegas y estacionamientos.",
+   "sectors": [
+    "ph",
+    "industrial"
+   ],
+   "photos": [
+    "/img/obras/pisos-pintura-epoxica-1.webp",
+    "/img/obras/pisos-pintura-epoxica-2.webp",
+    "/img/obras/pisos-pintura-epoxica-3.webp",
+    "/img/obras/pisos-pintura-epoxica-4.webp",
+    "/img/galeria/svc-dispron-epoxi-1.webp",
+    "/img/galeria/svc-dispron-epoxi-2.webp",
+    "/img/galeria/svc-dispron-epoxi-3.webp",
+    "/img/galeria/svc-dispron-epoxi-4.webp",
+    "/img/galeria/svc-dispron-epoxi-5.webp",
+    "/img/galeria/svc-dispron-epoxi-6.webp"
+   ],
+   "scope": [
+    "Pisos epóxicos autonivelantes",
+    "Recubrimientos epóxicos de alto tráfico",
+    "Pisos antideslizantes",
+    "Poliuretano y uretano-cemento",
+    "Demarcación y señalización",
+    "Recubrimientos anticorrosivos"
+   ],
+   "faq": [
+    [
+     "¿Cuánto dura un piso epóxico?",
+     "Un sistema epóxico bien especificado y aplicado sobre concreto preparado correctamente puede durar de 5 a 15 años, según el tráfico, los químicos y el mantenimiento."
+    ],
+    [
+     "¿Cuánto tiempo hay que esperar para usar el piso?",
+     "Normalmente se permite tráfico peatonal en 24 horas y tráfico pesado entre 3 y 7 días, según el sistema y la temperatura."
+    ],
+    [
+     "¿Se puede aplicar epóxico sobre un piso existente?",
+     "Sí, siempre que se evalúe la adherencia y la humedad del sustrato y se prepare mecánicamente la superficie antes de aplicar."
+    ]
+   ]
+  },
+  {
+   "slug": "mantenimiento-ph-edificios",
+   "name": "Mantenimiento de PH, Edificios e Instalaciones",
+   "short": "Mantenimiento integral de propiedades horizontales, oficinas, bancos e instituciones.",
+   "sectors": [
+    "bancario",
+    "hotelero",
+    "ph"
+   ],
+   "photos": [
+    "/img/obras/mantenimiento-ph-edificios-1.webp",
+    "/img/obras/mantenimiento-ph-edificios-2.webp",
+    "/img/obras/mantenimiento-ph-edificios-3.webp",
+    "/img/obras/mantenimiento-ph-edificios-4.webp",
+    "/img/galeria/svc-dispron-restauracion-1.webp",
+    "/img/galeria/svc-dispron-restauracion-2.webp",
+    "/img/galeria/svc-dispron-restauracion-3.webp",
+    "/img/galeria/svc-dispron-restauracion-4.webp",
+    "/img/galeria/svc-dispron-restauracion-5.webp",
+    "/img/galeria/svc-dispron-restauracion-6.webp",
+    "/img/galeria/svc-dispron-mantenimiento-1.webp",
+    "/img/galeria/svc-dispron-mantenimiento-2.webp",
+    "/img/galeria/svc-dispron-mantenimiento-3.webp",
+    "/img/galeria/svc-dispron-mantenimiento-4.webp",
+    "/img/galeria/svc-dispron-mantenimiento-5.webp",
+    "/img/galeria/svc-dispron-mantenimiento-6.webp"
+   ],
+   "scope": [
+    "Pintura de fachadas y áreas comunes",
+    "Impermeabilización de techos y losas",
+    "Sistemas de bombeo y agua potable",
+    "Electricidad y plantas de emergencia",
+    "Aire acondicionado y ventilación",
+    "Sistemas contra incendios"
+   ],
+   "faq": [
+    [
+     "¿Qué incluye un contrato de mantenimiento de PH?",
+     "Inspecciones programadas, mantenimiento preventivo de bombas, generadores, A/C, elevadores (coordinación), contra incendios y áreas comunes, atención de emergencias e informes para la junta directiva."
+    ],
+    [
+     "¿Pintan fachadas de edificios altos?",
+     "Sí. Contamos con personal capacitado en trabajos en altura, andamios, sillas y plataformas colgantes, con equipos de protección contra caídas."
+    ],
+    [
+     "¿Atienden emergencias fuera de horario?",
+     "Sí, ofrecemos atención de emergencias 24/7 para clientes con contrato de mantenimiento."
+    ]
+   ]
+  },
+  {
+   "slug": "arquitectura-planos-render-3d",
+   "name": "Arquitectura, Planos, Render 3D y Diseño de Interiores",
+   "short": "Diseño arquitectónico, planos de construcción, renders 3D fotorrealistas e interiorismo.",
+   "sectors": [
+    "bancario",
+    "hotelero",
+    "eventos"
+   ],
+   "photos": [
+    "/img/obras/arquitectura-planos-render-3d-1.webp",
+    "/img/obras/arquitectura-planos-render-3d-2.webp",
+    "/img/obras/arquitectura-planos-render-3d-3.webp",
+    "/img/obras/arquitectura-planos-render-3d-4.webp"
+   ],
+   "scope": [
+    "Anteproyecto y diseño arquitectónico",
+    "Planos de construcción e ingeniería",
+    "Render 3D y recorridos virtuales",
+    "Modelado BIM",
+    "Diseño de interiores",
+    "Levantamientos y as-built"
+   ],
+   "faq": [
+    [
+     "¿Cuánto tarda un render 3D?",
+     "Un render de una escena interior o exterior suele entregarse entre 3 y 7 días hábiles, con rondas de ajustes incluidas; los recorridos animados requieren más tiempo."
+    ],
+    [
+     "¿Los planos sirven para tramitar el permiso de construcción?",
+     "Sí. Entregamos juegos de planos completos, firmados y sellados por profesionales idóneos, listos para presentar ante el municipio y las entidades revisoras."
+    ],
+    [
+     "¿Ofrecen diseño de interiores y también la ejecución?",
+     "Sí. Podemos diseñar el interior y ejecutarlo llave en mano, garantizando que el resultado construido sea fiel al render aprobado."
+    ]
+   ]
+  },
+  {
+   "slug": "stands-corporativos",
+   "name": "Stands Corporativos para Ferias y Centros de Convenciones",
+   "short": "Diseño, fabricación y montaje de stands para ferias y eventos en Panamá.",
+   "sectors": [
+    "eventos"
+   ],
+   "photos": [
+    "/img/obras/stands-corporativos-1.webp",
+    "/img/obras/stands-corporativos-2.webp",
+    "/img/obras/stands-corporativos-3.webp",
+    "/img/obras/stands-corporativos-4.webp",
+    "/img/galeria/svc-dispron-eventos-1.webp",
+    "/img/galeria/svc-dispron-eventos-2.webp",
+    "/img/galeria/svc-dispron-eventos-3.webp",
+    "/img/galeria/svc-dispron-eventos-4.webp",
+    "/img/galeria/svc-dispron-eventos-5.webp",
+    "/img/galeria/svc-dispron-eventos-6.webp"
+   ],
+   "scope": [
+    "Diseño de stand y render 3D",
+    "Fabricación a medida",
+    "Gráfica e iluminación",
+    "Montaje y desmontaje",
+    "Stands modulares reutilizables",
+    "Espacios para proyectos corporativos"
+   ],
+   "faq": [
+    [
+     "¿Con cuánta anticipación debo solicitar mi stand?",
+     "Recomendamos iniciar entre 4 y 8 semanas antes del evento para diseño, aprobaciones del organizador y fabricación; para stands grandes o de doble altura, con más anticipación."
+    ],
+    [
+     "¿Montan stands en el Panama Convention Center y Atlapa?",
+     "Sí, montamos stands en los principales centros de convenciones y recintos de Panamá, cumpliendo los reglamentos técnicos de cada organizador."
+    ],
+    [
+     "¿Puedo reutilizar el stand en varias ferias?",
+     "Sí. Diseñamos stands modulares que se almacenan y adaptan a diferentes tamaños de espacio para reducir el costo por evento."
+    ]
+   ]
+  },
+  {
+   "slug": "gerencia-proyectos-epc-llave-en-mano",
+   "name": "Gerencia de Proyectos EPC y Llave en Mano",
+   "short": "EPC/Turnkey, administración de obras, inspección técnica y consultoría de construcción.",
+   "sectors": [
+    "industrial"
+   ],
+   "photos": [
+    "/img/obras/gerencia-proyectos-epc-llave-en-mano-1.webp",
+    "/img/obras/gerencia-proyectos-epc-llave-en-mano-2.webp",
+    "/img/obras/gerencia-proyectos-epc-llave-en-mano-3.webp",
+    "/img/obras/gerencia-proyectos-epc-llave-en-mano-4.webp"
+   ],
+   "scope": [
+    "EPC / Llave en mano",
+    "Gerencia de proyectos",
+    "Administración de obras",
+    "Inspección técnica",
+    "Consultoría de construcción",
+    "Planos arquitectónicos y de ingeniería"
+   ],
+   "faq": [
+    [
+     "¿Qué significa un proyecto llave en mano?",
+     "Que el contratista asume el diseño, la compra de materiales y equipos, la construcción y la puesta en marcha, y entrega al cliente el proyecto terminado y operativo por un precio y plazo acordados."
+    ],
+    [
+     "¿Cuál es la diferencia entre EPC y administración de obra?",
+     "En EPC el contratista asume el riesgo integral de diseño, procura y construcción; en administración de obra el contratista gestiona la ejecución por cuenta del propietario, que asume los costos directos."
+    ],
+    [
+     "¿Ofrecen inspección técnica independiente?",
+     "Sí. Actuamos como inspectores o supervisores del propietario para verificar calidad, avances, cumplimiento de planos y especificaciones."
+    ]
+   ]
+  },
+  {
+   "slug": "ingenieria-electrica",
+   "name": "Ingeniería Eléctrica, de Potencia y Automatización",
+   "short": "Baja, media y alta tensión, subestaciones, generadores, puesta a tierra y tableros.",
+   "sectors": [
+    "bancario",
+    "ph",
+    "eventos",
+    "industrial"
+   ],
+   "photos": [
+    "/img/obras/ingenieria-electrica-1.webp",
+    "/img/obras/ingenieria-electrica-2.webp",
+    "/img/obras/ingenieria-electrica-3.webp",
+    "/img/obras/ingenieria-electrica-4.webp",
+    "/img/obras/ingenieria-electrica-5.webp",
+    "/img/galeria/svc-dispron-electrica-1.webp",
+    "/img/galeria/svc-dispron-electrica-2.webp",
+    "/img/galeria/svc-dispron-electrica-3.webp",
+    "/img/galeria/svc-dispron-electrica-4.webp",
+    "/img/galeria/svc-dispron-electrica-5.webp",
+    "/img/galeria/svc-dispron-electrica-6.webp"
+   ],
+   "scope": [
+    "Diseño y cálculo eléctrico",
+    "Subestaciones y transformadores",
+    "Plantas de emergencia (generadores)",
+    "Bancos de capacitores y calidad de energía",
+    "Puesta a tierra y pararrayos",
+    "Tableros, cableado estructurado e iluminación"
+   ],
+   "faq": [
+    [
+     "¿Instalan y dan mantenimiento a subestaciones eléctricas?",
+     "Sí. Instalamos, probamos y mantenemos subestaciones y transformadores, incluyendo termografía, pruebas de aislamiento, análisis de aceite y ajuste de protecciones."
+    ],
+    [
+     "¿Qué beneficios tiene un banco de capacitores?",
+     "Corrige el factor de potencia, reduce penalizaciones en la factura eléctrica, libera capacidad en transformadores y disminuye pérdidas en los conductores."
+    ],
+    [
+     "¿Tramitan los planos eléctricos para permisos?",
+     "Sí. Nuestros planos eléctricos son firmados por ingenieros electricistas idóneos y cumplen los requisitos de las entidades revisoras y de la empresa distribuidora."
+    ]
+   ]
+  },
+  {
+   "slug": "hvac-aire-acondicionado",
+   "name": "Aire Acondicionado, Ventilación y Refrigeración (HVAC)",
+   "short": "Chillers, VRF, ductería, manejadoras, splits, calderas, cuartos fríos y refrigeración industrial.",
+   "sectors": [
+    "bancario",
+    "hotelero",
+    "industrial"
+   ],
+   "photos": [
+    "/img/obras/hvac-aire-acondicionado-1.webp",
+    "/img/obras/hvac-aire-acondicionado-2.webp",
+    "/img/obras/hvac-aire-acondicionado-3.webp",
+    "/img/obras/hvac-aire-acondicionado-4.webp"
+   ],
+   "scope": [
+    "Chillers y agua helada",
+    "Sistemas VRF / VRV",
+    "Ductería y manejadoras de aire",
+    "Splits y equipos residenciales",
+    "Refrigeración industrial y cuartos fríos",
+    "Calderas e intercambiadores de calor"
+   ],
+   "faq": [
+    [
+     "¿Cada cuánto se debe dar mantenimiento al aire acondicionado en Panamá?",
+     "Por la alta humedad y temperatura, recomendamos mantenimiento preventivo de splits cada 3 a 6 meses y de sistemas centrales según plan mensual o trimestral."
+    ],
+    [
+     "¿Qué es un sistema VRF?",
+     "Es un sistema de aire acondicionado que ajusta el flujo de refrigerante a la demanda de cada zona, permitiendo controlar múltiples espacios con alta eficiencia energética."
+    ],
+    [
+     "¿Construyen cuartos fríos?",
+     "Sí. Diseñamos e instalamos cuartos fríos de refrigeración y congelación con paneles aislados, equipos de refrigeración, control y monitoreo de temperatura."
+    ]
+   ]
+  },
+  {
+   "slug": "metalmecanica-soldadura",
+   "name": "Metalmecánica, Estructuras Metálicas y Soldadura",
+   "short": "Estructuras pesadas y livianas, soldadura SMAW/MIG/TIG, tanques, piping, silos y tolvas.",
+   "sectors": [
+    "bancario",
+    "industrial"
+   ],
+   "photos": [
+    "/img/obras/metalmecanica-soldadura-1.webp",
+    "/img/obras/metalmecanica-soldadura-2.webp",
+    "/img/obras/metalmecanica-soldadura-3.webp",
+    "/img/obras/metalmecanica-soldadura-4.webp",
+    "/img/obras/metalmecanica-soldadura-5.webp",
+    "/img/galeria/soldadura-soldadura-01.webp",
+    "/img/galeria/soldadura-soldadura-02.webp",
+    "/img/galeria/soldadura-soldadura-03.webp",
+    "/img/galeria/soldadura-soldadura-04.webp",
+    "/img/galeria/soldadura-soldadura-05.webp",
+    "/img/galeria/soldadura-soldadura-06.webp",
+    "/img/galeria/soldadura-soldadura-07.webp",
+    "/img/galeria/soldadura-soldadura-08.webp",
+    "/img/galeria/soldadura-soldadura-09.webp",
+    "/img/galeria/soldadura-soldadura-10.webp",
+    "/img/galeria/soldadura-soldadura-11.webp",
+    "/img/galeria/soldadura-soldadura-12.webp",
+    "/img/galeria/soldadura-soldadura-13.webp",
+    "/img/galeria/soldadura-soldadura-14.webp",
+    "/img/galeria/soldadura-soldadura-15.webp",
+    "/img/galeria/soldadura-soldadura-16.webp",
+    "/img/galeria/soldadura-soldadura-17.webp",
+    "/img/galeria/soldadura-soldadura-18.webp",
+    "/img/galeria/soldadura-soldadura-19.webp",
+    "/img/galeria/soldadura-soldadura-20.webp",
+    "/img/galeria/soldadura-soldadura-21.webp",
+    "/img/galeria/soldadura-soldadura-22.webp",
+    "/img/galeria/soldadura-soldadura-23.webp",
+    "/img/galeria/soldadura-soldadura-24.webp",
+    "/img/galeria/soldadura-soldadura-25.webp",
+    "/img/galeria/soldadura-soldadura-26.webp",
+    "/img/galeria/soldadura-soldadura-27.webp",
+    "/img/galeria/soldadura-soldadura-28.webp",
+    "/img/galeria/soldadura-soldadura-29.webp",
+    "/img/galeria/soldadura-soldadura-30.webp"
+   ],
+   "scope": [
+    "Estructuras metálicas",
+    "Soldadura especializada",
+    "Corte y conformado",
+    "Tanques, silos y tolvas",
+    "Piping de alta presión",
+    "Herrería industrial y reparación"
+   ],
+   "faq": [
+    [
+     "¿Qué tipos de soldadura realizan?",
+     "Realizamos soldadura SMAW (electrodo revestido), GMAW/MIG, FCAW y GTAW/TIG en acero al carbono, acero inoxidable y aluminio, en taller y en campo."
+    ],
+    [
+     "¿Fabrican y montan galeras metálicas?",
+     "Sí. Diseñamos, fabricamos y montamos galeras y naves industriales con estructura metálica, cubierta, cerramientos y canales pluviales."
+    ],
+    [
+     "¿Sus soldadores están calificados?",
+     "Trabajamos con procedimientos de soldadura (WPS) y soldadores calificados según AWS D1.1 o ASME Sección IX, según lo requiera cada proyecto."
+    ]
+   ]
+  },
+  {
+   "slug": "fontaneria-hidraulica-contra-incendios",
+   "name": "Fontanería, Hidráulica y Sistemas Contra Incendios",
+   "short": "Agua potable, bombeo, aguas residuales, rociadores, bombas contra incendio, gas y plantas de tratamiento.",
+   "sectors": [
+    "bancario",
+    "hotelero",
+    "ph",
+    "industrial"
+   ],
+   "photos": [
+    "/img/obras/fontaneria-hidraulica-contra-incendios-1.webp",
+    "/img/obras/fontaneria-hidraulica-contra-incendios-2.webp",
+    "/img/obras/fontaneria-hidraulica-contra-incendios-3.webp",
+    "/img/obras/fontaneria-hidraulica-contra-incendios-4.webp",
+    "/img/obras/fontaneria-hidraulica-contra-incendios-5.webp",
+    "/img/galeria/fire-fire-01.webp",
+    "/img/galeria/fire-fire-02.webp",
+    "/img/galeria/fire-fire-03.webp",
+    "/img/galeria/fire-fire-04.webp",
+    "/img/galeria/fire-fire-05.webp",
+    "/img/galeria/fire-fire-06.webp",
+    "/img/galeria/fire-fire-07.webp",
+    "/img/galeria/fire-fire-08.webp",
+    "/img/galeria/fire-fire-09.webp",
+    "/img/galeria/fire-fire-10.webp",
+    "/img/galeria/fire-fire-11.webp",
+    "/img/galeria/fire-fire-12.webp",
+    "/img/galeria/fire-fire-13.webp",
+    "/img/galeria/fire-fire-14.webp",
+    "/img/galeria/fire-fire-15.webp",
+    "/img/galeria/fire-fire-16.webp",
+    "/img/galeria/fire-fire-17.webp",
+    "/img/galeria/fire-fire-18.webp",
+    "/img/galeria/fire-fire-19.webp",
+    "/img/galeria/fire-fire-20.webp",
+    "/img/galeria/fire-fire-21.webp",
+    "/img/galeria/fire-fire-22.webp",
+    "/img/galeria/fire-fire-23.webp",
+    "/img/galeria/fire-fire-24.webp",
+    "/img/galeria/fire-fire-25.webp",
+    "/img/galeria/fire-fire-26.webp",
+    "/img/galeria/fire-fire-27.webp",
+    "/img/galeria/fire-fire-28.webp",
+    "/img/galeria/fire-fire-29.webp",
+    "/img/galeria/fire-fire-30.webp",
+    "/img/galeria/fire-fire-31.webp",
+    "/img/galeria/fire-fire-32.webp",
+    "/img/galeria/fire-fire-33.webp",
+    "/img/galeria/fire-fire-34.webp",
+    "/img/galeria/fire-fire-35.webp",
+    "/img/galeria/plomeria-plomeria-01.webp",
+    "/img/galeria/plomeria-plomeria-02.webp",
+    "/img/galeria/plomeria-plomeria-03.webp",
+    "/img/galeria/plomeria-plomeria-04.webp",
+    "/img/galeria/plomeria-plomeria-05.webp",
+    "/img/galeria/plomeria-plomeria-06.webp",
+    "/img/galeria/plomeria-plomeria-07.webp",
+    "/img/galeria/plomeria-plomeria-08.webp",
+    "/img/galeria/plomeria-plomeria-09.webp",
+    "/img/galeria/plomeria-plomeria-10.webp",
+    "/img/galeria/plomeria-plomeria-11.webp",
+    "/img/galeria/plomeria-plomeria-12.webp",
+    "/img/galeria/plomeria-plomeria-13.webp",
+    "/img/galeria/plomeria-plomeria-14.webp",
+    "/img/galeria/plomeria-plomeria-15.webp",
+    "/img/galeria/plomeria-plomeria-16.webp",
+    "/img/galeria/plomeria-plomeria-17.webp",
+    "/img/galeria/plomeria-plomeria-18.webp",
+    "/img/galeria/plomeria-plomeria-19.webp",
+    "/img/galeria/plomeria-plomeria-20.webp",
+    "/img/galeria/plomeria-plomeria-21.webp",
+    "/img/galeria/plomeria-plomeria-22.webp",
+    "/img/galeria/svc-dispron-plomeria-1.webp",
+    "/img/galeria/svc-dispron-plomeria-2.webp",
+    "/img/galeria/svc-dispron-plomeria-3.webp",
+    "/img/galeria/svc-dispron-plomeria-4.webp",
+    "/img/galeria/svc-dispron-plomeria-5.webp",
+    "/img/galeria/svc-dispron-plomeria-6.webp"
+   ],
+   "scope": [
+    "Agua potable y sistemas de bombeo",
+    "Aguas residuales, pluviales y sanitarias",
+    "Sistemas contra incendios",
+    "Gas natural y GLP",
+    "Plantas de tratamiento de agua",
+    "Tuberías hidráulicas y neumáticas"
+   ],
+   "faq": [
+    [
+     "¿Instalan sistemas contra incendios aprobados por Bomberos?",
+     "Sí. Diseñamos e instalamos sistemas contra incendios conforme a las normas NFPA y al reglamento de la Oficina de Seguridad del Benemérito Cuerpo de Bomberos de la República de Panamá, y acompañamos el proceso de revisión."
+    ],
+    [
+     "¿Cada cuánto se inspecciona una bomba contra incendio?",
+     "Según NFPA 25, las bombas contra incendio requieren pruebas periódicas de funcionamiento (semanales o mensuales según el tipo) y una prueba anual de desempeño con caudal."
+    ],
+    [
+     "¿Realizan instalaciones de gas GLP para restaurantes?",
+     "Sí. Diseñamos e instalamos redes de gas GLP y natural para restaurantes, industrias y edificios, con pruebas de hermeticidad y documentación para su aprobación."
+    ]
+   ]
+  },
+  {
+   "slug": "suministro-equipos-materiales",
+   "name": "Suministro de Materiales, Herramientas, Repuestos y Equipos",
+   "short": "Importación, distribución, venta y alquiler de materiales y equipos industriales y de construcción.",
+   "sectors": [
+    "industrial"
+   ],
+   "photos": [
+    "/img/obras/suministro-equipos-materiales-1.webp",
+    "/img/obras/suministro-equipos-materiales-2.webp",
+    "/img/obras/suministro-equipos-materiales-3.webp",
+    "/img/obras/suministro-equipos-materiales-4.webp"
+   ],
+   "scope": [
+    "Materiales de construcción",
+    "Material eléctrico",
+    "Equipos HVAC y refrigeración",
+    "Tuberías, válvulas y bombas",
+    "Herramientas y consumibles de soldadura",
+    "Repuestos industriales y alquiler de equipos"
+   ],
+   "faq": [
+    [
+     "¿Venden al por mayor y al detal?",
+     "Sí. Atendemos tanto a contratistas y empresas que compran al por mayor como a clientes que necesitan cantidades menores."
+    ],
+    [
+     "¿Pueden importar equipos o repuestos específicos?",
+     "Sí. Gestionamos la importación de equipos, repuestos y materiales especializados bajo pedido, incluyendo logística y entrega en todo Panamá."
+    ],
+    [
+     "¿Alquilan equipos para proyectos?",
+     "Sí. Ofrecemos arrendamiento de equipos y herramientas para proyectos de construcción, montaje y mantenimiento."
+    ]
+   ]
+  }
+ ],
+ "SECTORES": [
+  {
+   "id": "bancario",
+   "name": "Bancario",
+   "icon": "bank",
+   "lead": "Sucursales, oficinas centrales y centros de datos sin detener la operación.",
+   "needs": [
+    "Trabajos nocturnos y en fines de semana con cierre de área seguro",
+    "Cumplimiento de normas de seguridad física y cableado crítico",
+    "Protección contra incendios en cuartos de servidores",
+    "Mantenimiento preventivo de A/C de precisión y UPS"
+   ],
+   "services": [
+    "remodelacion-fit-out",
+    "arquitectura-planos-render-3d",
+    "mantenimiento-ph-edificios",
+    "ingenieria-electrica",
+    "mantenimiento-industrial",
+    "metalmecanica-soldadura",
+    "construccion-obra-civil",
+    "fontaneria-hidraulica-contra-incendios",
+    "hvac-aire-acondicionado"
+   ]
+  },
+  {
+   "id": "hotelero",
+   "name": "Hotelero",
+   "icon": "hotel",
+   "lead": "Habitaciones, áreas comunes y sistemas críticos con mínima afectación al huésped.",
+   "needs": [
+    "Renovación por pisos con cronograma de ocupación",
+    "Plomería, bombeo y agua caliente continua",
+    "Carpintería a medida para habitaciones y lobby",
+    "Refrigeración y A/C de cuartos fríos y chillers"
+   ],
+   "services": [
+    "remodelacion-fit-out",
+    "arquitectura-planos-render-3d",
+    "fontaneria-hidraulica-contra-incendios",
+    "mantenimiento-ph-edificios",
+    "hvac-aire-acondicionado"
+   ]
+  },
+  {
+   "id": "ph",
+   "name": "Propiedad Horizontal",
+   "icon": "building",
+   "lead": "Fachadas, bombeo, tanques, electricidad y estacionamientos para comunidades de propietarios.",
+   "needs": [
+    "Restauración de fachadas e impermeabilización de losas",
+    "Sistemas de bombeo, tanques y redes contra incendios",
+    "Tableros eléctricos, plantas y áreas comunes",
+    "Pisos epóxicos en estacionamientos"
+   ],
+   "services": [
+    "mantenimiento-ph-edificios",
+    "remodelacion-fit-out",
+    "fontaneria-hidraulica-contra-incendios",
+    "ingenieria-electrica",
+    "pisos-pintura-epoxica"
+   ]
+  },
+  {
+   "id": "eventos",
+   "name": "Eventos y convenciones",
+   "icon": "stage",
+   "lead": "Stands, escenarios y salas VIP en centros de convenciones de Panamá.",
+   "needs": [
+    "Diseño y arquitectura efímera para stands",
+    "Estructuras, iluminación y acometidas eléctricas temporales",
+    "Montaje y desmontaje con cronograma estricto",
+    "Acabados premium para salas VIP y eventos sociales"
+   ],
+   "services": [
+    "stands-corporativos",
+    "remodelacion-fit-out",
+    "ingenieria-electrica",
+    "arquitectura-planos-render-3d"
+   ]
+  },
+  {
+   "id": "industrial",
+   "name": "Industrial",
+   "icon": "factory",
+   "lead": "Subestaciones, epóxicos, refrigeración, contra incendios y obra civil para planta y logística.",
+   "needs": [
+    "Ingeniería eléctrica de media y alta tensión",
+    "Pisos epóxicos de alto tráfico y resistencia química",
+    "Sistemas contra incendios con bombas y tanques",
+    "Soldadura, estructuras metálicas y maquinaria pesada"
+   ],
+   "services": [
+    "ingenieria-electrica",
+    "pisos-pintura-epoxica",
+    "mantenimiento-industrial",
+    "metalmecanica-soldadura",
+    "construccion-obra-civil",
+    "fontaneria-hidraulica-contra-incendios",
+    "hvac-aire-acondicionado",
+    "montaje-maquinaria-automatizacion"
+   ]
+  }
+ ],
+ "GUIAS": [
+  {
+   "t": "Para solicitar una inspección eléctrica",
+   "items": [
+    "Diagrama unifilar o fotos de tableros",
+    "Capacidad contratada y tensión de suministro",
+    "Antecedentes de fallas o disparos",
+    "Horarios permitidos para corte programado"
+   ]
+  },
+  {
+   "t": "Para una cotización de pisos epóxicos",
+   "items": [
+    "Área aproximada en m²",
+    "Tipo de tráfico (peatonal, montacargas, vehicular)",
+    "Exposición a químicos o humedad",
+    "Ventana de parada disponible"
+   ]
+  },
+  {
+   "t": "Para restauración de fachadas",
+   "items": [
+    "Altura y cantidad de pisos",
+    "Fotos de grietas, humedad o desprendimientos",
+    "Planos del edificio si existen",
+    "Reglamento de la PH y horarios de trabajo"
+   ]
+  },
+  {
+   "t": "Para contratos de mantenimiento integral",
+   "items": [
+    "Inventario de áreas y equipos",
+    "Horario de operación y criticidad",
+    "Contratos vigentes con otros proveedores",
+    "Nivel de respuesta esperado"
+   ]
+  },
+  {
+   "t": "Para sistemas contra incendios",
+   "items": [
+    "Uso y ocupación del edificio",
+    "Planos arquitectónicos y mecánicos",
+    "Estado de bombas, tanques y tomas de bomberos",
+    "Requerimientos del cuerpo de bomberos / aseguradora"
+   ]
+  },
+  {
+   "t": "Para montaje de eventos y stands",
+   "items": [
+    "Recinto y fechas de montaje y desmontaje",
+    "Medidas del espacio asignado",
+    "Requerimientos eléctricos y de iluminación",
+    "Brief de marca y referencias visuales"
+   ]
+  }
+ ],
+ "PROCESO": [
+  [
+   "Diagnóstico",
+   "Visita técnica en sitio, levantamiento y definición de alcance."
+  ],
+  [
+   "Ingeniería",
+   "Planos, especificaciones, cronograma y plan de seguridad."
+  ],
+  [
+   "Propuesta",
+   "Cotización clara por alcance con opciones y garantías."
+  ],
+  [
+   "Ejecución",
+   "Obra supervisada, reportes y control de calidad."
+  ],
+  [
+   "Mantenimiento",
+   "Contrato preventivo y soporte correctivo posterior."
+  ]
+ ],
+ "PROVINCIAS": [
+  "Panamá",
+  "Panamá Oeste",
+  "Colón",
+  "Chiriquí",
+  "Coclé",
+  "Herrera",
+  "Los Santos",
+  "Veraguas",
+  "Bocas del Toro",
+  "Darién",
+  "Comarca Guna Yala",
+  "Comarca Emberá-Wounaan",
+  "Comarca Ngäbe-Buglé"
+ ],
+ "CONTACT": {
+  "phone": null,
+  "email": "info@dicprom.com",
+  "whatsapp": null,
+  "address": null,
+  "hours": "Lunes a viernes 8:00 a. m. – 5:00 p. m. · Sábados 8:00 a. m. – 12:00 m. · Emergencias 24/7"
+ },
+ "GALLERY": [
+  {
+   "url": "/img/galeria/svc-dispron-industrial-1.webp",
+   "cat": "industrial",
+   "caption": "Sellado de panel en cuarto frío"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-industrial-2.webp",
+   "cat": "industrial",
+   "caption": "Centro de datos con racks y climatización"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-industrial-3.webp",
+   "cat": "industrial",
+   "caption": "Ductería y ventilación en nave industrial"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-industrial-4.webp",
+   "cat": "industrial",
+   "caption": "Supervisión de obra de nave industrial"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-industrial-5.webp",
+   "cat": "industrial",
+   "caption": "Cimentación de nave industrial"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-industrial-6.webp",
+   "cat": "industrial",
+   "caption": "Armado de pedestales en excavación"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-industrial-7.webp",
+   "cat": "industrial",
+   "caption": "Unidad enfriadora (chiller) para edificio"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-industrial-8.webp",
+   "cat": "industrial",
+   "caption": "Ensamble de colector de válvulas diseñado a medida"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-01.webp",
+   "cat": "obra-civil",
+   "caption": "Concreto lanzado para estabilizar talud"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-02.webp",
+   "cat": "obra-civil",
+   "caption": "Inspección técnica de estructura metálica"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-03.webp",
+   "cat": "obra-civil",
+   "caption": "Allanado de losa de concreto en sitio"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-04.webp",
+   "cat": "obra-civil",
+   "caption": "Vaciado de concreto con bomba en obra"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-05.webp",
+   "cat": "obra-civil",
+   "caption": "Excavación y movimiento de tierras"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-06.webp",
+   "cat": "obra-civil",
+   "caption": "Terracería y vialidad de parque logístico"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-07.webp",
+   "cat": "obra-civil",
+   "caption": "Armado de columnas en excavación tablestacada"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-08.webp",
+   "cat": "obra-civil",
+   "caption": "Ingeniera revisando modelo digital en planta"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-09.webp",
+   "cat": "obra-civil",
+   "caption": "Levantamiento topográfico de proyecto"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-10.webp",
+   "cat": "obra-civil",
+   "caption": "Espacio interior diseñado y construido"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-11.webp",
+   "cat": "obra-civil",
+   "caption": "Estribos y vigas de puente en construcción"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-12.webp",
+   "cat": "obra-civil",
+   "caption": "Muro de contención curvo en obra"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-13.webp",
+   "cat": "obra-civil",
+   "caption": "Vista de obra desde oficina de campo"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-14.webp",
+   "cat": "obra-civil",
+   "caption": "Cuadrilla armando acero de refuerzo"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-15.webp",
+   "cat": "obra-civil",
+   "caption": "Excavadora y mixer en cimentación"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-16.webp",
+   "cat": "obra-civil",
+   "caption": "Armado de acero de refuerzo para losa"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-17.webp",
+   "cat": "obra-civil",
+   "caption": "Montaje de galera de estructura metálica"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-18.webp",
+   "cat": "obra-civil",
+   "caption": "Impermeabilización de azotea"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-19.webp",
+   "cat": "obra-civil",
+   "caption": "Instalación de cámara de inspección pluvial"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-20.webp",
+   "cat": "obra-civil",
+   "caption": "Complejo logístico entregado llave en mano"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-21.webp",
+   "cat": "obra-civil",
+   "caption": "Trabajo nocturno de demolición controlada"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-22.webp",
+   "cat": "obra-civil",
+   "caption": "Oficina adecuada en edificio industrial"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-23.webp",
+   "cat": "obra-civil",
+   "caption": "Estructura de edificio en construcción"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-24.webp",
+   "cat": "obra-civil",
+   "caption": "Pavimentación con asfalto"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-25.webp",
+   "cat": "obra-civil",
+   "caption": "Trazo topográfico y planos en losa"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-26.webp",
+   "cat": "obra-civil",
+   "caption": "Movimiento de tierras en proyecto de gran escala"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-27.webp",
+   "cat": "obra-civil",
+   "caption": "Vaciado de losa de cimentación"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-28.webp",
+   "cat": "obra-civil",
+   "caption": "Ejecución de proyecto de interiorismo"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-29.webp",
+   "cat": "obra-civil",
+   "caption": "Trabajos en planta de alimentos en operación"
+  },
+  {
+   "url": "/img/galeria/obra-civil-obra-civil-30.webp",
+   "cat": "obra-civil",
+   "caption": "Zanja para canalizaciones subterráneas"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-hero-1.webp",
+   "cat": "obra-civil",
+   "caption": "Estructura en construcción con grúas torre"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-electrica-1.webp",
+   "cat": "electrica",
+   "caption": "Mantenimiento de transformador en subestación"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-electrica-2.webp",
+   "cat": "electrica",
+   "caption": "Pruebas en transformador de potencia"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-electrica-3.webp",
+   "cat": "electrica",
+   "caption": "Centro de control y automatización de planta"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-electrica-4.webp",
+   "cat": "electrica",
+   "caption": "Conexionado de tablero eléctrico industrial"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-electrica-5.webp",
+   "cat": "electrica",
+   "caption": "Izaje de transformador en subestación eléctrica"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-electrica-6.webp",
+   "cat": "electrica",
+   "caption": "Mantenimiento de planta eléctrica de emergencia"
+  },
+  {
+   "url": "/img/galeria/fire-fire-01.webp",
+   "cat": "fire",
+   "caption": "Red de rociadores sobre racks en centro de datos"
+  },
+  {
+   "url": "/img/galeria/fire-fire-02.webp",
+   "cat": "fire",
+   "caption": "Tubería contra incendios en sala de servidores"
+  },
+  {
+   "url": "/img/galeria/fire-fire-03.webp",
+   "cat": "fire",
+   "caption": "Válvula de alarma y tren de control de rociadores"
+  },
+  {
+   "url": "/img/galeria/fire-fire-04.webp",
+   "cat": "fire",
+   "caption": "Toma siamesa para bomberos en fachada"
+  },
+  {
+   "url": "/img/galeria/fire-fire-05.webp",
+   "cat": "fire",
+   "caption": "Prueba de hidrante contra incendios"
+  },
+  {
+   "url": "/img/galeria/fire-fire-06.webp",
+   "cat": "fire",
+   "caption": "Rociadores en nave con tragaluces"
+  },
+  {
+   "url": "/img/galeria/fire-fire-07.webp",
+   "cat": "fire",
+   "caption": "Toma de bomberos en escalera de emergencia"
+  },
+  {
+   "url": "/img/galeria/fire-fire-08.webp",
+   "cat": "fire",
+   "caption": "Instalación de rociadores desde plataforma elevadora"
+  },
+  {
+   "url": "/img/galeria/fire-fire-09.webp",
+   "cat": "fire",
+   "caption": "Rociador oculto en vestíbulo corporativo"
+  },
+  {
+   "url": "/img/galeria/fire-fire-10.webp",
+   "cat": "fire",
+   "caption": "Manifold de control con manómetros"
+  },
+  {
+   "url": "/img/galeria/fire-fire-11.webp",
+   "cat": "fire",
+   "caption": "Distribución de rociadores sobre tableros"
+  },
+  {
+   "url": "/img/galeria/fire-fire-12.webp",
+   "cat": "fire",
+   "caption": "Suministro de equipos eléctricos y de control"
+  },
+  {
+   "url": "/img/galeria/fire-fire-13.webp",
+   "cat": "fire",
+   "caption": "Revisión de panel de detección y alarma"
+  },
+  {
+   "url": "/img/galeria/fire-fire-14.webp",
+   "cat": "fire",
+   "caption": "Mantenimiento preventivo de equipos de bombeo"
+  },
+  {
+   "url": "/img/galeria/fire-fire-15.webp",
+   "cat": "fire",
+   "caption": "Bomba contra incendio y tablero de control"
+  },
+  {
+   "url": "/img/galeria/fire-fire-16.webp",
+   "cat": "fire",
+   "caption": "Cuarto de bombas y red contra incendios"
+  },
+  {
+   "url": "/img/galeria/fire-fire-17.webp",
+   "cat": "fire",
+   "caption": "Cocina industrial con campana y supresión"
+  },
+  {
+   "url": "/img/galeria/fire-fire-18.webp",
+   "cat": "fire",
+   "caption": "Ajuste de rociadores en galera logística"
+  },
+  {
+   "url": "/img/galeria/fire-fire-19.webp",
+   "cat": "fire",
+   "caption": "Columna seca con toma de bomberos"
+  },
+  {
+   "url": "/img/galeria/fire-fire-20.webp",
+   "cat": "fire",
+   "caption": "Montante contra incendios en escalera"
+  },
+  {
+   "url": "/img/galeria/fire-fire-21.webp",
+   "cat": "fire",
+   "caption": "Montaje de red en bodega con estanterías"
+  },
+  {
+   "url": "/img/galeria/fire-fire-22.webp",
+   "cat": "fire",
+   "caption": "Gabinete de manguera en lobby"
+  },
+  {
+   "url": "/img/galeria/fire-fire-23.webp",
+   "cat": "fire",
+   "caption": "Válvula de diluvio y accesorios de control"
+  },
+  {
+   "url": "/img/galeria/fire-fire-24.webp",
+   "cat": "fire",
+   "caption": "Tablero de bomba y panel de alarma"
+  },
+  {
+   "url": "/img/galeria/fire-fire-25.webp",
+   "cat": "fire",
+   "caption": "Red de rociadores en cuarto eléctrico"
+  },
+  {
+   "url": "/img/galeria/fire-fire-26.webp",
+   "cat": "fire",
+   "caption": "Red de rociadores y tubería contra incendios"
+  },
+  {
+   "url": "/img/galeria/fire-fire-27.webp",
+   "cat": "fire",
+   "caption": "Rociador decorativo en cielo de madera"
+  },
+  {
+   "url": "/img/galeria/fire-fire-28.webp",
+   "cat": "fire",
+   "caption": "Cuarto eléctrico con tubería roja de protección"
+  },
+  {
+   "url": "/img/galeria/fire-fire-29.webp",
+   "cat": "fire",
+   "caption": "Mantenimiento de sistema de supresión en cocina"
+  },
+  {
+   "url": "/img/galeria/fire-fire-30.webp",
+   "cat": "fire",
+   "caption": "Manómetros y válvulas en cuarto de bombas"
+  },
+  {
+   "url": "/img/galeria/fire-fire-31.webp",
+   "cat": "fire",
+   "caption": "Rociador montante en tubería de acero"
+  },
+  {
+   "url": "/img/galeria/fire-fire-32.webp",
+   "cat": "fire",
+   "caption": "Cabezal de succión de bombas contra incendio"
+  },
+  {
+   "url": "/img/galeria/fire-fire-33.webp",
+   "cat": "fire",
+   "caption": "Izaje de tanque de almacenamiento en proyecto industrial"
+  },
+  {
+   "url": "/img/galeria/fire-fire-34.webp",
+   "cat": "fire",
+   "caption": "Válvula de compuerta en línea de succión"
+  },
+  {
+   "url": "/img/galeria/fire-fire-35.webp",
+   "cat": "fire",
+   "caption": "Toma siamesa de bronce en fachada de granito"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-01.webp",
+   "cat": "plomeria",
+   "caption": "Tanques hidroneumáticos y cabezal de distribución"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-02.webp",
+   "cat": "plomeria",
+   "caption": "Sistema de bombeo de presión constante"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-03.webp",
+   "cat": "plomeria",
+   "caption": "Técnico registrando parámetros de operación"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-04.webp",
+   "cat": "plomeria",
+   "caption": "Válvula reductora de presión en ducto"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-05.webp",
+   "cat": "plomeria",
+   "caption": "Instalación de tubería de cobre"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-06.webp",
+   "cat": "plomeria",
+   "caption": "Ajuste de unión en tubería de agua"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-07.webp",
+   "cat": "plomeria",
+   "caption": "Conexión de termofusión a cobre"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-08.webp",
+   "cat": "plomeria",
+   "caption": "Instalación de tubería hidrosanitaria"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-09.webp",
+   "cat": "plomeria",
+   "caption": "Unión de tubería de cobre con llave"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-10.webp",
+   "cat": "plomeria",
+   "caption": "Cuarto de máquinas con tanques y tuberías"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-11.webp",
+   "cat": "plomeria",
+   "caption": "Medición con detector en tubería"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-12.webp",
+   "cat": "plomeria",
+   "caption": "Inspección de trampa de grasa"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-13.webp",
+   "cat": "plomeria",
+   "caption": "Línea de gas en azotea"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-14.webp",
+   "cat": "plomeria",
+   "caption": "Planta de tratamiento de agua"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-15.webp",
+   "cat": "plomeria",
+   "caption": "Instalación de trampa de grasa"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-16.webp",
+   "cat": "plomeria",
+   "caption": "Trampa de grasa en cocina comercial"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-17.webp",
+   "cat": "plomeria",
+   "caption": "Interceptor de grasa bajo fregadero"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-18.webp",
+   "cat": "plomeria",
+   "caption": "Equipos de tratamiento de agua"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-19.webp",
+   "cat": "plomeria",
+   "caption": "Prensado de accesorio de cobre"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-20.webp",
+   "cat": "plomeria",
+   "caption": "Tubería sanitaria colgada en sótano"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-21.webp",
+   "cat": "plomeria",
+   "caption": "Red pluvial en estacionamiento"
+  },
+  {
+   "url": "/img/galeria/plomeria-plomeria-22.webp",
+   "cat": "plomeria",
+   "caption": "Bajantes y colectores en estacionamiento"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-plomeria-1.webp",
+   "cat": "plomeria",
+   "caption": "Instalación de tubería de cobre en muro"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-plomeria-2.webp",
+   "cat": "plomeria",
+   "caption": "Sistema de bombeo de agua potable"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-plomeria-3.webp",
+   "cat": "plomeria",
+   "caption": "Cuarto de bombeo y distribución"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-plomeria-4.webp",
+   "cat": "plomeria",
+   "caption": "Tuberías de agua helada en cuarto de máquinas"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-plomeria-5.webp",
+   "cat": "plomeria",
+   "caption": "Ajuste de conexión de cobre"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-plomeria-6.webp",
+   "cat": "plomeria",
+   "caption": "Trampa de grasa en cocina"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-01.webp",
+   "cat": "soldadura",
+   "caption": "Esmerilado de estructura metálica"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-02.webp",
+   "cat": "soldadura",
+   "caption": "Fabricación de escalera metálica"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-03.webp",
+   "cat": "soldadura",
+   "caption": "Cubierta metálica fabricada e instalada"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-04.webp",
+   "cat": "soldadura",
+   "caption": "Soldadura de mezzanine metálico"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-05.webp",
+   "cat": "soldadura",
+   "caption": "Inspección de soldadura en tubería"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-06.webp",
+   "cat": "soldadura",
+   "caption": "Taller de fabricación de estructuras metálicas"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-07.webp",
+   "cat": "soldadura",
+   "caption": "Inventario de perfiles y tubería de acero"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-08.webp",
+   "cat": "soldadura",
+   "caption": "Nave de fabricación metalmecánica"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-09.webp",
+   "cat": "soldadura",
+   "caption": "Puesta en marcha de equipo de corte automatizado"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-10.webp",
+   "cat": "soldadura",
+   "caption": "Corte CNC por plasma de piezas de ingeniería"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-11.webp",
+   "cat": "soldadura",
+   "caption": "Soldadura de virola de tanque"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-12.webp",
+   "cat": "soldadura",
+   "caption": "Fabricación de tanque de almacenamiento"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-13.webp",
+   "cat": "soldadura",
+   "caption": "Corte y soldadura de lámina curva"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-14.webp",
+   "cat": "soldadura",
+   "caption": "Soldadura de tanque metálico en taller"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-15.webp",
+   "cat": "soldadura",
+   "caption": "Soldadura TIG de tubería"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-16.webp",
+   "cat": "soldadura",
+   "caption": "Soldadura TIG de tubería de acero inoxidable"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-17.webp",
+   "cat": "soldadura",
+   "caption": "Soldadura estructural en taller metalmecánico"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-18.webp",
+   "cat": "soldadura",
+   "caption": "Soldadura de unión estructural"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-19.webp",
+   "cat": "soldadura",
+   "caption": "Soldadura de viga en taller"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-20.webp",
+   "cat": "soldadura",
+   "caption": "Soldadura de estructura en altura con arnés"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-21.webp",
+   "cat": "soldadura",
+   "caption": "Corte de acero con chispas"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-22.webp",
+   "cat": "soldadura",
+   "caption": "Ajuste de eje y componentes mecánicos"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-23.webp",
+   "cat": "soldadura",
+   "caption": "Soldadura de nodo de estructura"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-24.webp",
+   "cat": "soldadura",
+   "caption": "Cordón de soldadura en tubo"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-25.webp",
+   "cat": "soldadura",
+   "caption": "Reparación de estructura en muelle"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-26.webp",
+   "cat": "soldadura",
+   "caption": "Montaje y soldadura de estructura en altura"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-27.webp",
+   "cat": "soldadura",
+   "caption": "Soldadura de columna metálica"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-28.webp",
+   "cat": "soldadura",
+   "caption": "Almacén de materiales metálicos"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-29.webp",
+   "cat": "soldadura",
+   "caption": "Inspección dimensional de pieza mecanizada"
+  },
+  {
+   "url": "/img/galeria/soldadura-soldadura-30.webp",
+   "cat": "soldadura",
+   "caption": "Montaje y alineación de maquinaria industrial"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-ebanisteria-1.webp",
+   "cat": "remodelacion",
+   "caption": "Pintura de muros en remodelación"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-ebanisteria-2.webp",
+   "cat": "remodelacion",
+   "caption": "Acabados de drywall y pintura en oficina"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-ebanisteria-3.webp",
+   "cat": "remodelacion",
+   "caption": "Pintura de acento en apartamento"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-remodelacion-1.webp",
+   "cat": "remodelacion",
+   "caption": "Remodelación dentro de planta en operación"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-remodelacion-2.webp",
+   "cat": "remodelacion",
+   "caption": "Oficina terminada en edificio histórico"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-remodelacion-3.webp",
+   "cat": "remodelacion",
+   "caption": "Fit-out de oficina corporativa con divisiones de vidrio"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-remodelacion-4.webp",
+   "cat": "remodelacion",
+   "caption": "Instalación de tabiquería y cielo raso"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-remodelacion-5.webp",
+   "cat": "remodelacion",
+   "caption": "Remodelación de local con andamios"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-remodelacion-6.webp",
+   "cat": "remodelacion",
+   "caption": "Acabado de drywall en remodelación"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-epoxi-1.webp",
+   "cat": "epoxi",
+   "caption": "Aplicación de recubrimiento epóxico"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-epoxi-2.webp",
+   "cat": "epoxi",
+   "caption": "Piso epóxico con señalización en bodega"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-epoxi-3.webp",
+   "cat": "epoxi",
+   "caption": "Piso epóxico con canaleta de drenaje"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-epoxi-4.webp",
+   "cat": "epoxi",
+   "caption": "Piso industrial de alto tráfico para montacargas"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-epoxi-5.webp",
+   "cat": "epoxi",
+   "caption": "Acabado de piso epóxico autonivelante"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-epoxi-6.webp",
+   "cat": "epoxi",
+   "caption": "Piso de bodega para montacargas"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-restauracion-1.webp",
+   "cat": "fachadas",
+   "caption": "Reparación de grieta en fachada"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-restauracion-2.webp",
+   "cat": "fachadas",
+   "caption": "Tratamiento de acero expuesto en balcón"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-restauracion-3.webp",
+   "cat": "fachadas",
+   "caption": "Mantenimiento de fachada en edificio de Panamá"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-restauracion-4.webp",
+   "cat": "fachadas",
+   "caption": "Sellado de junta en fachada"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-restauracion-5.webp",
+   "cat": "fachadas",
+   "caption": "Lavado a presión de fachada con acceso por cuerda"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-restauracion-6.webp",
+   "cat": "fachadas",
+   "caption": "Trabajo en plataforma suspendida en torre"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-eventos-1.webp",
+   "cat": "eventos",
+   "caption": "Montaje de stand institucional"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-eventos-2.webp",
+   "cat": "eventos",
+   "caption": "Stand corporativo para feria en centro de convenciones"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-eventos-3.webp",
+   "cat": "eventos",
+   "caption": "Escenario para evento corporativo"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-eventos-4.webp",
+   "cat": "eventos",
+   "caption": "Montaje de stand con estructura de truss"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-eventos-5.webp",
+   "cat": "eventos",
+   "caption": "Sala de reuniones con diseño interior corporativo"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-eventos-6.webp",
+   "cat": "eventos",
+   "caption": "Stand de exhibición con estructura elevada"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-mantenimiento-1.webp",
+   "cat": "mantenimiento",
+   "caption": "Mantenimiento de áreas comunes en edificio"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-mantenimiento-2.webp",
+   "cat": "mantenimiento",
+   "caption": "Mantenimiento de cielo raso en vestíbulo"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-mantenimiento-3.webp",
+   "cat": "mantenimiento",
+   "caption": "Mantenimiento de sala de bombas y tanques"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-mantenimiento-4.webp",
+   "cat": "mantenimiento",
+   "caption": "Diagnóstico de tablero eléctrico con equipo de medición"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-mantenimiento-5.webp",
+   "cat": "mantenimiento",
+   "caption": "Cambio de filtros en unidad manejadora de aire"
+  },
+  {
+   "url": "/img/galeria/svc-dispron-mantenimiento-6.webp",
+   "cat": "mantenimiento",
+   "caption": "Diagnóstico de cuarto de máquinas"
+  }
+ ],
+ "PATHS": [
+  "/",
+  "/servicios/",
+  "/servicios/diseno-industrial-ingenieria-de-producto/",
+  "/servicios/mantenimiento-industrial/",
+  "/servicios/montaje-maquinaria-automatizacion/",
+  "/servicios/ingenieria-proyectos-industriales-petroleros-mineria/",
+  "/servicios/construccion-obra-civil/",
+  "/servicios/remodelacion-fit-out/",
+  "/servicios/pisos-pintura-epoxica/",
+  "/servicios/mantenimiento-ph-edificios/",
+  "/servicios/arquitectura-planos-render-3d/",
+  "/servicios/stands-corporativos/",
+  "/servicios/gerencia-proyectos-epc-llave-en-mano/",
+  "/servicios/ingenieria-electrica/",
+  "/servicios/hvac-aire-acondicionado/",
+  "/servicios/metalmecanica-soldadura/",
+  "/servicios/fontaneria-hidraulica-contra-incendios/",
+  "/servicios/suministro-equipos-materiales/",
+  "/proyectos/",
+  "/sectores/",
+  "/sectores/bancario/",
+  "/sectores/hotelero/",
+  "/sectores/ph/",
+  "/sectores/eventos/",
+  "/sectores/industrial/",
+  "/blog/",
+  "/blog/remodelacion-oficinas-bancarias-panama-sin-detener-operacion/",
+  "/blog/cuanto-cuesta-remodelar-sucursal-bancaria-en-panama/",
+  "/blog/remodelacion-areas-comunes-propiedad-horizontal-panama/",
+  "/blog/deteccion-fugas-de-agua-en-edificios-panama-senales-de-alerta/",
+  "/blog/mantenimiento-preventivo-cuarto-de-bombas-panama/",
+  "/blog/tratamiento-de-agua-y-agua-caliente-continua-en-hoteles-panama/",
+  "/blog/tuberia-termofusion-vs-tuberia-tradicional-en-panama/",
+  "/blog/mobiliario-a-medida-counters-recepcion-oficinas-panama/",
+  "/blog/contrato-de-mantenimiento-integral-bancos-hoteles-ph-panama/",
+  "/blog/checklist-mantenimiento-preventivo-anual-edificios-panama/",
+  "/blog/montaje-de-stands-en-centros-de-convenciones-de-panama/",
+  "/blog/cuanto-tiempo-antes-contratar-montaje-de-stand-para-un-evento/",
+  "/blog/restauracion-de-fachadas-de-edificios-en-panama-guia-tecnica/",
+  "/blog/impermeabilizacion-de-losas-y-azoteas-en-panama-clima-tropical/",
+  "/blog/pintura-de-edificios-en-altura-en-panama-acceso-por-andamio-o-cuerda/",
+  "/blog/subestaciones-electricas-y-tableros-de-media-tension-en-panama/",
+  "/blog/mantenimiento-preventivo-de-tableros-electricos-y-termografia/",
+  "/blog/plantas-de-emergencia-y-ups-para-continuidad-electrica-en-panama/",
+  "/blog/pisos-epoxicos-industriales-en-panama-guia-completa/",
+  "/blog/piso-epoxico-o-poliuretano-cual-elegir-en-panama/",
+  "/blog/sistemas-contra-incendios-con-rociadores-en-panama-que-debe-saber/",
+  "/blog/mantenimiento-de-sistemas-contra-incendios-y-cuarto-de-bombeo/",
+  "/blog/soldadura-de-estructuras-metalicas-industriales-en-panama/",
+  "/blog/obra-civil-industrial-y-galeras-en-panama-que-incluye/",
+  "/blog/como-elegir-un-contratista-integral-para-banco-hotel-o-ph-en-panama/",
+  "/recursos/",
+  "/cotizar/",
+  "/cobertura/",
+  "/nosotros/",
+  "/preguntas-frecuentes/",
+  "/contacto/",
+  "/politica-de-privacidad/"
+ ],
+ "KEYWORDS": {
+  "diseno-industrial-ingenieria-de-producto": [
+   "Diseño industrial e ingeniería de producto Panamá",
+   "Diseño Industrial e Ingeniería de Producto Panamá",
+   "empresa de diseño industrial e ingeniería de producto en Panamá"
+  ],
+  "mantenimiento-industrial": [
+   "Mantenimiento industrial Panamá",
+   "Mantenimiento Industrial Predictivo, Preventivo y Correctivo Panamá",
+   "empresa de mantenimiento industrial en Panamá"
+  ],
+  "montaje-maquinaria-automatizacion": [
+   "Montaje y puesta en marcha de maquinaria industrial Panamá",
+   "Montaje, Alineación y Puesta en Marcha de Maquinaria Panamá",
+   "empresa de montaje y puesta en marcha de maquinaria industrial en Panamá"
+  ],
+  "ingenieria-proyectos-industriales-petroleros-mineria": [
+   "Ingeniería de proyectos industriales Panamá",
+   "Ingeniería de Proyectos Industriales, Petroleros y Mineros Panamá",
+   "empresa de ingeniería de proyectos industriales en Panamá"
+  ],
+  "construccion-obra-civil": [
+   "Construcción y obra civil Panamá",
+   "Construcción y Obra Civil Panamá",
+   "empresa de construcción y obra civil en Panamá"
+  ],
+  "remodelacion-fit-out": [
+   "Remodelación y adecuación de espacios comerciales (fit-out) Panamá",
+   "Remodelación y Fit-Out Corporativo Panamá",
+   "empresa de remodelación y adecuación de espacios comerciales (fit-out) en Panamá"
+  ],
+  "pisos-pintura-epoxica": [
+   "Aplicación de pintura y pisos epóxicos Panamá",
+   "Pisos y Pintura Epóxica Industrial Panamá",
+   "empresa de aplicación de pintura y pisos epóxicos en Panamá"
+  ],
+  "mantenimiento-ph-edificios": [
+   "Mantenimiento de edificios y propiedad horizontal Panamá",
+   "Mantenimiento de PH, Edificios e Instalaciones Panamá",
+   "empresa de mantenimiento de edificios y propiedad horizontal en Panamá"
+  ],
+  "arquitectura-planos-render-3d": [
+   "Diseño arquitectónico, render 3D y diseño de interiores Panamá",
+   "Arquitectura, Planos, Render 3D y Diseño de Interiores Panamá",
+   "empresa de diseño arquitectónico, render 3d y diseño de interiores en Panamá"
+  ],
+  "stands-corporativos": [
+   "Diseño y montaje de stands corporativos Panamá",
+   "Stands Corporativos para Ferias y Centros de Convenciones Panamá",
+   "empresa de diseño y montaje de stands corporativos en Panamá"
+  ],
+  "gerencia-proyectos-epc-llave-en-mano": [
+   "Gerencia de proyectos EPC y llave en mano Panamá",
+   "Gerencia de Proyectos EPC y Llave en Mano Panamá",
+   "empresa de gerencia de proyectos epc y llave en mano en Panamá"
+  ],
+  "ingenieria-electrica": [
+   "Ingeniería eléctrica y de potencia Panamá",
+   "Ingeniería Eléctrica, de Potencia y Automatización Panamá",
+   "empresa de ingeniería eléctrica y de potencia en Panamá"
+  ],
+  "hvac-aire-acondicionado": [
+   "Sistemas HVAC y refrigeración Panamá",
+   "Aire Acondicionado, Ventilación y Refrigeración (HVAC) Panamá",
+   "empresa de sistemas hvac y refrigeración en Panamá"
+  ],
+  "metalmecanica-soldadura": [
+   "Metalmecánica y soldadura industrial Panamá",
+   "Metalmecánica, Estructuras Metálicas y Soldadura Panamá",
+   "empresa de metalmecánica y soldadura industrial en Panamá"
+  ],
+  "fontaneria-hidraulica-contra-incendios": [
+   "Fontanería, hidráulica y protección contra incendios Panamá",
+   "Fontanería, Hidráulica y Sistemas Contra Incendios Panamá",
+   "empresa de fontanería, hidráulica y protección contra incendios en Panamá"
+  ],
+  "suministro-equipos-materiales": [
+   "Suministro y comercialización de materiales y equipos Panamá",
+   "Suministro de Materiales, Herramientas, Repuestos y Equipos Panamá",
+   "empresa de suministro y comercialización de materiales y equipos en Panamá"
+  ]
+ }
+}

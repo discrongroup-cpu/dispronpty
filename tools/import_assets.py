@@ -13,6 +13,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "data"))
 from content import HERO_PHOTOS, SERVICES  # noqa: E402
+from gallery import all_photos, gallery_url  # noqa: E402
 
 SRC = Path(sys.argv[1]) if len(sys.argv) > 1 and not sys.argv[1].startswith("--") else Path.home() / "dispron-src/public/img"
 LOGO = ROOT / "assets-src/logo-oficial.jpg"
@@ -93,6 +94,17 @@ def photos():
     return sizes
 
 
+def gallery():
+    n = 0
+    for src, _cap, _cat in all_photos():
+        big, small = ROOT / "static" / gallery_url(src).lstrip("/"), ROOT / "static" / gallery_url(src, True).lstrip("/")
+        if not big.exists():
+            save_photo(SRC / src, big, 1200)
+            save_photo(SRC / src, small, 560)
+        n += 1
+    return n
+
+
 def og_image(mark):
     W, H = 1200, 630
     bg = Image.open(IMG / "hero/hero-1.webp").convert("RGB")
@@ -124,7 +136,12 @@ def og_image(mark):
 
 
 if __name__ == "__main__":
+    if "--gallery" in sys.argv:
+        print(f"Galería: {gallery()} fotos")
+        sys.exit(0)
     mark = logos()
     sizes = photos() if "--logos" not in sys.argv else {}
+    if "--gallery" in sys.argv or "--logos" not in sys.argv:
+        print(f"Galería: {gallery()} fotos")
     og_image(mark)
     print(f"OK: logotipos, iconos, {len(sizes)} fotos y og-dispron.jpg generados")

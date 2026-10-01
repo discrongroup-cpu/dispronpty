@@ -1,0 +1,668 @@
+{
+ "@context": "https://schema.org",
+ "name": "DISPRON GROUP",
+ "legalName": "DISPRON GROUP, S.A.",
+ "alternateName": [
+  "DISPRON",
+  "Dispron Group",
+  "Dispron Group Panamá",
+  "DISPRON Ingeniería y Construcción"
+ ],
+ "url": "https://dicprom.com/",
+ "description": "DISPRON GROUP es una empresa panameña de ingeniería, construcción, mantenimiento industrial, remodelación e instalaciones electromecánicas, con suministro de materiales y equipos.",
+ "slogan": "Diseñamos, construimos y mantenemos la infraestructura que mueve a Panamá.",
+ "areaServed": [
+  "Panamá",
+  "Panamá Oeste",
+  "Colón",
+  "Chiriquí",
+  "Coclé",
+  "Herrera",
+  "Los Santos",
+  "Veraguas",
+  "Bocas del Toro",
+  "Darién",
+  "Comarca Guna Yala",
+  "Comarca Emberá-Wounaan",
+  "Comarca Ngäbe-Buglé"
+ ],
+ "inLanguage": "es-PA",
+ "dateModified": "2026-10-01",
+ "contact": {
+  "phone": null,
+  "email": "info@dicprom.com",
+  "whatsapp": null,
+  "address": null,
+  "hours": "Lunes a viernes 8:00 a. m. – 5:00 p. m. · Sábados 8:00 a. m. – 12:00 m. · Emergencias 24/7"
+ },
+ "pendingVerification": [
+  "phone",
+  "whatsapp",
+  "address"
+ ],
+ "services": [
+  {
+   "name": "Diseño Industrial e Ingeniería de Producto",
+   "serviceType": "Diseño industrial e ingeniería de producto",
+   "url": "https://dicprom.com/servicios/diseno-industrial-ingenieria-de-producto/",
+   "summary": "Consultoría en procesos de fabricación, ergonomía, materiales, simulación FEA y patentes.",
+   "category": "Diseño industrial, ingeniería y mantenimiento",
+   "faq": [
+    {
+     "q": "¿Qué es un análisis de fallas estructurales por simulación?",
+     "a": "Es un estudio de ingeniería que reproduce en software (FEA) las cargas reales de una pieza o estructura para identificar por qué falló —fatiga, sobrecarga, corrosión o defecto de diseño— y validar una solución antes de fabricarla."
+    },
+    {
+     "q": "¿DISPRON GROUP ayuda a registrar patentes en Panamá?",
+     "a": "Sí. Preparamos la documentación técnica, dibujos y memoria descriptiva necesarios para solicitar patentes de invención o modelos de utilidad ante DIGERPI, en coordinación con su abogado de propiedad industrial."
+    },
+    {
+     "q": "¿Cuánto tiempo toma un estudio de optimización de procesos?",
+     "a": "Un diagnóstico inicial de planta suele tomar de 1 a 3 semanas según el tamaño de la operación; el plan de mejora incluye indicadores medibles (OEE, tiempo de ciclo, desperdicio)."
+    }
+   ]
+  },
+  {
+   "name": "Mantenimiento Industrial Predictivo, Preventivo y Correctivo",
+   "serviceType": "Mantenimiento industrial",
+   "url": "https://dicprom.com/servicios/mantenimiento-industrial/",
+   "summary": "Termografía, análisis de vibraciones y mantenimiento integral de plantas, galeras y muelles.",
+   "category": "Diseño industrial, ingeniería y mantenimiento",
+   "faq": [
+    {
+     "q": "¿Qué diferencia hay entre mantenimiento predictivo y preventivo?",
+     "a": "El preventivo se ejecuta por calendario u horas de uso; el predictivo mide la condición real del equipo (temperatura, vibración, ultrasonido) y solo interviene cuando los datos indican una falla en desarrollo, reduciendo costos y paradas."
+    },
+    {
+     "q": "¿DISPRON GROUP ofrece contratos de mantenimiento anual?",
+     "a": "Sí. Diseñamos contratos mensuales o anuales con visitas programadas, inspecciones predictivas, tiempos de respuesta garantizados e informes periódicos de condición de activos."
+    },
+    {
+     "q": "¿En qué provincias de Panamá dan mantenimiento industrial?",
+     "a": "Atendemos todo Panamá: Panamá, Panamá Oeste, Colón, Coclé, Herrera, Los Santos, Veraguas, Chiriquí, Bocas del Toro y Darién, además de áreas industriales, puertos y proyectos mineros."
+    }
+   ]
+  },
+  {
+   "name": "Montaje, Alineación y Puesta en Marcha de Maquinaria",
+   "serviceType": "Montaje y puesta en marcha de maquinaria industrial",
+   "url": "https://dicprom.com/servicios/montaje-maquinaria-automatizacion/",
+   "summary": "Montaje, desmontaje, alineación láser, calibración y automatización de líneas de producción.",
+   "category": "Diseño industrial, ingeniería y mantenimiento",
+   "faq": [
+    {
+     "q": "¿Pueden trasladar una planta completa dentro de Panamá?",
+     "a": "Sí. Planificamos el desmontaje, identificación de piezas, transporte, montaje, alineación y puesta en marcha de líneas completas, minimizando el tiempo fuera de producción."
+    },
+    {
+     "q": "¿Qué incluye la puesta en marcha de una máquina?",
+     "a": "Verificación mecánica y eléctrica, pruebas en vacío y con carga, ajuste de parámetros de control, protocolo de entrega firmado y capacitación del personal operativo y de mantenimiento."
+    },
+    {
+     "q": "¿Trabajan con PLC de distintas marcas?",
+     "a": "Sí, integramos controladores y HMI de las principales marcas industriales del mercado y documentamos la programación para su equipo de mantenimiento."
+    }
+   ]
+  },
+  {
+   "name": "Ingeniería de Proyectos Industriales, Petroleros y Mineros",
+   "serviceType": "Ingeniería de proyectos industriales",
+   "url": "https://dicprom.com/servicios/ingenieria-proyectos-industriales-petroleros-mineria/",
+   "summary": "Ingeniería conceptual, básica y de detalle para industria, hidrocarburos y minería.",
+   "category": "Diseño industrial, ingeniería y mantenimiento",
+   "faq": [
+    {
+     "q": "¿Qué entregables incluye la ingeniería de detalle?",
+     "a": "Planos de construcción por disciplina, P&ID, isométricos, listas de materiales (MTO), memorias de cálculo, especificaciones técnicas y paquetes de licitación."
+    },
+    {
+     "q": "¿DISPRON GROUP trabaja en proyectos mineros en Panamá?",
+     "a": "Sí. Ofrecemos ingeniería, metalmecánica, electricidad de potencia, montaje y mantenimiento para operaciones y proyectos mineros, cumpliendo los programas de seguridad del cliente."
+    },
+    {
+     "q": "¿Pueden ejecutar además la construcción del proyecto?",
+     "a": "Sí. Podemos entregar el proyecto bajo modalidad EPC o llave en mano: ingeniería, procura, construcción y puesta en marcha con un único responsable."
+    }
+   ]
+  },
+  {
+   "name": "Construcción y Obra Civil",
+   "serviceType": "Construcción y obra civil",
+   "url": "https://dicprom.com/servicios/construccion-obra-civil/",
+   "summary": "Edificaciones residenciales, comerciales, industriales, movimientos de tierra, asfalto e infraestructura.",
+   "category": "Construcción, obra civil y remodelación",
+   "faq": [
+    {
+     "q": "¿DISPRON GROUP construye en todo Panamá?",
+     "a": "Sí. Ejecutamos obras en la Ciudad de Panamá, Panamá Oeste, Colón, Coclé, Azuero, Veraguas, Chiriquí, Bocas del Toro y Darién."
+    },
+    {
+     "q": "¿Construyen galeras y bodegas industriales?",
+     "a": "Sí. Diseñamos y construimos galeras, bodegas y centros de distribución con estructura metálica, losa industrial, cubierta, sistemas eléctricos, contra incendios y patios de maniobra."
+    },
+    {
+     "q": "¿Se encargan de los permisos de construcción?",
+     "a": "Sí. Preparamos los planos sellados por profesionales idóneos y gestionamos los permisos ante el municipio, Bomberos, MIVIOT y demás entidades correspondientes."
+    }
+   ]
+  },
+  {
+   "name": "Remodelación y Fit-Out Corporativo",
+   "serviceType": "Remodelación y adecuación de espacios comerciales (fit-out)",
+   "url": "https://dicprom.com/servicios/remodelacion-fit-out/",
+   "summary": "Adecuación de oficinas, bancos, locales e instituciones: albañilería, acabados, yeso y cielos rasos.",
+   "category": "Construcción, obra civil y remodelación",
+   "faq": [
+    {
+     "q": "¿Qué es un fit-out de oficinas?",
+     "a": "Es el proceso de adecuar un espacio comercial vacío (obra gris) o existente para que quede listo para operar: divisiones, cielos, pisos, electricidad, datos, aire acondicionado, iluminación, contra incendios y acabados."
+    },
+    {
+     "q": "¿Pueden remodelar sin detener la operación de mi oficina o banco?",
+     "a": "Sí. Planificamos por fases y trabajamos en horarios nocturnos o fines de semana, con control de polvo, ruido y seguridad para que su operación continúe."
+    },
+    {
+     "q": "¿Cuánto tarda una remodelación de oficina?",
+     "a": "Depende del área y alcance; un fit-out típico de 200 a 500 m² suele completarse entre 4 y 10 semanas después de aprobar diseño y permisos."
+    }
+   ]
+  },
+  {
+   "name": "Pisos y Pintura Epóxica Industrial",
+   "serviceType": "Aplicación de pintura y pisos epóxicos",
+   "url": "https://dicprom.com/servicios/pisos-pintura-epoxica/",
+   "summary": "Pisos epóxicos, autonivelantes y recubrimientos industriales para plantas, bodegas y estacionamientos.",
+   "category": "Construcción, obra civil y remodelación",
+   "faq": [
+    {
+     "q": "¿Cuánto dura un piso epóxico?",
+     "a": "Un sistema epóxico bien especificado y aplicado sobre concreto preparado correctamente puede durar de 5 a 15 años, según el tráfico, los químicos y el mantenimiento."
+    },
+    {
+     "q": "¿Cuánto tiempo hay que esperar para usar el piso?",
+     "a": "Normalmente se permite tráfico peatonal en 24 horas y tráfico pesado entre 3 y 7 días, según el sistema y la temperatura."
+    },
+    {
+     "q": "¿Se puede aplicar epóxico sobre un piso existente?",
+     "a": "Sí, siempre que se evalúe la adherencia y la humedad del sustrato y se prepare mecánicamente la superficie antes de aplicar."
+    }
+   ]
+  },
+  {
+   "name": "Mantenimiento de PH, Edificios e Instalaciones",
+   "serviceType": "Mantenimiento de edificios y propiedad horizontal",
+   "url": "https://dicprom.com/servicios/mantenimiento-ph-edificios/",
+   "summary": "Mantenimiento integral de propiedades horizontales, oficinas, bancos e instituciones.",
+   "category": "Construcción, obra civil y remodelación",
+   "faq": [
+    {
+     "q": "¿Qué incluye un contrato de mantenimiento de PH?",
+     "a": "Inspecciones programadas, mantenimiento preventivo de bombas, generadores, A/C, elevadores (coordinación), contra incendios y áreas comunes, atención de emergencias e informes para la junta directiva."
+    },
+    {
+     "q": "¿Pintan fachadas de edificios altos?",
+     "a": "Sí. Contamos con personal capacitado en trabajos en altura, andamios, sillas y plataformas colgantes, con equipos de protección contra caídas."
+    },
+    {
+     "q": "¿Atienden emergencias fuera de horario?",
+     "a": "Sí, ofrecemos atención de emergencias 24/7 para clientes con contrato de mantenimiento."
+    }
+   ]
+  },
+  {
+   "name": "Arquitectura, Planos, Render 3D y Diseño de Interiores",
+   "serviceType": "Diseño arquitectónico, render 3D y diseño de interiores",
+   "url": "https://dicprom.com/servicios/arquitectura-planos-render-3d/",
+   "summary": "Diseño arquitectónico, planos de construcción, renders 3D fotorrealistas e interiorismo.",
+   "category": "Construcción, obra civil y remodelación",
+   "faq": [
+    {
+     "q": "¿Cuánto tarda un render 3D?",
+     "a": "Un render de una escena interior o exterior suele entregarse entre 3 y 7 días hábiles, con rondas de ajustes incluidas; los recorridos animados requieren más tiempo."
+    },
+    {
+     "q": "¿Los planos sirven para tramitar el permiso de construcción?",
+     "a": "Sí. Entregamos juegos de planos completos, firmados y sellados por profesionales idóneos, listos para presentar ante el municipio y las entidades revisoras."
+    },
+    {
+     "q": "¿Ofrecen diseño de interiores y también la ejecución?",
+     "a": "Sí. Podemos diseñar el interior y ejecutarlo llave en mano, garantizando que el resultado construido sea fiel al render aprobado."
+    }
+   ]
+  },
+  {
+   "name": "Stands Corporativos para Ferias y Centros de Convenciones",
+   "serviceType": "Diseño y montaje de stands corporativos",
+   "url": "https://dicprom.com/servicios/stands-corporativos/",
+   "summary": "Diseño, fabricación y montaje de stands para ferias y eventos en Panamá.",
+   "category": "Construcción, obra civil y remodelación",
+   "faq": [
+    {
+     "q": "¿Con cuánta anticipación debo solicitar mi stand?",
+     "a": "Recomendamos iniciar entre 4 y 8 semanas antes del evento para diseño, aprobaciones del organizador y fabricación; para stands grandes o de doble altura, con más anticipación."
+    },
+    {
+     "q": "¿Montan stands en el Panama Convention Center y Atlapa?",
+     "a": "Sí, montamos stands en los principales centros de convenciones y recintos de Panamá, cumpliendo los reglamentos técnicos de cada organizador."
+    },
+    {
+     "q": "¿Puedo reutilizar el stand en varias ferias?",
+     "a": "Sí. Diseñamos stands modulares que se almacenan y adaptan a diferentes tamaños de espacio para reducir el costo por evento."
+    }
+   ]
+  },
+  {
+   "name": "Gerencia de Proyectos EPC y Llave en Mano",
+   "serviceType": "Gerencia de proyectos EPC y llave en mano",
+   "url": "https://dicprom.com/servicios/gerencia-proyectos-epc-llave-en-mano/",
+   "summary": "EPC/Turnkey, administración de obras, inspección técnica y consultoría de construcción.",
+   "category": "Construcción, obra civil y remodelación",
+   "faq": [
+    {
+     "q": "¿Qué significa un proyecto llave en mano?",
+     "a": "Que el contratista asume el diseño, la compra de materiales y equipos, la construcción y la puesta en marcha, y entrega al cliente el proyecto terminado y operativo por un precio y plazo acordados."
+    },
+    {
+     "q": "¿Cuál es la diferencia entre EPC y administración de obra?",
+     "a": "En EPC el contratista asume el riesgo integral de diseño, procura y construcción; en administración de obra el contratista gestiona la ejecución por cuenta del propietario, que asume los costos directos."
+    },
+    {
+     "q": "¿Ofrecen inspección técnica independiente?",
+     "a": "Sí. Actuamos como inspectores o supervisores del propietario para verificar calidad, avances, cumplimiento de planos y especificaciones."
+    }
+   ]
+  },
+  {
+   "name": "Ingeniería Eléctrica, de Potencia y Automatización",
+   "serviceType": "Ingeniería eléctrica y de potencia",
+   "url": "https://dicprom.com/servicios/ingenieria-electrica/",
+   "summary": "Baja, media y alta tensión, subestaciones, generadores, puesta a tierra y tableros.",
+   "category": "Instalaciones electromecánicas",
+   "faq": [
+    {
+     "q": "¿Instalan y dan mantenimiento a subestaciones eléctricas?",
+     "a": "Sí. Instalamos, probamos y mantenemos subestaciones y transformadores, incluyendo termografía, pruebas de aislamiento, análisis de aceite y ajuste de protecciones."
+    },
+    {
+     "q": "¿Qué beneficios tiene un banco de capacitores?",
+     "a": "Corrige el factor de potencia, reduce penalizaciones en la factura eléctrica, libera capacidad en transformadores y disminuye pérdidas en los conductores."
+    },
+    {
+     "q": "¿Tramitan los planos eléctricos para permisos?",
+     "a": "Sí. Nuestros planos eléctricos son firmados por ingenieros electricistas idóneos y cumplen los requisitos de las entidades revisoras y de la empresa distribuidora."
+    }
+   ]
+  },
+  {
+   "name": "Aire Acondicionado, Ventilación y Refrigeración (HVAC)",
+   "serviceType": "Sistemas HVAC y refrigeración",
+   "url": "https://dicprom.com/servicios/hvac-aire-acondicionado/",
+   "summary": "Chillers, VRF, ductería, manejadoras, splits, calderas, cuartos fríos y refrigeración industrial.",
+   "category": "Instalaciones electromecánicas",
+   "faq": [
+    {
+     "q": "¿Cada cuánto se debe dar mantenimiento al aire acondicionado en Panamá?",
+     "a": "Por la alta humedad y temperatura, recomendamos mantenimiento preventivo de splits cada 3 a 6 meses y de sistemas centrales según plan mensual o trimestral."
+    },
+    {
+     "q": "¿Qué es un sistema VRF?",
+     "a": "Es un sistema de aire acondicionado que ajusta el flujo de refrigerante a la demanda de cada zona, permitiendo controlar múltiples espacios con alta eficiencia energética."
+    },
+    {
+     "q": "¿Construyen cuartos fríos?",
+     "a": "Sí. Diseñamos e instalamos cuartos fríos de refrigeración y congelación con paneles aislados, equipos de refrigeración, control y monitoreo de temperatura."
+    }
+   ]
+  },
+  {
+   "name": "Metalmecánica, Estructuras Metálicas y Soldadura",
+   "serviceType": "Metalmecánica y soldadura industrial",
+   "url": "https://dicprom.com/servicios/metalmecanica-soldadura/",
+   "summary": "Estructuras pesadas y livianas, soldadura SMAW/MIG/TIG, tanques, piping, silos y tolvas.",
+   "category": "Instalaciones electromecánicas",
+   "faq": [
+    {
+     "q": "¿Qué tipos de soldadura realizan?",
+     "a": "Realizamos soldadura SMAW (electrodo revestido), GMAW/MIG, FCAW y GTAW/TIG en acero al carbono, acero inoxidable y aluminio, en taller y en campo."
+    },
+    {
+     "q": "¿Fabrican y montan galeras metálicas?",
+     "a": "Sí. Diseñamos, fabricamos y montamos galeras y naves industriales con estructura metálica, cubierta, cerramientos y canales pluviales."
+    },
+    {
+     "q": "¿Sus soldadores están calificados?",
+     "a": "Trabajamos con procedimientos de soldadura (WPS) y soldadores calificados según AWS D1.1 o ASME Sección IX, según lo requiera cada proyecto."
+    }
+   ]
+  },
+  {
+   "name": "Fontanería, Hidráulica y Sistemas Contra Incendios",
+   "serviceType": "Fontanería, hidráulica y protección contra incendios",
+   "url": "https://dicprom.com/servicios/fontaneria-hidraulica-contra-incendios/",
+   "summary": "Agua potable, bombeo, aguas residuales, rociadores, bombas contra incendio, gas y plantas de tratamiento.",
+   "category": "Instalaciones electromecánicas",
+   "faq": [
+    {
+     "q": "¿Instalan sistemas contra incendios aprobados por Bomberos?",
+     "a": "Sí. Diseñamos e instalamos sistemas contra incendios conforme a las normas NFPA y al reglamento de la Oficina de Seguridad del Benemérito Cuerpo de Bomberos de la República de Panamá, y acompañamos el proceso de revisión."
+    },
+    {
+     "q": "¿Cada cuánto se inspecciona una bomba contra incendio?",
+     "a": "Según NFPA 25, las bombas contra incendio requieren pruebas periódicas de funcionamiento (semanales o mensuales según el tipo) y una prueba anual de desempeño con caudal."
+    },
+    {
+     "q": "¿Realizan instalaciones de gas GLP para restaurantes?",
+     "a": "Sí. Diseñamos e instalamos redes de gas GLP y natural para restaurantes, industrias y edificios, con pruebas de hermeticidad y documentación para su aprobación."
+    }
+   ]
+  },
+  {
+   "name": "Suministro de Materiales, Herramientas, Repuestos y Equipos",
+   "serviceType": "Suministro y comercialización de materiales y equipos",
+   "url": "https://dicprom.com/servicios/suministro-equipos-materiales/",
+   "summary": "Importación, distribución, venta y alquiler de materiales y equipos industriales y de construcción.",
+   "category": "Suministro y comercialización",
+   "faq": [
+    {
+     "q": "¿Venden al por mayor y al detal?",
+     "a": "Sí. Atendemos tanto a contratistas y empresas que compran al por mayor como a clientes que necesitan cantidades menores."
+    },
+    {
+     "q": "¿Pueden importar equipos o repuestos específicos?",
+     "a": "Sí. Gestionamos la importación de equipos, repuestos y materiales especializados bajo pedido, incluyendo logística y entrega en todo Panamá."
+    },
+    {
+     "q": "¿Alquilan equipos para proyectos?",
+     "a": "Sí. Ofrecemos arrendamiento de equipos y herramientas para proyectos de construcción, montaje y mantenimiento."
+    }
+   ]
+  }
+ ],
+ "sectors": [
+  {
+   "id": "bancario",
+   "name": "Bancos y sucursales",
+   "url": "https://dicprom.com/sectores/bancario/",
+   "needs": [
+    "Trabajos nocturnos y en fines de semana con cierre de área seguro",
+    "Cumplimiento de normas de seguridad física y cableado crítico",
+    "Protección contra incendios en cuartos de servidores",
+    "Mantenimiento preventivo de A/C de precisión y UPS"
+   ],
+   "services": [
+    "https://dicprom.com/servicios/remodelacion-fit-out/",
+    "https://dicprom.com/servicios/arquitectura-planos-render-3d/",
+    "https://dicprom.com/servicios/mantenimiento-ph-edificios/",
+    "https://dicprom.com/servicios/ingenieria-electrica/",
+    "https://dicprom.com/servicios/mantenimiento-industrial/",
+    "https://dicprom.com/servicios/metalmecanica-soldadura/",
+    "https://dicprom.com/servicios/construccion-obra-civil/",
+    "https://dicprom.com/servicios/fontaneria-hidraulica-contra-incendios/",
+    "https://dicprom.com/servicios/hvac-aire-acondicionado/"
+   ]
+  },
+  {
+   "id": "hotelero",
+   "name": "Hoteles y hospitalidad",
+   "url": "https://dicprom.com/sectores/hotelero/",
+   "needs": [
+    "Renovación por pisos con cronograma de ocupación",
+    "Plomería, bombeo y agua caliente continua",
+    "Carpintería a medida para habitaciones y lobby",
+    "Refrigeración y A/C de cuartos fríos y chillers"
+   ],
+   "services": [
+    "https://dicprom.com/servicios/remodelacion-fit-out/",
+    "https://dicprom.com/servicios/arquitectura-planos-render-3d/",
+    "https://dicprom.com/servicios/fontaneria-hidraulica-contra-incendios/",
+    "https://dicprom.com/servicios/mantenimiento-ph-edificios/",
+    "https://dicprom.com/servicios/hvac-aire-acondicionado/"
+   ]
+  },
+  {
+   "id": "ph",
+   "name": "Propiedad horizontal (PH)",
+   "url": "https://dicprom.com/sectores/ph/",
+   "needs": [
+    "Restauración de fachadas e impermeabilización de losas",
+    "Sistemas de bombeo, tanques y redes contra incendios",
+    "Tableros eléctricos, plantas y áreas comunes",
+    "Pisos epóxicos en estacionamientos"
+   ],
+   "services": [
+    "https://dicprom.com/servicios/mantenimiento-ph-edificios/",
+    "https://dicprom.com/servicios/remodelacion-fit-out/",
+    "https://dicprom.com/servicios/fontaneria-hidraulica-contra-incendios/",
+    "https://dicprom.com/servicios/ingenieria-electrica/",
+    "https://dicprom.com/servicios/pisos-pintura-epoxica/"
+   ]
+  },
+  {
+   "id": "eventos",
+   "name": "Eventos corporativos y stands",
+   "url": "https://dicprom.com/sectores/eventos/",
+   "needs": [
+    "Diseño y arquitectura efímera para stands",
+    "Estructuras, iluminación y acometidas eléctricas temporales",
+    "Montaje y desmontaje con cronograma estricto",
+    "Acabados premium para salas VIP y eventos sociales"
+   ],
+   "services": [
+    "https://dicprom.com/servicios/stands-corporativos/",
+    "https://dicprom.com/servicios/remodelacion-fit-out/",
+    "https://dicprom.com/servicios/ingenieria-electrica/",
+    "https://dicprom.com/servicios/arquitectura-planos-render-3d/"
+   ]
+  },
+  {
+   "id": "industrial",
+   "name": "Plantas e instalaciones industriales",
+   "url": "https://dicprom.com/sectores/industrial/",
+   "needs": [
+    "Ingeniería eléctrica de media y alta tensión",
+    "Pisos epóxicos de alto tráfico y resistencia química",
+    "Sistemas contra incendios con bombas y tanques",
+    "Soldadura, estructuras metálicas y maquinaria pesada"
+   ],
+   "services": [
+    "https://dicprom.com/servicios/ingenieria-electrica/",
+    "https://dicprom.com/servicios/pisos-pintura-epoxica/",
+    "https://dicprom.com/servicios/mantenimiento-industrial/",
+    "https://dicprom.com/servicios/metalmecanica-soldadura/",
+    "https://dicprom.com/servicios/construccion-obra-civil/",
+    "https://dicprom.com/servicios/fontaneria-hidraulica-contra-incendios/",
+    "https://dicprom.com/servicios/hvac-aire-acondicionado/",
+    "https://dicprom.com/servicios/montaje-maquinaria-automatizacion/"
+   ]
+  }
+ ],
+ "articles": [
+  {
+   "title": "Remodelación de sucursales bancarias en Panamá sin detener la operación",
+   "url": "https://dicprom.com/blog/remodelacion-oficinas-bancarias-panama-sin-detener-operacion/",
+   "answer": "Una sucursal bancaria en Panamá puede remodelarse sin cerrar al público dividiendo la obra por zonas, trabajando en horario nocturno o de fin de semana, y coordinando cada corte de energía o agua con el gerente de agencia. El resultado es una renovación completa sin perder un solo día de atención."
+  },
+  {
+   "title": "¿Cuánto cuesta remodelar una sucursal bancaria en Panamá? Factores que definen el presupuesto",
+   "url": "https://dicprom.com/blog/cuanto-cuesta-remodelar-sucursal-bancaria-en-panama/",
+   "answer": "El costo de remodelar una sucursal bancaria en Panamá depende del área a intervenir, el alcance (solo acabados o también instalaciones), el horario permitido para trabajar y el nivel de acabado solicitado. No existe una tarifa única; cada presupuesto nace de una visita técnica de diagnóstico."
+  },
+  {
+   "title": "Remodelación de áreas comunes en propiedad horizontal (PH) en Panamá: por dónde empezar",
+   "url": "https://dicprom.com/blog/remodelacion-areas-comunes-propiedad-horizontal-panama/",
+   "answer": "La remodelación de áreas comunes en una propiedad horizontal de Panamá debe empezar por un diagnóstico de lo que afecta la operación diaria —lobby, ascensores, pasillos, estacionamiento— antes que por lo estético, y coordinarse con la junta directiva para minimizar molestias a los residentes."
+  },
+  {
+   "title": "Detección de fugas de agua en edificios de Panamá: señales de alerta tempranas",
+   "url": "https://dicprom.com/blog/deteccion-fugas-de-agua-en-edificios-panama-senales-de-alerta/",
+   "answer": "Una fuga de agua en un edificio de Panamá suele avisar antes de causar daño grave: manchas de humedad, aumento inexplicable en el consumo, o un sonido constante de agua corriendo cuando no hay consumo activo. Detectarla a tiempo evita reparaciones estructurales mucho más costosas."
+  },
+  {
+   "title": "Mantenimiento preventivo de cuartos de bombas en Panamá: qué revisar y con qué frecuencia",
+   "url": "https://dicprom.com/blog/mantenimiento-preventivo-cuarto-de-bombas-panama/",
+   "answer": "El mantenimiento preventivo de un cuarto de bombas en Panamá revisa presiones, sellos mecánicos, tableros de control, variadores de frecuencia y el estado de las válvulas, con una frecuencia que depende del uso del edificio, pero que nunca debería dejarse solo para cuando falla la bomba."
+  },
+  {
+   "title": "Tratamiento de agua y agua caliente continua en hoteles de Panamá",
+   "url": "https://dicprom.com/blog/tratamiento-de-agua-y-agua-caliente-continua-en-hoteles-panama/",
+   "answer": "Un hotel en Panamá depende de agua caliente continua y de un sistema de tratamiento que mantenga la calidad del agua en habitaciones, cocina y áreas húmedas. Ambos sistemas requieren revisión periódica de calentadores, tanques y equipos de filtración u ósmosis inversa para evitar interrupciones al huésped."
+  },
+  {
+   "title": "Tubería de termofusión vs. tubería tradicional en Panamá: diferencias prácticas",
+   "url": "https://dicprom.com/blog/tuberia-termofusion-vs-tuberia-tradicional-en-panama/",
+   "answer": "La tubería de termofusión (PPR) se une por calor en lugar de roscas o soldadura, lo que reduce puntos de fuga y resiste bien el agua caliente, mientras que la tubería metálica tradicional sigue siendo común en ciertas instalaciones existentes. La elección correcta depende del uso, la presión y el presupuesto del proyecto."
+  },
+  {
+   "title": "Mobiliario a medida: counters de recepción y acabados para oficinas en Panamá",
+   "url": "https://dicprom.com/blog/mobiliario-a-medida-counters-recepcion-oficinas-panama/",
+   "answer": "Un counter de recepción o mobiliario corporativo a medida en Panamá debe diseñarse a partir de planos de taller reales, no solo de un render, considerando el paso de cableado, la resistencia del material al uso diario y el acabado que representa la marca del cliente."
+  },
+  {
+   "title": "Contratos de mantenimiento integral para bancos, hoteles y PH en Panamá: qué deben incluir",
+   "url": "https://dicprom.com/blog/contrato-de-mantenimiento-integral-bancos-hoteles-ph-panama/",
+   "answer": "Un contrato de mantenimiento integral en Panamá debe definir con claridad el alcance (civil, eléctrico, hidráulico, climatización y acabados), la frecuencia de visitas, los tiempos de respuesta ante emergencias y la forma en que se documenta cada intervención, para que el cliente tenga trazabilidad real del servicio."
+  },
+  {
+   "title": "Checklist de mantenimiento preventivo anual para edificios comerciales en Panamá",
+   "url": "https://dicprom.com/blog/checklist-mantenimiento-preventivo-anual-edificios-panama/",
+   "answer": "Un plan de mantenimiento preventivo anual para un edificio en Panamá debe cubrir al menos cuatro frentes: sistemas eléctricos (tableros, plantas), hidrosanitarios (bombas, tanques), climatización y estructura/fachada, revisados con una frecuencia definida según el uso y la antigüedad del inmueble."
+  },
+  {
+   "title": "Montaje de stands en centros de convenciones de Panamá: guía para expositores",
+   "url": "https://dicprom.com/blog/montaje-de-stands-en-centros-de-convenciones-de-panama/",
+   "answer": "Montar un stand en un centro de convenciones de Panamá implica coordinar diseño, estructura, acometida eléctrica e iluminación con los horarios y normas del recinto, además de dejar tiempo suficiente para el desmontaje al cierre del evento."
+  },
+  {
+   "title": "¿Cuánto tiempo antes se debe contratar el montaje de un stand para un evento en Panamá?",
+   "url": "https://dicprom.com/blog/cuanto-tiempo-antes-contratar-montaje-de-stand-para-un-evento/",
+   "answer": "Contratar el montaje de un stand en Panamá con suficiente anticipación permite un diseño mejor pensado, fabricación sin prisas y coordinación ordenada con el centro de convenciones, en lugar de resolver todo en los últimos días antes del evento."
+  },
+  {
+   "title": "Restauración de fachadas de edificios en Panamá: guía técnica paso a paso",
+   "url": "https://dicprom.com/blog/restauracion-de-fachadas-de-edificios-en-panama-guia-tecnica/",
+   "answer": "Restaurar la fachada de un edificio en Panamá empieza por un diagnóstico de patologías —grietas, humedad, desprendimientos— antes de decidir el sistema de reparación, impermeabilización y pintura, porque pintar sobre un problema sin resolver solo lo oculta temporalmente."
+  },
+  {
+   "title": "Impermeabilización de losas y azoteas en Panamá: por qué el clima tropical lo exige",
+   "url": "https://dicprom.com/blog/impermeabilizacion-de-losas-y-azoteas-en-panama-clima-tropical/",
+   "answer": "El clima tropical de Panamá —lluvias intensas y sol fuerte casi todo el año— exige que losas y azoteas tengan un sistema de impermeabilización adecuado, porque una filtración no resuelta a tiempo termina dañando estructura, acabados interiores e instalaciones eléctricas."
+  },
+  {
+   "title": "Pintura de edificios en altura en Panamá: acceso por andamio, plataforma o cuerda",
+   "url": "https://dicprom.com/blog/pintura-de-edificios-en-altura-en-panama-acceso-por-andamio-o-cuerda/",
+   "answer": "Pintar un edificio en altura en Panamá puede hacerse con andamio, plataforma suspendida o acceso por cuerda, y la elección depende de la altura del edificio, el acceso disponible alrededor y las normas de seguridad aplicables a cada método."
+  },
+  {
+   "title": "Subestaciones eléctricas y tableros de media tensión en Panamá: qué debe saber un gerente de operaciones",
+   "url": "https://dicprom.com/blog/subestaciones-electricas-y-tableros-de-media-tension-en-panama/",
+   "answer": "Una subestación eléctrica y sus tableros de media tensión son el punto donde se transforma y distribuye la energía que alimenta un edificio o planta en Panamá; su diseño, construcción y mantenimiento deben seguir un criterio técnico claro, porque una falla ahí afecta a toda la instalación."
+  },
+  {
+   "title": "Mantenimiento preventivo de tableros eléctricos y termografía en Panamá",
+   "url": "https://dicprom.com/blog/mantenimiento-preventivo-de-tableros-electricos-y-termografia/",
+   "answer": "La termografía permite detectar puntos calientes en un tablero eléctrico antes de que se conviertan en una falla o un incendio, por lo que es una herramienta central del mantenimiento preventivo eléctrico en edificios comerciales e industriales de Panamá."
+  },
+  {
+   "title": "Plantas de emergencia y UPS: cómo garantizar continuidad eléctrica en Panamá",
+   "url": "https://dicprom.com/blog/plantas-de-emergencia-y-ups-para-continuidad-electrica-en-panama/",
+   "answer": "Una planta de emergencia y un UPS cumplen funciones distintas pero complementarias: el UPS cubre el corte de energía durante los segundos en que arranca la planta, y la planta sostiene la operación durante horas si la red eléctrica falla por más tiempo."
+  },
+  {
+   "title": "Pisos epóxicos industriales en Panamá: guía completa para almacenes y plantas",
+   "url": "https://dicprom.com/blog/pisos-epoxicos-industriales-en-panama-guia-completa/",
+   "answer": "Un piso epóxico industrial en Panamá debe elegirse según el tipo de tráfico (peatonal, montacargas o vehicular), la exposición a químicos o humedad, y el tiempo disponible para la parada de operación, porque esos factores determinan el sistema y el espesor correctos."
+  },
+  {
+   "title": "¿Piso epóxico o poliuretano? Cómo elegir el recubrimiento correcto en Panamá",
+   "url": "https://dicprom.com/blog/piso-epoxico-o-poliuretano-cual-elegir-en-panama/",
+   "answer": "La elección entre un piso epóxico y uno de poliuretano en Panamá depende del tipo de exposición: el epóxico suele ofrecer buena resistencia mecánica y química a menor costo, mientras que el poliuretano resiste mejor cambios bruscos de temperatura y es común en áreas con lavado frecuente."
+  },
+  {
+   "title": "Sistemas contra incendios con rociadores en Panamá: qué debe saber un administrador de edificio",
+   "url": "https://dicprom.com/blog/sistemas-contra-incendios-con-rociadores-en-panama-que-debe-saber/",
+   "answer": "Un sistema contra incendios con rociadores combina una red de tuberías y cabezales distribuidos en el techo, un cuarto de bombeo con tanque de reserva, y tomas de bomberos para conexión externa; cada componente debe mantenerse operativo de forma permanente, no solo al momento de instalarlo."
+  },
+  {
+   "title": "Mantenimiento de sistemas contra incendios y cuarto de bombeo en Panamá",
+   "url": "https://dicprom.com/blog/mantenimiento-de-sistemas-contra-incendios-y-cuarto-de-bombeo/",
+   "answer": "El mantenimiento de un cuarto de bombeo contra incendios revisa el estado de las bombas, la presión del sistema, el nivel del tanque de reserva y el arranque automático ante una caída de presión, componentes que deben funcionar de forma coordinada en el momento exacto de una emergencia."
+  },
+  {
+   "title": "Soldadura de estructuras metálicas industriales en Panamá: procesos y aplicaciones",
+   "url": "https://dicprom.com/blog/soldadura-de-estructuras-metalicas-industriales-en-panama/",
+   "answer": "La soldadura de estructuras metálicas industriales en Panamá se aplica a vigas, columnas, tuberías de proceso y tanques, y requiere preparación de superficie, control del proceso de soldadura y, en piezas críticas, revisión posterior para confirmar la calidad de la unión."
+  },
+  {
+   "title": "Obra civil industrial y galeras en Panamá: qué incluye un proyecto típico",
+   "url": "https://dicprom.com/blog/obra-civil-industrial-y-galeras-en-panama-que-incluye/",
+   "answer": "Un proyecto de obra civil industrial en Panamá —como una galera o nave de almacenamiento— incluye movimiento de tierra, cimentación, encofrado, estructura, plataformas de piso y drenajes, además de las pruebas de calidad que confirman que cada etapa cumple lo proyectado antes de avanzar a la siguiente."
+  },
+  {
+   "title": "Cómo elegir un contratista integral para su banco, hotel o PH en Panamá",
+   "url": "https://dicprom.com/blog/como-elegir-un-contratista-integral-para-banco-hotel-o-ph-en-panama/",
+   "answer": "Elegir un contratista integral para un banco, hotel o PH en Panamá implica evaluar si realmente puede cubrir las disciplinas que su edificio necesita —civil, eléctrica, hidráulica, climatización— bajo un solo responsable, en lugar de subcontratar cada una sin trazabilidad ni garantía conjunta."
+  }
+ ],
+ "faq": [
+  {
+   "q": "¿Qué hace DISPRON GROUP?",
+   "a": "DISPRON GROUP es una empresa panameña de ingeniería, construcción y mantenimiento industrial. Ofrece diseño industrial e ingeniería de producto, mantenimiento predictivo y preventivo, montaje de maquinaria, obra civil, remodelaciones y fit-out, ingeniería eléctrica, HVAC, metalmecánica y soldadura, fontanería y sistemas contra incendios, además del suministro de materiales y equipos."
+  },
+  {
+   "q": "¿En qué parte de Panamá trabaja DISPRON GROUP?",
+   "a": "DISPRON GROUP tiene sede en la Ciudad de Panamá y ejecuta proyectos en todas las provincias de la República de Panamá, incluyendo Panamá Oeste, Colón, Coclé, Herrera, Los Santos, Veraguas, Chiriquí, Bocas del Toro, Darién y comarcas."
+  },
+  {
+   "q": "¿DISPRON GROUP realiza proyectos llave en mano?",
+   "a": "Sí. DISPRON GROUP ejecuta proyectos bajo modalidad llave en mano (EPC / Turnkey), asumiendo ingeniería, procura, construcción y puesta en marcha con un único contrato y responsable."
+  },
+  {
+   "q": "¿Cómo solicito una cotización a DISPRON GROUP?",
+   "a": "Puede solicitar una cotización gratuita desde el formulario de contacto de dicprom.com, por WhatsApp o por correo electrónico a info@dicprom.com. Un ingeniero revisa su solicitud y agenda una visita técnica si es necesario."
+  },
+  {
+   "q": "¿DISPRON GROUP atiende emergencias de mantenimiento?",
+   "a": "Sí. DISPRON GROUP ofrece atención de emergencias 24/7 para fallas eléctricas, mecánicas, hidráulicas y de aire acondicionado a clientes con contrato de mantenimiento."
+  },
+  {
+   "q": "¿Qué tipo de clientes atiende DISPRON GROUP?",
+   "a": "Plantas industriales, empresas logísticas y portuarias, minería, sector petrolero, bancos, oficinas corporativas, instituciones públicas y privadas, propiedades horizontales (PH), comercios y clientes residenciales."
+  },
+  {
+   "q": "¿Los trabajos de DISPRON GROUP cumplen las normas de Panamá?",
+   "a": "Sí. DISPRON GROUP trabaja con profesionales idóneos y conforme al Reglamento Estructural Panameño (REP), la normativa de la JTIA, el reglamento del Benemérito Cuerpo de Bomberos y estándares internacionales como NFPA, ASHRAE, AWS, ASME, API e ISO."
+  },
+  {
+   "q": "¿DISPRON GROUP vende materiales y equipos?",
+   "a": "Sí. DISPRON GROUP importa, distribuye, vende y arrienda al por mayor y al detal materiales de construcción, material eléctrico, equipos HVAC, tuberías, herramientas, repuestos y equipos industriales."
+  }
+ ],
+ "process": [
+  {
+   "step": "Diagnóstico",
+   "detail": "Visita técnica en sitio, levantamiento y definición de alcance."
+  },
+  {
+   "step": "Ingeniería",
+   "detail": "Planos, especificaciones, cronograma y plan de seguridad."
+  },
+  {
+   "step": "Propuesta",
+   "detail": "Cotización clara por alcance con opciones y garantías."
+  },
+  {
+   "step": "Ejecución",
+   "detail": "Obra supervisada, reportes y control de calidad."
+  },
+  {
+   "step": "Mantenimiento",
+   "detail": "Contrato preventivo y soporte correctivo posterior."
+  }
+ ],
+ "links": {
+  "llms": "https://dicprom.com/llms.txt",
+  "llmsFull": "https://dicprom.com/llms-full.txt",
+  "sitemap": "https://dicprom.com/sitemap.xml",
+  "quote": "https://dicprom.com/cotizar/"
+ }
+}
