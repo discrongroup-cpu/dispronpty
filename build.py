@@ -213,6 +213,12 @@ def svc_photos(s):
     return [(photo_url(s["slug"], i + 1), cap) for i, (_src, cap) in enumerate(s["photos"])]
 
 
+def svc_gallery(s, limit=12):
+    cats = [k for k, _n, sv in GALLERY_CATS if sv == s["slug"]]
+    extra = [(gallery_url(src), cap) for src, cap, k in GALLERY if k in cats and src.startswith("cliente/")]
+    return uniq(svc_photos(s) + extra)[:limit]
+
+
 def svc_cover(s):
     return svc_photos(s)[0][0]
 
@@ -451,7 +457,7 @@ def build_home():
     values = "".join(f'<div class="value reveal">{icon("shield")}<h3>{e(t)}</h3><p>{e(d)}</p></div>' for t, d in VALUES)
     inds = "".join(f"<li>{icon('check')}{e(i)}</li>" for i in INDUSTRIES)
     provs = "".join(f"<li>{e(p)}</li>" for p, _ in PROVINCES)
-    strip_photos = [p for s in SERVICES for p in svc_photos(s)[1:2]]
+    strip_photos = [p for s in SERVICES for p in svc_gallery(s)[1:3]]
     strip = "".join(f'<figure>{picture(u, c, sizes="320px")}</figure>' for u, c in strip_photos)
     body = f'''<section class="hero">
   <div class="hero-slides" aria-hidden="true">{slides}</div>
@@ -587,7 +593,7 @@ def build_service(s):
 </div></section>
 <section class="section alt"><div class="container">
   <div class="sec-head row reveal"><div><p class="eyebrow dk">Proyectos</p><h2>{e(s["name"])}: trabajo en campo</h2></div><a class="link" href="/proyectos/">Ver todos los proyectos {icon("arrow")}</a></div>
-  {gallery_html(photos, s["name"] + " en Panamá – DISPRON GROUP")}
+  {gallery_html(svc_gallery(s), s["name"] + " en Panamá – DISPRON GROUP")}
 </div></section>
 {related_posts_html([p for p in POSTS if s["slug"] in post_services(p)], "Guías y artículos sobre " + s["serviceType"].lower())}
 {process_html()}
@@ -1041,7 +1047,7 @@ def build_sector(sec):
     svcs = [SVC[x] for x in sector_services(sec)]
     needs = "".join(f'<li class="reveal"><span class="need-n">{i + 1:02d}</span>{e(n)}</li>' for i, n in enumerate(sec["needs"]))
     cards = "".join(service_card(s) for s in svcs)
-    photos = uniq([ph for s in svcs for ph in svc_photos(s)[:2]])[:6]
+    photos = uniq([(gallery_url(a), c) for a, c in cat_photos(SECTOR_META[sid][1])[:3]] + [ph for s in svcs for ph in svc_gallery(s)[:2]])[:9]
     posts = [p for p in POSTS if p["sector"] == sid]
     faqs = SECTOR_FAQ[sid]
     src, cap = sector_cover(sec)

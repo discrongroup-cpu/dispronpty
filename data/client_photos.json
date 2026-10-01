@@ -1,0 +1,762 @@
+[
+ [
+  "cliente/epoxi-aplicacion-de-resina.webp",
+  "Aplicación de resina",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-aplicacion-de-resina-2.webp",
+  "Aplicación de resina",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-aplicacion-de-resina-3.webp",
+  "Aplicación de resina",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-aplicacion-de-resina-4.webp",
+  "Aplicación de resina",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-aplicacion-de-resina-5.webp",
+  "Aplicación de resina",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-aplicacion-de-resina-6.webp",
+  "Aplicación de resina",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-estacionaineto-epoxi.webp",
+  "Estacionamiento epoxi",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-estacionamiento-epoxi.webp",
+  "Estacionamiento epoxi",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-maquinaria-sobre-suelo-epoxi.webp",
+  "Maquinaria sobre suelo epoxi",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-maquinaria-sobre-suleo-epoxi.webp",
+  "Maquinaria sobre suelo epoxi",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-preaparacion-de-suelo.webp",
+  "Preparación de suelo",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-preparacion-de-suelos.webp",
+  "Preparación de suelos",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-preparacion-de-superifice.webp",
+  "Preparación de superficie",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-reparacion-de-piso.webp",
+  "Reparación de piso",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-reparacion-de-piso-para-la-aplicacion-de-resina-.webp",
+  "Reparación de piso para la aplicación de resina epoxi",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-reparacion-de-pisot.webp",
+  "Reparación de piso",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-reparacion-de-suelo.webp",
+  "Reparación de suelo",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-reparacion-de-superficies.webp",
+  "Reparación de superficies",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-suelo-epoxico-con-cuarzo.webp",
+  "Suelo epóxico con cuarzo",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-suelo-terminado-para-estacionamiento.webp",
+  "Suelo terminado para estacionamiento",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-superficie-epoxi-en-preparacion.webp",
+  "Superficie epoxi en preparación",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-superficie-epoxi-en-preparacion-2.webp",
+  "Superficie epoxi en preparación",
+  "epoxi"
+ ],
+ [
+  "cliente/epoxi-superficie-epoxi-en-preparacion-3.webp",
+  "Superficie epoxi en preparación",
+  "epoxi"
+ ],
+ [
+  "cliente/eventos-banco-general-de-panama-evento.webp",
+  "Montaje de evento corporativo",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-cable-and-wireless-panama-stand.webp",
+  "Stand corporativo en centro de convenciones",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-evento-grupo-mall.webp",
+  "Evento corporativo en centro comercial",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-fcc-construcciones-stand.webp",
+  "Stand corporativo para empresa constructora",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-montaje-de-stand.webp",
+  "Montaje de stand",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-conferencia-discron.webp",
+  "Conferencia DISPRON",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-conferencia-grane.webp",
+  "Conferencia grande",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-conferencia.webp",
+  "Conferencia",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-decoracion-de-evento.webp",
+  "Decoración de evento",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-digicell-panama.webp",
+  "Stand corporativo de telecomunicaciones",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-evento-casi-listo.webp",
+  "Evento casi listo",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-evento-cerveceria-nacional.webp",
+  "Evento corporativo de marca",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-evento-coctel.webp",
+  "Evento cóctel",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-evento-coctel-2.webp",
+  "Evento cóctel",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-evento-coctel-3.webp",
+  "Evento cóctel",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-evento-copasa.webp",
+  "Evento corporativo con escenario",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-evento-establecido.webp",
+  "Evento establecido",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-evento-exterior.webp",
+  "Evento exterior",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-evento-fcc-construccion.webp",
+  "Evento corporativo para empresa constructora",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-evento-fcc-construction.webp",
+  "Evento corporativo para empresa constructora",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-evento-listo.webp",
+  "Evento listo",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-mesas-ejecutivas-evento.webp",
+  "Mesas ejecutivas evento",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-montaje-de-stand-2.webp",
+  "Montaje de stand",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-organizacion-de-mesas.webp",
+  "Organización de mesas",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-organizaion-de-mesas-evento.webp",
+  "Organización de mesas evento",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-preparacion-de-escenario-de-evento.webp",
+  "Preparación de escenario de evento",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-preparacion-de-evento.webp",
+  "Preparación de evento",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-preparacion-de-eventos.webp",
+  "Preparación de eventos",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-preparacion-de-plataforma.webp",
+  "Preparación de plataforma",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-preparacion-de-plataformas-para-eventos.webp",
+  "Preparación de plataformas para eventos",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-preparacion-de-stand.webp",
+  "Preparación de stand",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-preparacion-de-stand-2.webp",
+  "Preparación de stand",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-preparacion-de-stands.webp",
+  "Preparación de stands",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-recepcion-de-evento.webp",
+  "Recepción de evento",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-recepcion-y-registro-de-evneto.webp",
+  "Recepción y registro de evento",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-sala-de-conferencia-vip.webp",
+  "Sala de conferencia vip",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-stand-corporativo-discron.webp",
+  "Stand corporativo DISPRON",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-stand-corporativo-en-preparacion.webp",
+  "Stand corporativo en preparación",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-stand-preperado.webp",
+  "Stand preparado",
+  "eventos"
+ ],
+ [
+  "cliente/eventos-zona-informativa-de-evento.webp",
+  "Zona informativa de evento",
+  "eventos"
+ ],
+ [
+  "cliente/maquinaria-maquinaria-con-materiales.webp",
+  "Maquinaria con materiales",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-transporte-de-escombros-y-materiales.webp",
+  "Transporte de escombros y materiales",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-transporte-de-maquinaria.webp",
+  "Transporte de maquinaria",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-aplanamiento-de-cemento.webp",
+  "Aplanamiento de cemento",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-construccion-de-puente-on-grua.webp",
+  "Construcción de puente con grúa",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-excavadora.webp",
+  "Excavadora",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-excavadora-2.webp",
+  "Excavadora",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-excavadora-3.webp",
+  "Excavadora",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-excavadoras.webp",
+  "Excavadoras",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-excavando-terreno.webp",
+  "Excavando terreno",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-flota-de-maquinaria.webp",
+  "Flota de maquinaria",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-gancho-de-maquinaria.webp",
+  "Gancho de maquinaria",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-gran-obra-y-maquinaria.webp",
+  "Gran obra y maquinaria",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-grua-ascendente.webp",
+  "Grúa ascendente",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-grua-en-obra.webp",
+  "Grúa en obra",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-grua-publicidad.webp",
+  "Grúa en obra",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-grua-subiendo-materiales.webp",
+  "Grúa subiendo materiales",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-grua-subiendo-transformador.webp",
+  "Grúa subiendo transformador",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-gruas-de-tipo-puerto.webp",
+  "Grúas de tipo puerto",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-montacargas.webp",
+  "Montacargas",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-montacargas-2.webp",
+  "Montacargas",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-obra-de-puente.webp",
+  "Obra de puente",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-obra-nocturna-con-luces-y-generadores.webp",
+  "Obra nocturna con luces y generadores",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-plataforma-elevadora.webp",
+  "Plataforma elevadora",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-transporte-de-maquinaria-2.webp",
+  "Transporte de maquinaria",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-transporte-de-transformador.webp",
+  "Transporte de transformador",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-transporte-maquinarias.webp",
+  "Transporte maquinarias",
+  "maquinaria"
+ ],
+ [
+  "cliente/maquinaria-transporte-maquinarias-2.webp",
+  "Transporte maquinarias",
+  "maquinaria"
+ ],
+ [
+  "cliente/hvac-boma-de-agua-grande.webp",
+  "Bomba de agua grande",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-bomba-de-agua.webp",
+  "Bomba de agua",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-bombas-de-agua-industriales.webp",
+  "Bombas de agua industriales",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-cuarto-refrigerador.webp",
+  "Cuarto refrigerador",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-ejemplo-de-filtro-viejo.webp",
+  "Filtro saturado antes del reemplazo",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-inspeccion-de-cuarto-de-bombeo.webp",
+  "Inspección de cuarto de bombeo",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-instalacion-aire-acondicionado.webp",
+  "Instalación aire acondicionado",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-instalacion-de-cuarto-frio.webp",
+  "Instalación de cuarto frio",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-instalacion-de-filtros-de-cocina.webp",
+  "Instalación de filtros de cocina",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-instalacion-de-ventilacion-de-cocina.webp",
+  "Instalación de ventilación de cocina",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-instalacion-de-ventilacion-de-cocina-2.webp",
+  "Instalación de ventilación de cocina",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-instalacion-de-ventilacion-de-cocina-3.webp",
+  "Instalación de ventilación de cocina",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-instalacion-de-ventilacion-de-coina.webp",
+  "Instalación de ventilación de cocina",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-mantenimiento-de-ventilacion.webp",
+  "Mantenimiento de ventilación",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-prueba-de-bombas-de-presion.webp",
+  "Prueba de bombas de presión",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-reemplazo-de-filtros.webp",
+  "Reemplazo de filtros",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-reemplazo-de-filtros-2.webp",
+  "Reemplazo de filtros",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-sala-de-bombeo.webp",
+  "Sala de bombeo",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-sistema-de-ventilacion.webp",
+  "Sistema de ventilación",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-tuberia-de-aire.webp",
+  "Tubería de aire",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-ventilacion-de-techo.webp",
+  "Ventilación de techo",
+  "hvac"
+ ],
+ [
+  "cliente/hvac-ventilacion-industrial.webp",
+  "Ventilación industrial",
+  "hvac"
+ ],
+ [
+  "cliente/fachadas-pintura-de-interiores.webp",
+  "Pintura de interiores",
+  "fachadas"
+ ],
+ [
+  "cliente/fachadas-cubierta-hidrofobica-para-techo.webp",
+  "Cubierta hidrofóbica para techo",
+  "fachadas"
+ ],
+ [
+  "cliente/fachadas-liimpieza-de-exteriores.webp",
+  "Limpieza de exteriores",
+  "fachadas"
+ ],
+ [
+  "cliente/fachadas-limpieza-de-exteriores.webp",
+  "Limpieza de exteriores",
+  "fachadas"
+ ],
+ [
+  "cliente/fachadas-pintura-de-edificio-nuevo.webp",
+  "Pintura de edificio nuevo",
+  "fachadas"
+ ],
+ [
+  "cliente/fachadas-pintura-de-interiores-2.webp",
+  "Pintura de interiores",
+  "fachadas"
+ ],
+ [
+  "cliente/fachadas-proceso-de-remodelacion-de-estacionamiento.webp",
+  "Proceso de remodelación de estacionamiento",
+  "fachadas"
+ ],
+ [
+  "cliente/fachadas-remodelacion-de-parking.webp",
+  "Remodelación de parking",
+  "fachadas"
+ ],
+ [
+  "cliente/fachadas-reparacion-de-grietas-en-edifcios.webp",
+  "Reparación de grietas en edificios",
+  "fachadas"
+ ],
+ [
+  "cliente/fachadas-reparacion-de-grietas.webp",
+  "Reparación de grietas",
+  "fachadas"
+ ],
+ [
+  "cliente/fachadas-restauracion-de-danos-en-edificios.webp",
+  "Restauración de daños en edificios",
+  "fachadas"
+ ],
+ [
+  "cliente/fachadas-restauracion-de-estacionamiento.webp",
+  "Restauración de estacionamiento",
+  "fachadas"
+ ],
+ [
+  "cliente/fachadas-restauracion-de-exteriores.webp",
+  "Restauración de exteriores",
+  "fachadas"
+ ],
+ [
+  "cliente/fachadas-restauracion-de-grietas.webp",
+  "Restauración de grietas",
+  "fachadas"
+ ],
+ [
+  "cliente/fachadas-restauracion-de-pintura-edificio.webp",
+  "Restauración de pintura edificio",
+  "fachadas"
+ ],
+ [
+  "cliente/fachadas-restauracion-de-pintura-edificio-2.webp",
+  "Restauración de pintura edificio",
+  "fachadas"
+ ],
+ [
+  "cliente/fachadas-restauracion-exterior-de-superficies.webp",
+  "Restauración exterior de superficies",
+  "fachadas"
+ ],
+ [
+  "cliente/electrica-configuracion-de-panel-electrico.webp",
+  "Configuración de panel eléctrico",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-prueba-de-panel-electrico.webp",
+  "Prueba de panel eléctrico",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-aseguramiento-de-electricidad-y-sosten.webp",
+  "Aseguramiento de electricidad y sosten",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-cableado-en-torre.webp",
+  "Cableado en torre",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-conexion-electrica-panel.webp",
+  "Conexión eléctrica panel",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-conexion-panel-electrica.webp",
+  "Conexión panel eléctrica",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-generador-a-gasoil.webp",
+  "Generador a gasoil",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-generador-de-repuesto.webp",
+  "Generador de repuesto",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-grua-con-transformador.webp",
+  "Grúa con transformador",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-instalacion-de-aterramiento.webp",
+  "Instalación de puesta a tierra",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-plan-de-transformador.webp",
+  "Plan de transformador",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-preparacion-de-cable-subterraneo.webp",
+  "Preparación de cable subterraneo",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-prueba-de-aterrado-y-resistencia.webp",
+  "Prueba de puesta a tierra y resistencia",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-prueba-de-calidad-de-corriente.webp",
+  "Prueba de calidad de corriente",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-prueba-de-circuito-de-alta-tension.webp",
+  "Prueba de circuito de alta tensión",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-prueba-de-circuito-de-alta-tension-2.webp",
+  "Prueba de circuito de alta tensión",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-prueba-de-panel-electrico-2.webp",
+  "Prueba de panel eléctrico",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-prueba-de-transformadores.webp",
+  "Prueba de transformadores",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-revision-armario-electrico.webp",
+  "Revisión armario eléctrico",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-revision-de-pnael.webp",
+  "Revisión de panel",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-terminal-de-cable-subterraneo.webp",
+  "Terminal de cable subterraneo",
+  "electrica"
+ ],
+ [
+  "cliente/electrica-transporte.webp",
+  "Transporte",
+  "electrica"
+ ]
+]

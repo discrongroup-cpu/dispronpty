@@ -7,7 +7,7 @@ Plataforma web de DISPRON GROUP (ingeniería, construcción y mantenimiento indu
 - `data/site.json` – datos de la empresa (NAP, dominio, verificaciones). **Completar antes de publicar.**
 - `data/content.py` – 16 servicios, FAQ, cobertura y fotos por servicio.
 - `data/platform.json` – blog (25 artículos), sectores, guías, proceso y provincias (exportado con `tools/export_platform.js`).
-- `data/gallery.py` – clasificación de las 171 fotografías reales de obra.
+- `data/gallery.py` – clasificación de las 323 fotografías reales de obra.
 - `build.py` – generador → `dist/` (58 URL indexables + páginas de aplicación, JSON-LD, sitemap de imágenes, robots, `llms.txt`, `llms-full.txt`, `knowledge.json`) y `server/site-data.json` para Alfred.
 - `server/` – servidor Node/Express: sirve `dist/` y la API (leads, autenticación, usuarios, CRM, CSV, Sofía, Alfred).
 - `static/` – CSS, JS (`main`, `quote`, `sofia`, `auth`, `crm`, `alfred`), fuentes e imágenes.

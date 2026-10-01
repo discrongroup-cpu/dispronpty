@@ -3,12 +3,19 @@
 Los pies de foto describen lo que se ve; antes de publicar, el cliente debe confirmar qué fotos
 corresponden a trabajos propios y cuáles son de referencia (ver PLAN-COMPLETO.md, sección de pendientes).
 """
+import json
+from pathlib import Path
+
 from content import HERO_PHOTOS, PHOTOS
+
+CLIENT_PHOTOS = Path(__file__).resolve().parent / "client_photos.json"
 
 GALLERY_CATS = [
     ("industrial", "Industrial y montaje", "mantenimiento-industrial"),
+    ("maquinaria", "Maquinaria y equipos", "montaje-maquinaria-automatizacion"),
     ("obra-civil", "Obra civil", "construccion-obra-civil"),
     ("electrica", "Electricidad", "ingenieria-electrica"),
+    ("hvac", "HVAC y refrigeración", "hvac-aire-acondicionado"),
     ("fire", "Contra incendios", "fontaneria-hidraulica-contra-incendios"),
     ("plomeria", "Plomería e hidráulica", "fontaneria-hidraulica-contra-incendios"),
     ("soldadura", "Metalmecánica y soldadura", "metalmecanica-soldadura"),
@@ -132,6 +139,12 @@ SVC_CAT = {
 }
 
 
+def client_photos():
+    if not CLIENT_PHOTOS.exists():
+        return []
+    return [tuple(x) for x in json.loads(CLIENT_PHOTOS.read_text(encoding="utf-8"))]
+
+
 def category(src):
     folder, name = src.split("/")
     if folder == "svc":
@@ -147,8 +160,8 @@ def all_photos():
         for src, cap in items:
             caps.setdefault(src, cap)
     order = [c for c, _, _ in GALLERY_CATS]
-    items = [(src, cap, category(src)) for src, cap in caps.items()]
-    items.sort(key=lambda x: (order.index(x[2]), x[0]))
+    items = client_photos() + [(src, cap, category(src)) for src, cap in caps.items()]
+    items.sort(key=lambda x: (order.index(x[2]), not x[0].startswith("cliente/"), x[0]))
     return items
 
 
