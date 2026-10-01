@@ -108,7 +108,7 @@ function create(ctx) {
   });
   def('openapi_spec', 'leonardo', 'Generar spec OpenAPI', 'Especificación OpenAPI 3.0 de la API real de DISPRON.', 'LOW', () => {
     const spec = { openapi: '3.0.3', info: { title: 'DISPRON GROUP API', version: '1.0.0' }, paths: { '/api/leads': { post: { summary: 'Crear lead desde el cotizador', responses: { 200: { description: 'ref' } } }, get: { summary: 'Listar leads (auth)', responses: { 200: { description: 'ok' } } } }, '/api/sofia/lead': { post: { summary: 'Lead desde Sofía' } }, '/api/leads/{id}': { patch: { summary: 'Actualizar lead (auth)' } }, '/api/alfred/chat': { post: { summary: 'Chat con Alfred (auth)' } }, '/api/alfred/tool': { post: { summary: 'Ejecutar habilidad (auth)' } }, '/knowledge.json': { get: { summary: 'Entidad estructurada' } } } };
-    const f = path.join(root, 'public', 'openapi.json'); fs.writeFileSync(f, JSON.stringify(spec, null, 2)); return { status: 'DONE', text: `Spec OpenAPI escrita en /openapi.json (${Object.keys(spec.paths).length} rutas).` };
+    const f = path.join(root, 'public', 'openapi.json'); fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, JSON.stringify(spec, null, 2)); return { status: 'DONE', text: `Spec OpenAPI escrita en /openapi.json (${Object.keys(spec.paths).length} rutas).` };
   });
 
   // ── Ada — calidad ─────────────────────────────────────────────
