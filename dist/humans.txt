@@ -1,0 +1,10 @@
+/* TEAM */
+Empresa: DICPROM, S.A.
+Sitio: https://dicprom.com
+Contacto: info@dicprom.com
+Ubicación: Ciudad de Panamá, Panamá
+
+/* SITE */
+Última actualización: 2026-10-01
+Idioma: Español (Panamá)
+Estándares: HTML5, CSS3, Schema.org JSON-LD

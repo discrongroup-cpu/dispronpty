@@ -1,0 +1,771 @@
+# DICPROM – contenido completo
+
+> DICPROM (DICPROM, S.A.) es una empresa panameña de diseño industrial, ingeniería de producto, mantenimiento industrial avanzado, construcción y obra civil, remodelación y fit-out, ingeniería eléctrica, HVAC, metalmecánica y soldadura, fontanería, hidráulica y sistemas contra incendios, y suministro de materiales y equipos. Sede en la Ciudad de Panamá; cobertura en todas las provincias de la República de Panamá.
+
+## Preguntas frecuentes generales
+
+### ¿Qué hace DICPROM?
+
+DICPROM es una empresa panameña de ingeniería, construcción y mantenimiento industrial. Ofrece diseño industrial e ingeniería de producto, mantenimiento predictivo y preventivo, montaje de maquinaria, obra civil, remodelaciones y fit-out, ingeniería eléctrica, HVAC, metalmecánica y soldadura, fontanería y sistemas contra incendios, además del suministro de materiales y equipos.
+
+### ¿En qué parte de Panamá trabaja DICPROM?
+
+DICPROM tiene sede en la Ciudad de Panamá y ejecuta proyectos en todas las provincias de la República de Panamá, incluyendo Panamá Oeste, Colón, Coclé, Herrera, Los Santos, Veraguas, Chiriquí, Bocas del Toro, Darién y comarcas.
+
+### ¿DICPROM realiza proyectos llave en mano?
+
+Sí. DICPROM ejecuta proyectos bajo modalidad llave en mano (EPC / Turnkey), asumiendo ingeniería, procura, construcción y puesta en marcha con un único contrato y responsable.
+
+### ¿Cómo solicito una cotización a DICPROM?
+
+Puede solicitar una cotización gratuita desde el formulario de contacto de dicprom.com, por WhatsApp o por correo electrónico a info@dicprom.com. Un ingeniero revisa su solicitud y agenda una visita técnica si es necesario.
+
+### ¿DICPROM atiende emergencias de mantenimiento?
+
+Sí. DICPROM ofrece atención de emergencias 24/7 para fallas eléctricas, mecánicas, hidráulicas y de aire acondicionado a clientes con contrato de mantenimiento.
+
+### ¿Qué tipo de clientes atiende DICPROM?
+
+Plantas industriales, empresas logísticas y portuarias, minería, sector petrolero, bancos, oficinas corporativas, instituciones públicas y privadas, propiedades horizontales (PH), comercios y clientes residenciales.
+
+### ¿Los trabajos de DICPROM cumplen las normas de Panamá?
+
+Sí. DICPROM trabaja con profesionales idóneos y conforme al Reglamento Estructural Panameño (REP), la normativa de la JTIA, el reglamento del Benemérito Cuerpo de Bomberos y estándares internacionales como NFPA, ASHRAE, AWS, ASME, API e ISO.
+
+### ¿DICPROM vende materiales y equipos?
+
+Sí. DICPROM importa, distribuye, vende y arrienda al por mayor y al detal materiales de construcción, material eléctrico, equipos HVAC, tuberías, herramientas, repuestos y equipos industriales.
+
+## Diseño Industrial e Ingeniería de Producto
+
+URL: https://dicprom.com/servicios/diseno-industrial-ingenieria-de-producto/
+
+Convertimos ideas, problemas de planta y productos existentes en soluciones de ingeniería medibles: más productividad, menos fallas y diseños protegibles.
+
+DICPROM ofrece en Panamá servicios de diseño industrial e ingeniería de producto para fabricantes, plantas de proceso, empresas logísticas y emprendedores. Nuestro equipo combina ingeniería mecánica, industrial y de materiales con software CAD/CAE para validar cada decisión antes de fabricar.
+
+Analizamos el ciclo completo: desde el concepto y el modelado 3D hasta la simulación estructural, el prototipo, la documentación técnica y el acompañamiento en el registro de patentes o modelos de utilidad ante la Dirección General del Registro de la Propiedad Industrial (DIGERPI).
+
+### Servicios incluidos
+
+- Optimización de procesos de fabricación: Estudios de tiempos y movimientos, balanceo de líneas, Lean Manufacturing, reducción de desperdicios y rediseño de layout de planta.
+- Ergonomía industrial: Evaluación de puestos de trabajo (RULA, REBA, NIOSH), diseño de estaciones, herramientas y dispositivos para reducir lesiones y aumentar el rendimiento.
+- Selección de materiales: Evaluación técnica y económica de aceros, aleaciones, polímeros y compuestos según carga, corrosión, temperatura y ambiente tropical-marino de Panamá.
+- Análisis de fallas estructurales y simulación: Análisis por elementos finitos (FEA), fatiga, pandeo, térmico y dinámica de fluidos (CFD) para encontrar la causa raíz y validar rediseños.
+- Diseño y desarrollo de producto: Modelado 3D paramétrico, planos de fabricación, tolerancias GD&T, prototipado y transferencia a producción.
+- Patentes y modelos de utilidad: Documentación técnica, memorias descriptivas y dibujos para proteger invenciones y mejoras funcionales en Panamá.
+
+### Sectores
+
+- Plantas de manufactura y alimentos
+- Empresas logísticas y Zona Libre de Colón
+- Industria metalmecánica
+- Startups de hardware e inventores
+- Puertos y muelles
+
+### Normas de referencia
+
+- ISO 9001 (gestión de calidad)
+- ASME Y14.5 (GD&T)
+- ISO 11228 / NIOSH (ergonomía)
+- Simulación CAE/FEA
+
+### Preguntas frecuentes
+
+**¿Qué es un análisis de fallas estructurales por simulación?**
+Es un estudio de ingeniería que reproduce en software (FEA) las cargas reales de una pieza o estructura para identificar por qué falló —fatiga, sobrecarga, corrosión o defecto de diseño— y validar una solución antes de fabricarla.
+
+**¿DICPROM ayuda a registrar patentes en Panamá?**
+Sí. Preparamos la documentación técnica, dibujos y memoria descriptiva necesarios para solicitar patentes de invención o modelos de utilidad ante DIGERPI, en coordinación con su abogado de propiedad industrial.
+
+**¿Cuánto tiempo toma un estudio de optimización de procesos?**
+Un diagnóstico inicial de planta suele tomar de 1 a 3 semanas según el tamaño de la operación; el plan de mejora incluye indicadores medibles (OEE, tiempo de ciclo, desperdicio).
+
+
+## Mantenimiento Industrial Predictivo, Preventivo y Correctivo
+
+URL: https://dicprom.com/servicios/mantenimiento-industrial/
+
+Reducimos paradas no programadas con un programa de mantenimiento basado en datos: inspección predictiva, planes preventivos y respuesta correctiva 24/7.
+
+DICPROM presta servicios integrales de mantenimiento industrial en toda la República de Panamá para plantas industriales, fábricas, centros logísticos, galeras, muelles, instalaciones comerciales y residenciales.
+
+Combinamos técnicas predictivas —termografía infrarroja, análisis de vibraciones, ultrasonido y análisis de aceite— con planes preventivos documentados y cuadrillas de mantenimiento correctivo, para aumentar la disponibilidad de sus activos y alargar su vida útil.
+
+### Servicios incluidos
+
+- Termografía infrarroja: Detección de puntos calientes en tableros, transformadores, motores, rodamientos y aislamiento térmico, con informe fotográfico y priorización de hallazgos.
+- Análisis de vibraciones: Diagnóstico de desbalance, desalineación, holguras y fallas de rodamientos en motores, bombas, ventiladores, compresores y reductores.
+- Mantenimiento preventivo: Planes por horas de operación o calendario, rutas de inspección, lubricación, ajustes y reemplazo planificado de componentes.
+- Mantenimiento correctivo y emergencias: Atención de averías eléctricas, mecánicas, hidráulicas y estructurales con cuadrillas multidisciplinarias.
+- Mantenimiento de galeras, muelles y edificaciones: Cubiertas, estructuras metálicas, pisos industriales, puertas, rampas niveladoras, defensas de muelle y sistemas de drenaje.
+- Gestión de mantenimiento (CMMS): Inventario de activos, criticidad, KPIs (MTBF, MTTR, disponibilidad) e informes gerenciales.
+
+### Sectores
+
+- Plantas industriales y fábricas
+- Complejos logísticos y centros de distribución
+- Galeras y bodegas
+- Muelles y terminales portuarias
+- Edificios comerciales, PH y residencias
+
+### Normas de referencia
+
+- ISO 55000 (gestión de activos)
+- ISO 20816 / ISO 10816 (vibraciones)
+- ISO 18436 (personal de monitoreo de condición)
+- NFPA 70B (mantenimiento eléctrico)
+
+### Preguntas frecuentes
+
+**¿Qué diferencia hay entre mantenimiento predictivo y preventivo?**
+El preventivo se ejecuta por calendario u horas de uso; el predictivo mide la condición real del equipo (temperatura, vibración, ultrasonido) y solo interviene cuando los datos indican una falla en desarrollo, reduciendo costos y paradas.
+
+**¿DICPROM ofrece contratos de mantenimiento anual?**
+Sí. Diseñamos contratos mensuales o anuales con visitas programadas, inspecciones predictivas, tiempos de respuesta garantizados e informes periódicos de condición de activos.
+
+**¿En qué provincias de Panamá dan mantenimiento industrial?**
+Atendemos todo Panamá: Panamá, Panamá Oeste, Colón, Coclé, Herrera, Los Santos, Veraguas, Chiriquí, Bocas del Toro y Darién, además de áreas industriales, puertos y proyectos mineros.
+
+
+## Montaje, Alineación y Puesta en Marcha de Maquinaria
+
+URL: https://dicprom.com/servicios/montaje-maquinaria-automatizacion/
+
+Instalamos, trasladamos y ponemos en marcha maquinaria y líneas de producción completas, con alineación de precisión y automatización integrada.
+
+DICPROM ejecuta en Panamá el montaje, desmontaje, traslado, nivelación, alineación, calibración, automatización y puesta en marcha (commissioning) de maquinaria industrial, líneas de producción y sistemas electromecánicos complejos.
+
+Coordinamos rigging e izajes, anclajes y bases de concreto, conexiones eléctricas, neumáticas e hidráulicas, programación de controladores y pruebas FAT/SAT, entregando el equipo operando y documentado.
+
+### Servicios incluidos
+
+- Montaje y desmontaje de maquinaria: Rigging, izaje con grúas, traslado de plantas, reubicación de líneas y anclaje sobre bases y fundaciones.
+- Alineación láser y nivelación: Alineación de ejes, poleas y acoples, nivelación de precisión y corrección de pata coja.
+- Calibración de equipos e instrumentos: Calibración de sensores, transmisores, básculas, válvulas de control e instrumentación de proceso.
+- Automatización industrial: Diseño e integración de PLC, HMI, SCADA, variadores de frecuencia, servomotores y redes industriales.
+- Puesta en marcha (commissioning): Pruebas en vacío y con carga, protocolos FAT/SAT, ajuste de parámetros y capacitación de operadores.
+- Sistemas electromecánicos complejos: Bandas transportadoras, sistemas de empaque, compresores, bombas, prensas, hornos y equipos de proceso.
+
+### Sectores
+
+- Líneas de producción y empaque
+- Industria de alimentos y bebidas
+- Plantas de concreto y agregados
+- Minería y procesamiento
+- Puertos y logística
+
+### Normas de referencia
+
+- IEC 61131-3 (programación PLC)
+- ISA-88 / ISA-95
+- Tolerancias de alineación del fabricante (OEM)
+- Procedimientos de izaje seguro (ASME B30)
+
+### Preguntas frecuentes
+
+**¿Pueden trasladar una planta completa dentro de Panamá?**
+Sí. Planificamos el desmontaje, identificación de piezas, transporte, montaje, alineación y puesta en marcha de líneas completas, minimizando el tiempo fuera de producción.
+
+**¿Qué incluye la puesta en marcha de una máquina?**
+Verificación mecánica y eléctrica, pruebas en vacío y con carga, ajuste de parámetros de control, protocolo de entrega firmado y capacitación del personal operativo y de mantenimiento.
+
+**¿Trabajan con PLC de distintas marcas?**
+Sí, integramos controladores y HMI de las principales marcas industriales del mercado y documentamos la programación para su equipo de mantenimiento.
+
+
+## Ingeniería de Proyectos Industriales, Petroleros y Mineros
+
+URL: https://dicprom.com/servicios/ingenieria-proyectos-industriales-petroleros-mineria/
+
+Desarrollamos la ingeniería multidisciplinaria de plantas industriales, terminales de combustibles y proyectos mineros, desde el estudio conceptual hasta la construcción.
+
+DICPROM desarrolla ingeniería conceptual, básica y de detalle para proyectos industriales, de hidrocarburos (terminales, almacenamiento y despacho de combustibles) y de minería en Panamá y la región.
+
+Integramos las disciplinas civil-estructural, mecánica, tuberías (piping), eléctrica, instrumentación y control, con entregables listos para licitación, compra y construcción.
+
+### Servicios incluidos
+
+- Ingeniería conceptual y factibilidad: Alcance, alternativas técnicas, estimados de costo clase 5–4 y cronograma preliminar.
+- Ingeniería básica y de detalle: P&ID, diagramas unifilares, planos de planta, isométricos, memorias de cálculo y especificaciones.
+- Tanques y sistemas de almacenamiento: Diseño y revisión de tanques API 650, diques de contención, sistemas de despacho y protección contra incendios.
+- Piping de proceso y alta presión: Diseño, análisis de flexibilidad y especificación de tuberías según ASME B31.3 / B31.1.
+- Proyectos mineros: Estructuras, bandas transportadoras, chancado, sistemas de bombeo, electricidad de potencia y mantenimiento de planta.
+- Inspección y supervisión técnica: Inspección de fabricación y montaje, control de calidad, pruebas hidrostáticas y dossier de calidad.
+
+### Sectores
+
+- Terminales y depósitos de combustible
+- Plantas industriales y de proceso
+- Proyectos mineros
+- Plantas de energía
+- Zonas francas e industriales
+
+### Normas de referencia
+
+- API 650 / API 653 (tanques)
+- ASME B31.3 / B31.1 (piping)
+- NFPA 30 (líquidos inflamables)
+- AWS D1.1 (estructuras soldadas)
+
+### Preguntas frecuentes
+
+**¿Qué entregables incluye la ingeniería de detalle?**
+Planos de construcción por disciplina, P&ID, isométricos, listas de materiales (MTO), memorias de cálculo, especificaciones técnicas y paquetes de licitación.
+
+**¿DICPROM trabaja en proyectos mineros en Panamá?**
+Sí. Ofrecemos ingeniería, metalmecánica, electricidad de potencia, montaje y mantenimiento para operaciones y proyectos mineros, cumpliendo los programas de seguridad del cliente.
+
+**¿Pueden ejecutar además la construcción del proyecto?**
+Sí. Podemos entregar el proyecto bajo modalidad EPC o llave en mano: ingeniería, procura, construcción y puesta en marcha con un único responsable.
+
+
+## Construcción y Obra Civil
+
+URL: https://dicprom.com/servicios/construccion-obra-civil/
+
+Desarrollamos, gerenciamos y construimos obras civiles y edificaciones con control de costo, plazo, calidad y seguridad desde el primer día.
+
+DICPROM es una empresa de construcción en Panamá que desarrolla, gerencia y ejecuta obras civiles y edificaciones residenciales, comerciales, logísticas e industriales, así como obras de infraestructura pública y privada.
+
+Nuestro alcance incluye estudios preliminares, movimientos de tierra, excavaciones, cimentaciones, estructuras de concreto y acero, pavimentación, asfalto, drenajes y urbanización, con gestión de permisos y cumplimiento de la normativa panameña (REP, MIVIOT, municipios y Bomberos).
+
+### Servicios incluidos
+
+- Edificaciones: Viviendas, edificios residenciales, locales comerciales, oficinas, naves industriales, galeras y centros logísticos.
+- Movimiento de tierra y excavaciones: Desmonte, cortes, rellenos compactados, terraplenes, zanjas y excavaciones masivas con equipo pesado.
+- Pavimentación y asfalto: Calles, estacionamientos y patios de carga en concreto hidráulico o carpeta asfáltica, señalización y drenajes.
+- Infraestructura pública y privada: Urbanizaciones, sistemas pluviales y sanitarios, muros de contención, puentes vehiculares y peatonales.
+- Cimentaciones y estructuras: Zapatas, losas, pilotes, estructuras de concreto armado, postensado y estructuras metálicas.
+- Gestión de permisos: Planos sellados, permisos de construcción, ocupación y coordinación con entidades públicas.
+
+### Sectores
+
+- Promotores inmobiliarios
+- Empresas logísticas e industriales
+- Comercio y retail
+- Entidades públicas
+- Propietarios residenciales
+
+### Normas de referencia
+
+- REP (Reglamento Estructural Panameño)
+- ACI 318 (concreto)
+- Normas de la JTIA
+- Reglamento de Seguridad del BCBRP
+
+### Preguntas frecuentes
+
+**¿DICPROM construye en todo Panamá?**
+Sí. Ejecutamos obras en la Ciudad de Panamá, Panamá Oeste, Colón, Coclé, Azuero, Veraguas, Chiriquí, Bocas del Toro y Darién.
+
+**¿Construyen galeras y bodegas industriales?**
+Sí. Diseñamos y construimos galeras, bodegas y centros de distribución con estructura metálica, losa industrial, cubierta, sistemas eléctricos, contra incendios y patios de maniobra.
+
+**¿Se encargan de los permisos de construcción?**
+Sí. Preparamos los planos sellados por profesionales idóneos y gestionamos los permisos ante el municipio, Bomberos, MIVIOT y demás entidades correspondientes.
+
+
+## Remodelación y Fit-Out Corporativo
+
+URL: https://dicprom.com/servicios/remodelacion-fit-out/
+
+Transformamos oficinas, sucursales bancarias, locales comerciales e instituciones en espacios funcionales, con mínima interrupción de su operación.
+
+DICPROM ofrece servicios integrales de remodelación y adecuación de espacios (fit-out) en Panamá para oficinas corporativas, bancos, instituciones públicas y privadas, locales comerciales y residencias.
+
+Ejecutamos todas las especialidades con un solo contrato: demolición, albañilería, tabiquería de gypsum, cielos rasos, pisos, pintura, carpintería, electricidad, datos, aire acondicionado y sistemas contra incendios, incluyendo trabajos nocturnos o en fines de semana para no detener su negocio.
+
+### Servicios incluidos
+
+- Fit-out de oficinas corporativas: Adecuación de pisos de oficina en obra gris o remodelación completa según su marca y manual corporativo.
+- Sucursales bancarias e instituciones: Remodelación de agencias, áreas de atención al cliente, bóvedas y oficinas de instituciones públicas y privadas, cumpliendo protocolos de seguridad.
+- Albañilería y mejoras estructurales: Paredes, repellos, reforzamiento de estructuras, impermeabilización y reparación de fisuras.
+- Acabados arquitectónicos: Pisos porcelanato y vinílicos, revestimientos, carpintería, puertas, vidrios y mobiliario fijo.
+- Yeso, gypsum y cielos rasos: Tabiques de gypsum, cielos suspendidos acústicos, cielos de gypsum y detalles decorativos.
+- Pintura arquitectónica: Pintura interior y exterior, recubrimientos especiales, elastoméricos e impermeabilizantes.
+
+### Sectores
+
+- Oficinas corporativas
+- Bancos y financieras
+- Instituciones públicas
+- Retail y restaurantes
+- Clínicas y colegios
+- Residencias
+
+### Normas de referencia
+
+- Normas de accesibilidad (Ley 42 de 1999)
+- Reglamento de Seguridad del BCBRP
+- Manuales corporativos de marca del cliente
+
+### Preguntas frecuentes
+
+**¿Qué es un fit-out de oficinas?**
+Es el proceso de adecuar un espacio comercial vacío (obra gris) o existente para que quede listo para operar: divisiones, cielos, pisos, electricidad, datos, aire acondicionado, iluminación, contra incendios y acabados.
+
+**¿Pueden remodelar sin detener la operación de mi oficina o banco?**
+Sí. Planificamos por fases y trabajamos en horarios nocturnos o fines de semana, con control de polvo, ruido y seguridad para que su operación continúe.
+
+**¿Cuánto tarda una remodelación de oficina?**
+Depende del área y alcance; un fit-out típico de 200 a 500 m² suele completarse entre 4 y 10 semanas después de aprobar diseño y permisos.
+
+
+## Pisos y Pintura Epóxica Industrial
+
+URL: https://dicprom.com/servicios/pisos-pintura-epoxica/
+
+Pisos resistentes, higiénicos y fáciles de limpiar para industria, logística, salud y comercio, con preparación de superficie profesional.
+
+DICPROM aplica pintura epóxica y sistemas de pisos epóxicos en Panamá para plantas industriales, bodegas, laboratorios, cocinas industriales, clínicas, estacionamientos y locales comerciales.
+
+La durabilidad de un piso epóxico depende de la preparación: realizamos diagnóstico de humedad, desbaste o granallado del concreto, reparación de fisuras y aplicación del sistema adecuado al tráfico, químicos y temperatura de cada área.
+
+### Servicios incluidos
+
+- Pisos epóxicos autonivelantes: Acabado continuo y brillante de alto desempeño para áreas de producción, laboratorios y salas limpias.
+- Recubrimientos epóxicos de alto tráfico: Sistemas multicapa resistentes a montacargas, abrasión y derrames químicos.
+- Pisos antideslizantes: Epóxico con agregado de cuarzo para cocinas, rampas, áreas húmedas y zonas peatonales.
+- Poliuretano y uretano-cemento: Sistemas para choque térmico, industria alimentaria y exposición UV.
+- Demarcación y señalización: Líneas de tráfico, pasillos peatonales, zonas de seguridad y estacionamientos.
+- Recubrimientos anticorrosivos: Pintura epóxica para estructuras metálicas, tanques y tuberías en ambiente marino.
+
+### Sectores
+
+- Bodegas y centros logísticos
+- Plantas de alimentos y farmacéuticas
+- Estacionamientos
+- Talleres y concesionarios
+- Hospitales y laboratorios
+
+### Normas de referencia
+
+- Preparación de superficie ICRI CSP / SSPC
+- Fichas técnicas del fabricante
+- Normas de inocuidad (HACCP) cuando aplica
+
+### Preguntas frecuentes
+
+**¿Cuánto dura un piso epóxico?**
+Un sistema epóxico bien especificado y aplicado sobre concreto preparado correctamente puede durar de 5 a 15 años, según el tráfico, los químicos y el mantenimiento.
+
+**¿Cuánto tiempo hay que esperar para usar el piso?**
+Normalmente se permite tráfico peatonal en 24 horas y tráfico pesado entre 3 y 7 días, según el sistema y la temperatura.
+
+**¿Se puede aplicar epóxico sobre un piso existente?**
+Sí, siempre que se evalúe la adherencia y la humedad del sustrato y se prepare mecánicamente la superficie antes de aplicar.
+
+
+## Mantenimiento de PH, Edificios e Instalaciones
+
+URL: https://dicprom.com/servicios/mantenimiento-ph-edificios/
+
+Un solo proveedor para mantener su PH o edificio corporativo en óptimas condiciones: fachadas, techos, equipos, áreas comunes y emergencias.
+
+DICPROM brinda mantenimiento preventivo y correctivo a propiedades horizontales (PH), edificios de oficinas, bancos, instituciones públicas y privadas y complejos residenciales en Panamá.
+
+Trabajamos con administradores y juntas directivas mediante contratos de mantenimiento con cronograma, bitácora, informes y presupuestos claros, cubriendo la infraestructura civil y los sistemas electromecánicos del inmueble.
+
+### Servicios incluidos
+
+- Pintura de fachadas y áreas comunes: Pintura exterior en altura con andamios o sistemas colgantes, lobbies, pasillos y estacionamientos.
+- Impermeabilización de techos y losas: Membranas, elastoméricos, poliuretano y reparación de filtraciones.
+- Sistemas de bombeo y agua potable: Mantenimiento de bombas, tanques, hidroneumáticos y cuartos de bombas.
+- Electricidad y plantas de emergencia: Tableros, iluminación, generadores, transferencias automáticas y termografía.
+- Aire acondicionado y ventilación: Mantenimiento de chillers, manejadoras, VRF, splits y extractores.
+- Sistemas contra incendios: Inspección y mantenimiento de rociadores, gabinetes, bombas contra incendio y alarmas.
+
+### Sectores
+
+- PH residenciales
+- Torres de oficinas
+- Bancos y sucursales
+- Instituciones públicas y privadas
+- Centros comerciales y hoteles
+
+### Normas de referencia
+
+- Régimen de Propiedad Horizontal de Panamá
+- NFPA 25 (inspección de sistemas contra incendios)
+- Reglamento de Seguridad del BCBRP
+
+### Preguntas frecuentes
+
+**¿Qué incluye un contrato de mantenimiento de PH?**
+Inspecciones programadas, mantenimiento preventivo de bombas, generadores, A/C, elevadores (coordinación), contra incendios y áreas comunes, atención de emergencias e informes para la junta directiva.
+
+**¿Pintan fachadas de edificios altos?**
+Sí. Contamos con personal capacitado en trabajos en altura, andamios, sillas y plataformas colgantes, con equipos de protección contra caídas.
+
+**¿Atienden emergencias fuera de horario?**
+Sí, ofrecemos atención de emergencias 24/7 para clientes con contrato de mantenimiento.
+
+
+## Arquitectura, Planos, Render 3D y Diseño de Interiores
+
+URL: https://dicprom.com/servicios/arquitectura-planos-render-3d/
+
+Visualice su proyecto antes de construirlo: planos completos, modelos BIM, renders 3D fotorrealistas y diseño de interiores con identidad.
+
+DICPROM desarrolla diseño arquitectónico, planos de construcción e ingeniería, renders 3D y diseño de interiores en Panamá para viviendas, oficinas, comercios, bancos, naves industriales y proyectos inmobiliarios.
+
+Trabajamos con modelado BIM para coordinar arquitectura, estructura e instalaciones, detectar interferencias antes de la obra y generar cantidades y presupuestos más precisos.
+
+### Servicios incluidos
+
+- Anteproyecto y diseño arquitectónico: Programa de necesidades, zonificación, distribución, fachadas y volumetría.
+- Planos de construcción e ingeniería: Arquitectura, estructuras, electricidad, plomería, HVAC y contra incendios para permisos y obra.
+- Render 3D y recorridos virtuales: Imágenes fotorrealistas, animaciones y tours 360° para ventas, aprobación de juntas y marketing inmobiliario.
+- Modelado BIM: Modelos coordinados, detección de interferencias y cuantificación de materiales.
+- Diseño de interiores: Interiorismo residencial y corporativo: concepto, materiales, iluminación, mobiliario y ambientación.
+- Levantamientos y as-built: Medición de edificaciones existentes y planos conforme a obra.
+
+### Sectores
+
+- Promotores inmobiliarios
+- Oficinas y bancos
+- Residencias
+- Comercios y restaurantes
+- Naves industriales
+
+### Normas de referencia
+
+- Planos sellados por arquitectos e ingenieros idóneos (JTIA)
+- Metodología BIM (ISO 19650)
+- Reglamentos municipales de urbanismo
+
+### Preguntas frecuentes
+
+**¿Cuánto tarda un render 3D?**
+Un render de una escena interior o exterior suele entregarse entre 3 y 7 días hábiles, con rondas de ajustes incluidas; los recorridos animados requieren más tiempo.
+
+**¿Los planos sirven para tramitar el permiso de construcción?**
+Sí. Entregamos juegos de planos completos, firmados y sellados por profesionales idóneos, listos para presentar ante el municipio y las entidades revisoras.
+
+**¿Ofrecen diseño de interiores y también la ejecución?**
+Sí. Podemos diseñar el interior y ejecutarlo llave en mano, garantizando que el resultado construido sea fiel al render aprobado.
+
+
+## Stands Corporativos para Ferias y Centros de Convenciones
+
+URL: https://dicprom.com/servicios/stands-corporativos/
+
+Stands que convierten visitantes en clientes: diseño 3D, fabricación propia, montaje y desmontaje en el centro de convenciones.
+
+DICPROM diseña, fabrica y monta stands corporativos para ferias comerciales, congresos y lanzamientos en Panamá, incluyendo el Panama Convention Center (Amador), el Centro de Convenciones Atlapa y hoteles y recintos feriales.
+
+Gestionamos todo el proceso: concepto creativo y render 3D, aprobación con el organizador, fabricación en carpintería y metalmecánica, gráfica, iluminación, electricidad, montaje, soporte durante el evento y desmontaje.
+
+### Servicios incluidos
+
+- Diseño de stand y render 3D: Concepto alineado a su marca, distribución funcional y renders para aprobación interna.
+- Fabricación a medida: Carpintería, estructuras metálicas, acrílicos, pantallas LED y mobiliario.
+- Gráfica e iluminación: Impresión de gran formato, letras corpóreas, backlights e iluminación LED.
+- Montaje y desmontaje: Logística, montaje en el recinto, instalación eléctrica y retiro al finalizar.
+- Stands modulares reutilizables: Sistemas que se adaptan a varias ferias y reducen costos por evento.
+- Espacios para proyectos corporativos: Salas de ventas, showrooms y activaciones de marca temporales.
+
+### Sectores
+
+- Ferias comerciales y expos
+- Congresos médicos y técnicos
+- Lanzamientos de productos
+- Ferias inmobiliarias
+- Activaciones de marca
+
+### Normas de referencia
+
+- Reglamentos técnicos de los recintos feriales
+- Normas de seguridad eléctrica y contra incendios del evento
+
+### Preguntas frecuentes
+
+**¿Con cuánta anticipación debo solicitar mi stand?**
+Recomendamos iniciar entre 4 y 8 semanas antes del evento para diseño, aprobaciones del organizador y fabricación; para stands grandes o de doble altura, con más anticipación.
+
+**¿Montan stands en el Panama Convention Center y Atlapa?**
+Sí, montamos stands en los principales centros de convenciones y recintos de Panamá, cumpliendo los reglamentos técnicos de cada organizador.
+
+**¿Puedo reutilizar el stand en varias ferias?**
+Sí. Diseñamos stands modulares que se almacenan y adaptan a diferentes tamaños de espacio para reducir el costo por evento.
+
+
+## Gerencia de Proyectos EPC y Llave en Mano
+
+URL: https://dicprom.com/servicios/gerencia-proyectos-epc-llave-en-mano/
+
+Un solo responsable de su proyecto, desde el diseño hasta la entrega: alcance, presupuesto y plazo definidos y controlados.
+
+DICPROM gestiona proyectos de construcción e ingeniería en Panamá bajo modalidad llave en mano (EPC / Turnkey): Ingeniería (Engineering), Procura (Procurement) y Construcción (Construction), con un único contrato y un único responsable.
+
+También prestamos servicios de administración de obras, gerencia de proyectos, consultoría, inspección técnica y desarrollo de planos arquitectónicos y de ingeniería para propietarios que necesitan proteger su inversión.
+
+### Servicios incluidos
+
+- EPC / Llave en mano: Diseño, compras, construcción, puesta en marcha y entrega con precio y plazo acordados.
+- Gerencia de proyectos: Planificación, cronogramas, control de costos, gestión de riesgos y reportes ejecutivos.
+- Administración de obras: Coordinación de contratistas, compras, control de calidad y seguridad en sitio.
+- Inspección técnica: Supervisión independiente de obra, verificación de especificaciones y certificación de avances.
+- Consultoría de construcción: Revisión de diseños, ingeniería de valor, estimación de costos y apoyo en licitaciones.
+- Planos arquitectónicos y de ingeniería: Paquetes completos de diseño coordinado para permisos y construcción.
+
+### Sectores
+
+- Inversionistas y promotores
+- Industria y logística
+- Retail y franquicias
+- Entidades públicas
+- Minería y energía
+
+### Normas de referencia
+
+- Buenas prácticas PMI (PMBOK)
+- Contratos tipo FIDIC
+- Normativa panameña de construcción
+
+### Preguntas frecuentes
+
+**¿Qué significa un proyecto llave en mano?**
+Que el contratista asume el diseño, la compra de materiales y equipos, la construcción y la puesta en marcha, y entrega al cliente el proyecto terminado y operativo por un precio y plazo acordados.
+
+**¿Cuál es la diferencia entre EPC y administración de obra?**
+En EPC el contratista asume el riesgo integral de diseño, procura y construcción; en administración de obra el contratista gestiona la ejecución por cuenta del propietario, que asume los costos directos.
+
+**¿Ofrecen inspección técnica independiente?**
+Sí. Actuamos como inspectores o supervisores del propietario para verificar calidad, avances, cumplimiento de planos y especificaciones.
+
+
+## Ingeniería Eléctrica, de Potencia y Automatización
+
+URL: https://dicprom.com/servicios/ingenieria-electrica/
+
+Sistemas eléctricos seguros, eficientes y conformes a norma, desde el cálculo hasta la energización y el mantenimiento.
+
+DICPROM diseña, calcula, inspecciona, instala y mantiene sistemas eléctricos de baja, media y alta tensión en Panamá para industrias, edificios comerciales, residenciales, minería e infraestructura.
+
+Ejecutamos subestaciones, transformadores, plantas de emergencia, bancos de capacitores, sistemas de puesta a tierra y pararrayos, cableado estructurado, iluminación, tableros y sistemas de automatización y control industrial.
+
+### Servicios incluidos
+
+- Diseño y cálculo eléctrico: Estudios de carga, cortocircuito, coordinación de protecciones, caída de tensión y planos para permisos.
+- Subestaciones y transformadores: Instalación, pruebas y mantenimiento de subestaciones y transformadores de distribución y potencia.
+- Plantas de emergencia (generadores): Suministro, instalación, transferencias automáticas (ATS) y mantenimiento preventivo.
+- Bancos de capacitores y calidad de energía: Corrección del factor de potencia, análisis de armónicos y ahorro energético.
+- Puesta a tierra y pararrayos: Mallas de tierra, medición de resistividad, sistemas de protección contra descargas atmosféricas.
+- Tableros, cableado estructurado e iluminación: Tableros de distribución y control, redes de datos, iluminación LED industrial, comercial y residencial.
+
+### Sectores
+
+- Industria y manufactura
+- Edificios y PH
+- Centros de datos
+- Minería
+- Comercio y bancos
+- Residencias
+
+### Normas de referencia
+
+- NEC / NFPA 70 y normativa eléctrica de la JTIA
+- NFPA 70E (seguridad eléctrica)
+- IEEE 80 / IEEE 142 (puesta a tierra)
+- NFPA 780 (pararrayos)
+- TIA-568 (cableado estructurado)
+
+### Preguntas frecuentes
+
+**¿Instalan y dan mantenimiento a subestaciones eléctricas?**
+Sí. Instalamos, probamos y mantenemos subestaciones y transformadores, incluyendo termografía, pruebas de aislamiento, análisis de aceite y ajuste de protecciones.
+
+**¿Qué beneficios tiene un banco de capacitores?**
+Corrige el factor de potencia, reduce penalizaciones en la factura eléctrica, libera capacidad en transformadores y disminuye pérdidas en los conductores.
+
+**¿Tramitan los planos eléctricos para permisos?**
+Sí. Nuestros planos eléctricos son firmados por ingenieros electricistas idóneos y cumplen los requisitos de las entidades revisoras y de la empresa distribuidora.
+
+
+## Aire Acondicionado, Ventilación y Refrigeración (HVAC)
+
+URL: https://dicprom.com/servicios/hvac-aire-acondicionado/
+
+Confort térmico, calidad de aire y refrigeración confiable para el clima tropical de Panamá, con eficiencia energética.
+
+DICPROM diseña, suministra, instala, aísla térmicamente y mantiene sistemas de aire acondicionado industrial, comercial y residencial en Panamá: chillers, sistemas VRF/VRV, ductería, unidades manejadoras de aire (UMA) y splits.
+
+También instalamos y mantenemos calderas, intercambiadores de calor, sistemas de refrigeración industrial, cuartos fríos y sistemas de control de temperatura y humedad para procesos críticos.
+
+### Servicios incluidos
+
+- Chillers y agua helada: Instalación, mantenimiento, overhaul y optimización de plantas de agua helada.
+- Sistemas VRF / VRV: Diseño e instalación de sistemas de volumen de refrigerante variable para oficinas, hoteles y edificios.
+- Ductería y manejadoras de aire: Fabricación e instalación de ductos, aislamiento térmico, UMA, extracción y ventilación.
+- Splits y equipos residenciales: Instalación y mantenimiento de minisplits, piso-techo y paquetes.
+- Refrigeración industrial y cuartos fríos: Cámaras de congelación y conservación, túneles de frío y control de cadena de frío.
+- Calderas e intercambiadores de calor: Instalación, mantenimiento y control de variables térmicas y de humedad.
+
+### Sectores
+
+- Industria alimentaria y farmacéutica
+- Oficinas y bancos
+- Hoteles y hospitales
+- Centros de datos
+- Logística de cadena de frío
+- Residencias
+
+### Normas de referencia
+
+- ASHRAE 62.1 / 90.1
+- SMACNA (ductería)
+- Manejo responsable de refrigerantes
+- Normas del fabricante (OEM)
+
+### Preguntas frecuentes
+
+**¿Cada cuánto se debe dar mantenimiento al aire acondicionado en Panamá?**
+Por la alta humedad y temperatura, recomendamos mantenimiento preventivo de splits cada 3 a 6 meses y de sistemas centrales según plan mensual o trimestral.
+
+**¿Qué es un sistema VRF?**
+Es un sistema de aire acondicionado que ajusta el flujo de refrigerante a la demanda de cada zona, permitiendo controlar múltiples espacios con alta eficiencia energética.
+
+**¿Construyen cuartos fríos?**
+Sí. Diseñamos e instalamos cuartos fríos de refrigeración y congelación con paneles aislados, equipos de refrigeración, control y monitoreo de temperatura.
+
+
+## Metalmecánica, Estructuras Metálicas y Soldadura
+
+URL: https://dicprom.com/servicios/metalmecanica-soldadura/
+
+Fabricamos y montamos estructuras y piezas metálicas con soldadura calificada y control de calidad documentado.
+
+DICPROM fabrica, diseña, ensambla, erige y monta estructuras metálicas pesadas y livianas en Panamá para edificios, galeras, puentes, naves industriales y obras civiles.
+
+Ofrecemos soldadura especializada (SMAW, GMAW/MIG, GTAW/TIG), oxicorte, corte por plasma y metalurgia, además de fabricación, reparación y mantenimiento de piezas metálicas, herrería industrial, tanques de almacenamiento, tuberías de alta presión (piping), silos y tolvas.
+
+### Servicios incluidos
+
+- Estructuras metálicas: Diseño, fabricación, pintura anticorrosiva, erección y montaje de galeras, mezzanines, edificios y puentes.
+- Soldadura especializada: Procesos SMAW, GMAW/MIG, FCAW y GTAW/TIG en acero al carbono, inoxidable y aluminio.
+- Corte y conformado: Oxicorte, corte por plasma, rolado, doblez y maquinado de piezas.
+- Tanques, silos y tolvas: Fabricación y reparación de tanques de almacenamiento, silos, tolvas y recipientes.
+- Piping de alta presión: Prefabricado y montaje de tuberías de proceso, vapor, aire y combustibles con pruebas hidrostáticas.
+- Herrería industrial y reparación: Escaleras, barandas, plataformas, portones, reparación de piezas y recuperación de componentes.
+
+### Sectores
+
+- Construcción de galeras y naves
+- Industria y minería
+- Puertos y muelles
+- Terminales de combustible
+- Obras civiles y puentes
+
+### Normas de referencia
+
+- AWS D1.1 (soldadura estructural)
+- ASME Sección IX (calificación de soldadores)
+- ASME B31.3 (piping)
+- AISC 360 (estructuras de acero)
+- API 650 (tanques)
+
+### Preguntas frecuentes
+
+**¿Qué tipos de soldadura realizan?**
+Realizamos soldadura SMAW (electrodo revestido), GMAW/MIG, FCAW y GTAW/TIG en acero al carbono, acero inoxidable y aluminio, en taller y en campo.
+
+**¿Fabrican y montan galeras metálicas?**
+Sí. Diseñamos, fabricamos y montamos galeras y naves industriales con estructura metálica, cubierta, cerramientos y canales pluviales.
+
+**¿Sus soldadores están calificados?**
+Trabajamos con procedimientos de soldadura (WPS) y soldadores calificados según AWS D1.1 o ASME Sección IX, según lo requiera cada proyecto.
+
+
+## Fontanería, Hidráulica y Sistemas Contra Incendios
+
+URL: https://dicprom.com/servicios/fontaneria-hidraulica-contra-incendios/
+
+Redes de agua, drenaje, gas y protección contra incendios diseñadas, instaladas y mantenidas conforme a norma.
+
+DICPROM diseña, instala y mantiene en Panamá redes de agua potable, sistemas de bombeo, aguas residuales, pluviales y sanitarias a nivel industrial, comercial y residencial.
+
+Instalamos y mantenemos sistemas contra incendios —redes de rociadores, gabinetes, bombas contra incendio y sistemas de extinción— así como tuberías hidráulicas y neumáticas, sistemas de gas natural o GLP, plantas de tratamiento de agua y redes de fluidos en general.
+
+### Servicios incluidos
+
+- Agua potable y sistemas de bombeo: Redes de distribución, tanques, hidroneumáticos, bombas de presión constante y cuartos de bombas.
+- Aguas residuales, pluviales y sanitarias: Drenajes, cámaras, trampas de grasa, estaciones de bombeo y desagües pluviales.
+- Sistemas contra incendios: Rociadores automáticos, gabinetes, hidrantes, bombas contra incendio, sistemas de supresión y alarmas.
+- Gas natural y GLP: Diseño e instalación de redes de gas para industria, restaurantes, edificios y residencias.
+- Plantas de tratamiento de agua: Instalación y mantenimiento de plantas de tratamiento de aguas residuales y potabilizadoras.
+- Tuberías hidráulicas y neumáticas: Redes de aire comprimido, aceite hidráulico y fluidos de proceso.
+
+### Sectores
+
+- Industria y bodegas
+- Edificios y PH
+- Hoteles y restaurantes
+- Hospitales
+- Urbanizaciones
+
+### Normas de referencia
+
+- NFPA 13 (rociadores)
+- NFPA 14 (gabinetes)
+- NFPA 20 (bombas contra incendio)
+- NFPA 25 (mantenimiento)
+- Reglamento de Seguridad del BCBRP
+- NFPA 54 / 58 (gas)
+
+### Preguntas frecuentes
+
+**¿Instalan sistemas contra incendios aprobados por Bomberos?**
+Sí. Diseñamos e instalamos sistemas contra incendios conforme a las normas NFPA y al reglamento de la Oficina de Seguridad del Benemérito Cuerpo de Bomberos de la República de Panamá, y acompañamos el proceso de revisión.
+
+**¿Cada cuánto se inspecciona una bomba contra incendio?**
+Según NFPA 25, las bombas contra incendio requieren pruebas periódicas de funcionamiento (semanales o mensuales según el tipo) y una prueba anual de desempeño con caudal.
+
+**¿Realizan instalaciones de gas GLP para restaurantes?**
+Sí. Diseñamos e instalamos redes de gas GLP y natural para restaurantes, industrias y edificios, con pruebas de hermeticidad y documentación para su aprobación.
+
+
+## Suministro de Materiales, Herramientas, Repuestos y Equipos
+
+URL: https://dicprom.com/servicios/suministro-equipos-materiales/
+
+Abastecemos sus proyectos y su planta con materiales, repuestos y equipos de calidad, al por mayor y al detal.
+
+DICPROM compra, vende, importa, exporta, distribuye, arrienda y comercializa al por mayor y al por menor materiales, herramientas, repuestos, materias primas y equipos relacionados con la construcción, la ingeniería eléctrica, HVAC, metalmecánica, fontanería y el mantenimiento industrial.
+
+Aprovechamos la posición logística de Panamá para importar equipos y repuestos especializados y entregarlos en obra o en planta en todo el país.
+
+### Servicios incluidos
+
+- Materiales de construcción: Acero, perfiles, láminas, cemento, agregados, gypsum, pinturas y recubrimientos epóxicos.
+- Material eléctrico: Cables, tableros, breakers, transformadores, luminarias y accesorios.
+- Equipos HVAC y refrigeración: Equipos de aire acondicionado, repuestos, refrigerantes y aislamiento.
+- Tuberías, válvulas y bombas: Tubería PVC, CPVC, acero, cobre, válvulas, accesorios y bombas.
+- Herramientas y consumibles de soldadura: Electrodos, alambres, gases, discos y herramientas industriales.
+- Repuestos industriales y alquiler de equipos: Rodamientos, correas, sellos, motores y arrendamiento de equipos para proyectos.
+
+### Sectores
+
+- Contratistas y constructoras
+- Plantas industriales
+- Departamentos de mantenimiento
+- Proyectos mineros
+- Clientes residenciales
+
+### Normas de referencia
+
+- Productos con fichas técnicas y certificados de calidad
+- Importación conforme a la normativa aduanera panameña
+
+### Preguntas frecuentes
+
+**¿Venden al por mayor y al detal?**
+Sí. Atendemos tanto a contratistas y empresas que compran al por mayor como a clientes que necesitan cantidades menores.
+
+**¿Pueden importar equipos o repuestos específicos?**
+Sí. Gestionamos la importación de equipos, repuestos y materiales especializados bajo pedido, incluyendo logística y entrega en todo Panamá.
+
+**¿Alquilan equipos para proyectos?**
+Sí. Ofrecemos arrendamiento de equipos y herramientas para proyectos de construcción, montaje y mantenimiento.
+

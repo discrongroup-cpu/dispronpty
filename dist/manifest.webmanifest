@@ -1,0 +1,26 @@
+{
+  "name": "DICPROM – Ingeniería, construcción y mantenimiento industrial en Panamá",
+  "short_name": "DICPROM",
+  "start_url": "/",
+  "display": "standalone",
+  "lang": "es-PA",
+  "background_color": "#0b1f3a",
+  "theme_color": "#0b1f3a",
+  "icons": [
+    {
+      "src": "/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/logo-dicprom.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Contact: mailto:info@dicprom.com
+Preferred-Languages: es, en
+Canonical: https://dicprom.com/.well-known/security.txt
+Expires: 2027-12-31T23:59:59Z

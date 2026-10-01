@@ -1,0 +1,62 @@
+{
+  "_LEEME": "Datos NAP (Nombre, Dirección, Teléfono) de la empresa. Deben ser IDÉNTICOS a Google Business Profile, Bing Places y directorios. Reemplace todos los valores que contienen REEMPLAZAR y ejecute: python3 build.py",
+  "brand": "DICPROM",
+  "legalName": "DICPROM, S.A.",
+  "alternateNames": [
+    "Dicprom",
+    "Dicprom Panamá",
+    "DICPROM Ingeniería y Construcción"
+  ],
+  "domain": "https://dicprom.com",
+  "tagline": "Ingeniería, construcción y mantenimiento industrial en Panamá",
+  "slogan": "Diseñamos, construimos y mantenemos la infraestructura que mueve a Panamá.",
+  "foundingYear": "REEMPLAZAR-AÑO",
+  "taxID": "REEMPLAZAR-RUC",
+  "phone": "+507-6000-0000",
+  "phoneDisplay": "+507 6000-0000",
+  "whatsapp": "50760000000",
+  "email": "info@dicprom.com",
+  "address": {
+    "street": "REEMPLAZAR-Calle, edificio, local",
+    "locality": "Ciudad de Panamá",
+    "region": "Panamá",
+    "postalCode": "0801",
+    "country": "PA"
+  },
+  "geo": {
+    "lat": 8.9824,
+    "lng": -79.5199
+  },
+  "hours": [
+    {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    {
+      "days": [
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "12:00"
+    }
+  ],
+  "hoursDisplay": "Lunes a viernes 8:00 a. m. – 5:00 p. m. · Sábados 8:00 a. m. – 12:00 m. · Emergencias 24/7",
+  "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=DICPROM+Panam%C3%A1",
+  "sameAs": [
+    "https://www.linkedin.com/company/dicprom",
+    "https://www.facebook.com/dicprom",
+    "https://www.instagram.com/dicprom"
+  ],
+  "googleSiteVerification": "",
+  "bingSiteVerification": "",
+  "gaMeasurementId": "",
+  "indexNowKey": "8f3c2a9d4b7e41f6a0c5d2e9b1f7a3c6",
+  "formEndpoint": ""
+}

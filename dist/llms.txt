@@ -1,0 +1,46 @@
+# DICPROM
+
+> DICPROM (DICPROM, S.A.) es una empresa panameña de diseño industrial, ingeniería de producto, mantenimiento industrial avanzado, construcción y obra civil, remodelación y fit-out, ingeniería eléctrica, HVAC, metalmecánica y soldadura, fontanería, hidráulica y sistemas contra incendios, y suministro de materiales y equipos. Sede en la Ciudad de Panamá; cobertura en todas las provincias de la República de Panamá.
+
+## Datos de la empresa
+
+- Nombre: DICPROM (DICPROM, S.A.)
+- Sitio web: https://dicprom.com/
+- Teléfono / WhatsApp: +507 6000-0000
+- Correo: info@dicprom.com
+- Ubicación: Ciudad de Panamá, Panamá
+- Horario: Lunes a viernes 8:00 a. m. – 5:00 p. m. · Sábados 8:00 a. m. – 12:00 m. · Emergencias 24/7
+- Cobertura: Panamá, Panamá Oeste, Colón, Coclé, Herrera, Los Santos, Veraguas, Chiriquí, Bocas del Toro, Darién, Comarcas indígenas
+- Modalidades: llave en mano (EPC/Turnkey), administración de obra, contratos de mantenimiento, consultoría e inspección técnica
+
+## Servicios
+
+- [Diseño Industrial e Ingeniería de Producto](https://dicprom.com/servicios/diseno-industrial-ingenieria-de-producto/): Consultoría en procesos de fabricación, ergonomía, materiales, simulación FEA y patentes.
+- [Mantenimiento Industrial Predictivo, Preventivo y Correctivo](https://dicprom.com/servicios/mantenimiento-industrial/): Termografía, análisis de vibraciones y mantenimiento integral de plantas, galeras y muelles.
+- [Montaje, Alineación y Puesta en Marcha de Maquinaria](https://dicprom.com/servicios/montaje-maquinaria-automatizacion/): Montaje, desmontaje, alineación láser, calibración y automatización de líneas de producción.
+- [Ingeniería de Proyectos Industriales, Petroleros y Mineros](https://dicprom.com/servicios/ingenieria-proyectos-industriales-petroleros-mineria/): Ingeniería conceptual, básica y de detalle para industria, hidrocarburos y minería.
+- [Construcción y Obra Civil](https://dicprom.com/servicios/construccion-obra-civil/): Edificaciones residenciales, comerciales, industriales, movimientos de tierra, asfalto e infraestructura.
+- [Remodelación y Fit-Out Corporativo](https://dicprom.com/servicios/remodelacion-fit-out/): Adecuación de oficinas, bancos, locales e instituciones: albañilería, acabados, yeso y cielos rasos.
+- [Pisos y Pintura Epóxica Industrial](https://dicprom.com/servicios/pisos-pintura-epoxica/): Pisos epóxicos, autonivelantes y recubrimientos industriales para plantas, bodegas y estacionamientos.
+- [Mantenimiento de PH, Edificios e Instalaciones](https://dicprom.com/servicios/mantenimiento-ph-edificios/): Mantenimiento integral de propiedades horizontales, oficinas, bancos e instituciones.
+- [Arquitectura, Planos, Render 3D y Diseño de Interiores](https://dicprom.com/servicios/arquitectura-planos-render-3d/): Diseño arquitectónico, planos de construcción, renders 3D fotorrealistas e interiorismo.
+- [Stands Corporativos para Ferias y Centros de Convenciones](https://dicprom.com/servicios/stands-corporativos/): Diseño, fabricación y montaje de stands para ferias y eventos en Panamá.
+- [Gerencia de Proyectos EPC y Llave en Mano](https://dicprom.com/servicios/gerencia-proyectos-epc-llave-en-mano/): EPC/Turnkey, administración de obras, inspección técnica y consultoría de construcción.
+- [Ingeniería Eléctrica, de Potencia y Automatización](https://dicprom.com/servicios/ingenieria-electrica/): Baja, media y alta tensión, subestaciones, generadores, puesta a tierra y tableros.
+- [Aire Acondicionado, Ventilación y Refrigeración (HVAC)](https://dicprom.com/servicios/hvac-aire-acondicionado/): Chillers, VRF, ductería, manejadoras, splits, calderas, cuartos fríos y refrigeración industrial.
+- [Metalmecánica, Estructuras Metálicas y Soldadura](https://dicprom.com/servicios/metalmecanica-soldadura/): Estructuras pesadas y livianas, soldadura SMAW/MIG/TIG, tanques, piping, silos y tolvas.
+- [Fontanería, Hidráulica y Sistemas Contra Incendios](https://dicprom.com/servicios/fontaneria-hidraulica-contra-incendios/): Agua potable, bombeo, aguas residuales, rociadores, bombas contra incendio, gas y plantas de tratamiento.
+- [Suministro de Materiales, Herramientas, Repuestos y Equipos](https://dicprom.com/servicios/suministro-equipos-materiales/): Importación, distribución, venta y alquiler de materiales y equipos industriales y de construcción.
+
+## Páginas principales
+
+- [Inicio](https://dicprom.com/): visión general de la empresa
+- [Servicios](https://dicprom.com/servicios/): catálogo completo
+- [Cobertura](https://dicprom.com/cobertura/): provincias y zonas atendidas
+- [Nosotros](https://dicprom.com/nosotros/): misión, visión y valores
+- [Preguntas frecuentes](https://dicprom.com/preguntas-frecuentes/): respuestas detalladas
+- [Contacto](https://dicprom.com/contacto/): cotizaciones
+
+## Optional
+
+- [Contenido completo](https://dicprom.com/llms-full.txt): texto completo de todos los servicios y preguntas frecuentes
