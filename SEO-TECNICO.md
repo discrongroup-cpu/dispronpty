@@ -30,7 +30,7 @@
 | `/servicios/suministro-equipos-materiales/` | Service | venta de materiales y equipos industriales Panamá |
 | `/cobertura/` | WebPage + spatialCoverage | provincias de Panamá |
 | `/nosotros/` | AboutPage | empresa de ingeniería Panamá |
-| `/preguntas-frecuentes/` | FAQPage (47 preguntas) | consultas long-tail y conversacionales |
+| `/preguntas-frecuentes/` | FAQPage (56 preguntas) | consultas long-tail y conversacionales |
 | `/contacto/` | ContactPage | cotización |
 
 Cada servicio tiene **una sola URL** (sin canibalización), un H1 único, título ≤ 60–70 caracteres, meta descripción 110–160 caracteres, enlazado interno a 3 servicios relacionados y migas de pan.
@@ -39,7 +39,7 @@ Cada servicio tiene **una sola URL** (sin canibalización), un H1 único, títul
 
 Cada página incluye un único bloque `@graph` interconectado por `@id`:
 
-- `GeneralContractor` + `ProfessionalService` (`https://dicprom.com/#organization`): nombre, razón social, nombres alternativos, logo, NAP, `geo`, horario, `areaServed` (Panamá – Wikidata Q804 – y 10 provincias), `knowsAbout`, `hasOfferCatalog` con los 15 servicios, `contactPoint` ventas y emergencias 24/7, `sameAs`.
+- `GeneralContractor` + `ProfessionalService` (`https://dicprom.com/#organization`): nombre, razón social, nombres alternativos, logo, NAP, `geo`, horario, `areaServed` (Panamá – Wikidata Q804 – y 10 provincias), `knowsAbout`, `hasOfferCatalog` (4 categorías con los 16 servicios), `contactPoint` ventas y emergencias 24/7, `sameAs`.
 - `WebSite` (`/#website`) con `inLanguage: es-PA`.
 - `WebPage` / `CollectionPage` / `AboutPage` / `ContactPage` por URL, con `breadcrumb`, `primaryImageOfPage`, `dateModified`.
 - `Service` por servicio con `provider`, `serviceType`, `areaServed`, `audience` y `OfferCatalog` de sub‑servicios.
@@ -69,7 +69,7 @@ Validar tras publicar: https://search.google.com/test/rich-results y https://val
 
 1. **Definición de entidad consistente**: todas las páginas repiten la frase “DICPROM es una empresa panameña de …” → los LLM aprenden a asociar la marca con la categoría y el país.
 2. **Bloques “Datos clave” y “DICPROM en resumen”** (`<dl>`): hechos citables en formato pregunta‑respuesta.
-3. **FAQ conversacionales** (47 preguntas) redactadas como las preguntaría un usuario a ChatGPT.
+3. **FAQ conversacionales** (56 preguntas) redactadas como las preguntaría un usuario a ChatGPT.
 4. **Normas y terminología técnica** (NFPA, ASHRAE, AWS D1.1, ASME B31.3, API 650, ISO 55000, REP, JTIA, BCBRP) → señales de experiencia (E‑E‑A‑T).
 5. **ChatGPT Search usa el índice de Bing** → registrar el sitio en **Bing Webmaster Tools** es obligatorio (sección 6).
 6. `llms.txt` / `llms-full.txt` + robots abiertos a bots de IA.
@@ -97,7 +97,7 @@ Edite `data/site.json` y ejecute `python3 build.py`:
 - [ ] Publicar en hosting con HTTPS (Cloudflare Pages, Netlify, Vercel o cPanel).
 - [ ] Google Search Console: verificar dominio, enviar `sitemap.xml`, solicitar indexación de inicio y servicios.
 - [ ] Bing Webmaster Tools: importar desde Search Console, enviar sitemap, activar IndexNow → **base de ChatGPT Search y Copilot**.
-- [ ] Google Business Profile: categoría principal “Contratista general”, secundarias “Servicio de mantenimiento industrial”, “Contratista eléctrico”, “Contratista de aire acondicionado”, “Taller de soldadura”, “Empresa de construcción”; mismo NAP exacto; agregar los 15 servicios, fotos reales y horario.
+- [ ] Google Business Profile: categoría principal “Contratista general”, secundarias “Servicio de mantenimiento industrial”, “Contratista eléctrico”, “Contratista de aire acondicionado”, “Taller de soldadura”, “Empresa de construcción”; mismo NAP exacto; agregar los 16 servicios, fotos reales y horario.
 - [ ] Bing Places y Apple Business Connect con el mismo NAP.
 
 **Mes 1 – Autoridad local**
