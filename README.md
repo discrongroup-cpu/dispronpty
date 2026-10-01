@@ -10,6 +10,7 @@ Plataforma web de DISPRON GROUP (ingeniería, construcción y mantenimiento indu
 - `data/gallery.py` – clasificación de las 323 fotografías reales de obra.
 - `build.py` – generador → `dist/` (58 URL indexables + páginas de aplicación, JSON-LD, sitemap de imágenes, robots, `llms.txt`, `llms-full.txt`, `knowledge.json`) y `server/site-data.json` para Alfred.
 - `server/` – servidor Node/Express: sirve `dist/` y la API (leads, autenticación, usuarios, CRM, CSV, Sofía, Alfred).
+- `server/alfred/` – motor de Alfred (12 sub-agentes, 30 habilidades, riesgo LOW/MEDIUM con confirmación, español e inglés). `guide.json` y `server/docs/ALFRED_DISPRON_Plataforma_Completa.pptx` alimentan la pestaña “Guía de la plataforma” del HUD (`GET /api/alfred/guide`, descarga en `/api/alfred/guide/pptx`, solo usuarios activos).
 - `static/` – CSS, JS (`main`, `quote`, `sofia`, `auth`, `crm`, `alfred`), fuentes e imágenes.
 - `tools/check.py` – auditoría SEO técnica · `tools/api-test.js` – pruebas de API · `tools/smoke.py` – prueba en navegador (Playwright, escritorio y móvil).
 
@@ -18,7 +19,7 @@ Plataforma web de DISPRON GROUP (ingeniería, construcción y mantenimiento indu
 ```bash
 python3 build.py && python3 tools/check.py   # genera y audita dist/
 npm install
-npm test                                      # 60 pruebas de API, seguridad y Alfred
+npm test                                      # 66 pruebas de API, seguridad y Alfred (incluye las 30 habilidades)
 PORT=8000 DATA_DIR=/var/lib/dispron FORCE_HTTPS=1 npm start
 python3 tools/smoke.py http://127.0.0.1:8000  # opcional
 ```

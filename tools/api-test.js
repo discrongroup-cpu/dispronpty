@@ -68,6 +68,24 @@ async function main() {
     const r = await req('admin', '/api/alfred/tool', { body: { tool: t, params: { query: t === 'jsonld_preview' ? '/servicios/ingenieria-electrica/' : 'hotel aire acondicionado' } } });
     ok(r.s === 200 && r.j && r.j.status !== 'ERROR', `Alfred ${t}: ${r.j && r.j.status} ${(r.j && r.j.text || '').split('\n')[0].slice(0, 90)}`);
   }
+  const allTools = (await req('admin', '/api/alfred/meta')).j.tools;
+  const anyLead = (await req('admin', '/api/leads')).j;
+  const leadId = (Array.isArray(anyLead) ? anyLead : anyLead.leads || [])[0]?.id;
+  const failed = [];
+  for (const t of allTools) {
+    const r = await req('admin', '/api/alfred/tool', { body: { tool: t.id, confirmed: true, params: { query: 'hotel aire acondicionado', leadId, stage: 'En negociación', text: 'Nota de prueba', subject: 'Prueba', note: 'Nota de prueba' } } });
+    if (r.s !== 200 || !r.j || r.j.status === 'ERROR') failed.push(t.id + ':' + (r.j && r.j.text));
+  }
+  ok(allTools.length === 30 && failed.length === 0, `Alfred: las 30 habilidades se ejecutan sin error ${failed.join(' | ')}`);
+  const gd = await req('admin', '/api/alfred/guide');
+  ok(gd.s === 200 && gd.j.sections.length >= 8 && gd.j.file, 'Alfred: guía de la plataforma disponible');
+  const px = await fetch(B + gd.j.file, { headers: { Cookie: jar.admin } });
+  ok(px.status === 200 && (await px.arrayBuffer()).byteLength > 100000, 'Alfred: presentación PPTX descargable');
+  ok((await req('anon', '/api/alfred/guide')).s === 401, 'Guía de Alfred exige sesión');
+  const enr = await req('admin', '/api/alfred/chat', { body: { message: 'Please show me the pipeline report' } });
+  ok(enr.j.lang === 'en' && enr.j.tool === 'pipeline_report' && /^Understood/.test(enr.j.reply), 'Alfred responde en inglés');
+  const enc = await req('admin', '/api/alfred/chat', { body: { message: 'Please move the lead to negotiation stage' } });
+  ok(enc.j.confirm && enc.j.confirm.en && /express confirmation/.test(enc.j.reply), 'Alfred en inglés exige confirmación MEDIUM');
   const ch = await req('admin', '/api/alfred/chat', { body: { message: 'reporte del pipeline' } });
   ok(ch.s === 200 && ch.j.reply, 'Alfred chat responde');
   const del = await req('admin', '/api/alfred/tool', { body: { tool: 'backup_db', params: {} } });

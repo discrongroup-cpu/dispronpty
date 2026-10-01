@@ -204,7 +204,18 @@ function create(ctx) {
   function route(msg) { const n = norm(msg); for (const [re, t] of INTENTS) if (re.test(n)) return { tool: t, method: 'intent' };
     const sc = AGENTS.map(a => ({ a, s: a.keywords.filter(k => n.includes(norm(k))).length })).sort((x, y) => y.s - x.s)[0]; if (sc && sc.s) { const t = Object.values(T).find(x => x.agentId === sc.a.id); return { tool: t.id, method: 'keyword' }; } return null; }
 
-  const hour = () => { const h = new Date().getHours(); return h < 12 ? 'Buenos días' : h < 19 ? 'Buenas tardes' : 'Buenas noches'; };
+  const EN_INTENTS = [
+    [/\b(rank|ranking|first place|number one|top of google)\b/, 'geo_ranking_plan'], [/json-?ld|schema|structured data/, 'jsonld_preview'], [/\bseo\b|\bgeo\b|site audit/, 'seo_audit'],
+    [/\bscore|qualify|hot leads|best leads/, 'lead_scoring'], [/next (best )?(action|step)|what should i do/, 'next_best_action'], [/follow.?up|draft (a )?(message|email)/, 'followup_draft'], [/prospect|find (more )?clients|new clients|get clients/, 'prospecting_plan'], [/campaign|brief/, 'campaign_brief'],
+    [/\b(move|change)\b.*\b(stage|negotiation)\b/, 'move_stage'], [/report|pipeline|forecast|metrics|how are we doing/, 'pipeline_report'],
+    [/health|broken|check the site/, 'site_health'], [/architecture|diagram|inventory/, 'architecture_map'], [/backup/, 'backup_db'], [/deploy/, 'deploy_checklist'], [/environment|server status|uptime/, 'env_status'], [/openapi|swagger/, 'openapi_spec'],
+    [/escalate|urgent|emergency/, 'escalate_case'], [/ticket/, 'ticket_create'], [/faq|frequently asked/, 'faq_search'], [/security|vulnerab/, 'security_audit'], [/spam|suspicious|duplicate/, 'suspicious_leads'],
+    [/proposal|quote/, 'proposal_draft'], [/site visit|survey checklist/, 'visit_checklist'], [/launch|pending data/, 'launch_checklist'],
+    [/remember|save to memory/, 'memory_store'], [/what do you know|memory/, 'memory_search'], [/\bnote\b/, 'add_note'], [/summary|summarize|history/, 'lead_summary'], [/introduce|presentation|about dispron|who are you|english/, 'bilingual_intro'], [/language/, 'detect_language'],
+  ];
+  const isEN = (t) => { const n = norm(t); const en = (n.match(/\b(the|and|is|are|for|with|to|of|you|we|please|my|our|show|give|what|how|run|me|leads|report|check)\b/g) || []).length; const es = (n.match(/\b(el|la|los|las|de|que|y|es|en|para|con|por|una|un|mis|del|dame|muestra|como|cual)\b/g) || []).length; return en > es; };
+  function routeEN(msg) { const n = norm(msg); for (const [re, t] of EN_INTENTS) if (re.test(n)) return { tool: t, method: 'intent-en' }; return route(msg); }
+  const hour = (en) => { const h = new Date().getHours(); return en ? (h < 12 ? 'Good morning' : h < 19 ? 'Good afternoon' : 'Good evening') : (h < 12 ? 'Buenos días' : h < 19 ? 'Buenas tardes' : 'Buenas noches'); };
   async function run(toolId, params, confirmed, user) {
     const t = T[toolId]; if (!t) return { ok: false, text: 'Habilidad desconocida.' }; const a = agent(t.agentId);
     if (['MEDIUM', 'HIGH', 'CRITICAL'].includes(t.risk) && !confirmed) return { ok: true, status: 'REQUIRES_CONFIRMATION', agent: a.name, tool: t.id, toolName: t.name, params, text: `Esta acción modifica datos reales (${t.name}, riesgo ${t.risk}). ${a.name} la ejecutará solo con su confirmación expresa, Jefe Maestro.` };
@@ -213,16 +224,20 @@ function create(ctx) {
     return { ok: true, agent: a.name, tool: t.id, toolName: t.name, ms: Date.now() - t0, ...r };
   }
   async function chat(message, user, confirm) {
-    const msg = String(message || '').slice(0, 800); if (confirm && confirm.tool) { const r = await run(confirm.tool, confirm.params, true, user); return wrap(r, true); }
-    if (/^(hola|buen[oa]s|hello|hi)\b/i.test(norm(msg)) && msg.length < 30) return { reply: `${hour()}, Jefe Maestro. Alfred a su servicio en DISPRON GROUP. Puedo calificar leads, reportar el pipeline, auditar SEO/GEO, redactar seguimientos y propuestas, y más. ¿Qué necesita?`, agent: null };
-    const rt = route(msg); if (!rt) return { reply: 'Permítame precisar, Jefe Maestro: ¿desea un reporte del pipeline, calificar leads, auditar el SEO o preparar una propuesta?', agent: null };
-    const params = { query: msg }; const l = findLead(msg); if (l) params.leadId = l.id; const r = await run(rt.tool, params, false, user); return wrap(r, false, rt);
+    const msg = String(message || '').slice(0, 800); if (confirm && confirm.tool) { const r = await run(confirm.tool, confirm.params, true, user); return wrap(r, true, null, !!confirm.en); }
+    const en = /^(hello|hi|good (morning|afternoon|evening))\b/i.test(norm(msg)) || isEN(msg);
+    if (/^(hola|buen[oa]s|hello|hi|good (morning|afternoon|evening))\b/i.test(norm(msg)) && msg.length < 30) return { reply: en ? `${hour(true)}, Jefe Maestro. Alfred at your service at DISPRON GROUP. I can score leads, report the pipeline, audit SEO/GEO, draft follow-ups and proposals, and more. What do you need?` : `${hour()}, Jefe Maestro. Alfred a su servicio en DISPRON GROUP. Puedo calificar leads, reportar el pipeline, auditar SEO/GEO, redactar seguimientos y propuestas, y más. ¿Qué necesita?`, agent: null, lang: en ? 'en' : 'es' };
+    const rt = en ? routeEN(msg) : route(msg); if (!rt) return { reply: en ? 'Allow me to clarify, Jefe Maestro: would you like a pipeline report, lead scoring, an SEO audit or a proposal?' : 'Permítame precisar, Jefe Maestro: ¿desea un reporte del pipeline, calificar leads, auditar el SEO o preparar una propuesta?', agent: null, lang: en ? 'en' : 'es' };
+    const params = { query: msg }; const l = findLead(msg); if (l) params.leadId = l.id; const r = await run(rt.tool, params, false, user); return wrap(r, false, rt, en);
   }
-  function wrap(r, confirmedRun, rt) {
-    if (r.status === 'REQUIRES_CONFIRMATION') return { reply: `He delegado esto a ${r.agent}. ${r.text}`, agent: r.agent, tool: r.tool, confirm: { tool: r.tool, params: r.params } };
+  function wrap(r, confirmedRun, rt, en) {
+    if (r.status === 'REQUIRES_CONFIRMATION') return { reply: en ? `I have delegated this to ${r.agent}. This action modifies real data (${r.toolName}, risk ${T[r.tool].risk}). ${r.agent} will run it only with your express confirmation, Jefe Maestro.` : `He delegado esto a ${r.agent}. ${r.text}`, agent: r.agent, tool: r.tool, confirm: { tool: r.tool, params: r.params, en: !!en }, lang: en ? 'en' : 'es' };
     const ok = ['OK', 'DONE', 'DRAFT'].includes(r.status);
-    const head = r.status === 'DONE' || confirmedRun ? 'Entendido, Jefe Maestro. ' : `Entendido, Jefe Maestro. He delegado esto a ${r.agent}, ${agent(Object.values(T).find(x => x.id === r.tool).agentId).role.toLowerCase()}.\n\n`;
-    return { reply: head + (r.status === 'NEEDS_INPUT' || r.status === 'ERROR' ? '' : '') + r.text + (ok ? '' : ''), agent: r.agent, tool: r.tool, toolName: r.toolName, status: r.status, ms: r.ms, method: rt && rt.method };
+    const ag = r.tool && T[r.tool] ? agent(T[r.tool].agentId) : null;
+    const head = en
+      ? (r.status === 'DONE' || confirmedRun ? 'Understood, Jefe Maestro. ' : `Understood, Jefe Maestro. I have delegated this to ${r.agent}, ${ag ? ag.roleEN.toLowerCase() : ''}.\n\n`) + (r.tool === 'bilingual_intro' ? '' : '(Report data in Spanish, as stored in the CRM.)\n')
+      : (r.status === 'DONE' || confirmedRun ? 'Entendido, Jefe Maestro. ' : `Entendido, Jefe Maestro. He delegado esto a ${r.agent}, ${ag ? ag.role.toLowerCase() : ''}.\n\n`);
+    return { reply: head + r.text, agent: r.agent, tool: r.tool, toolName: r.toolName, status: r.status, ok, ms: r.ms, method: rt && rt.method, lang: en ? 'en' : 'es' };
   }
 
   const POLICIES = [

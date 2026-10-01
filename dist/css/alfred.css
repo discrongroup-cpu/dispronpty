@@ -36,3 +36,4 @@
 .alf-log::-webkit-scrollbar,.alf-scroll::-webkit-scrollbar,.alf-full::-webkit-scrollbar{width:8px}.alf-log::-webkit-scrollbar-thumb,.alf-scroll::-webkit-scrollbar-thumb,.alf-full::-webkit-scrollbar-thumb{background:#1c3550}
 .alf :focus-visible{outline:3px solid #C5A059;outline-offset:2px}
 @media(prefers-reduced-motion:reduce){.ring,.alf-dot{animation:none!important}}
+.guide-hd{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:.8rem}.guide-hd h3{margin:0}.guide-dl{background:#C5A059;color:#06101e;font-weight:800;padding:.55rem 1rem;text-decoration:none;letter-spacing:.06em;font-size:.8rem}.guide-dl:hover{background:#e8d9b5}.tool.guide ul{margin:.4rem 0 0;padding-left:1.1rem;color:#c9d6e4;font-size:.8rem;line-height:1.5}.tool.guide li{margin:.15rem 0}

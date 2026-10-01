@@ -1,0 +1,131 @@
+[
+ {
+  "title": "Qué es Alfred",
+  "items": [
+   "Alfred es el mayordomo digital de DISPRON GROUP. No es un chatbot decorativo: es un centro de mando donde 12 sub-agentes especializados ejecutan 30 habilidades reales contra el CRM y el sitio. Opera en español e inglés, se dirige al usuario como Jefe Maestro y nunca inventa un dato.",
+   "Acceso: solo usuarios activos del CRM (/crm)",
+   "Consola + pestañas: habilidades, sub-agentes, políticas y memoria",
+   "Telemetría en vivo: ejecuciones, memoria, tickets, última actividad",
+   "Confirmación obligatoria para acciones de riesgo MEDIUM+",
+   "Idioma: español (es-PA) e inglés (Hugo)",
+   "Adaptado a DISPRON: sectores, servicios y provincias de Panamá"
+  ]
+ },
+ {
+  "title": "Frontend - HUD de tres columnas",
+  "items": [
+   "SEC-CORE (izquierda): identidad y los 12 sub-agentes con color propio",
+   "SEC-CONSOLE (centro): conversación, chips de acción rápida y campo de órdenes",
+   "SEC-TELEMETRY (derecha): habilidades, agentes, ejecuciones, memoria y tickets",
+   "Paleta DISPRON: azul marino #0B1F33 y oro #C5A059",
+   "Esquinas achaflanadas, tipografía Segoe UI, jerarquía visual clara",
+   "Cierre con Escape; widget de Sofía oculto dentro del CRM",
+   "Botón flotante (fab) para abrir el panel",
+   "Dictado por micrófono (botón MIC) con transcripción"
+  ]
+ },
+ {
+  "title": "Backend - Arquitectura del motor",
+  "items": [
+   "alfred/agents.js - 12 sub-agentes (id, nombre, rol ES/EN, color, categoría, keywords)",
+   "alfred/engine.js - 30 habilidades reales con dueño, riesgo y handler async",
+   "alfred/core.js - scoring de leads (A/B/C) y normalización",
+   "server/index.js - rutas POST /api/alfred/chat y /api/alfred/tool",
+   "Rate limit: 60 peticiones por minuto por sesión",
+   "Persistencia: data/db.json (usuarios, leads, memoria, tickets, auditoría)",
+   "Router de intención: expresión regular -> agente (30 patrones ES)",
+   "Delegación: Alfred enruta al sub-agente competente",
+   "Política de riesgo: LOW ejecuta; MEDIUM exige confirmación expresa",
+   "Registro de auditoría: agente, herramienta, hora, duración y estado",
+   "Respuestas verificables: sin teléfono, rating ni certificación inventada",
+   "Datos pendientes se marcan PENDIENTE_DE_VALIDAR"
+  ]
+ },
+ {
+  "title": "30 habilidades reales - riesgo y ejecución",
+  "items": [
+   "27 de ejecución directa (LOW)",
+   "lead_scoring (marcus)",
+   "next_best_action (marcus)",
+   "followup_draft (marcus)",
+   "prospecting_plan (marcus)",
+   "campaign_brief (marcus)",
+   "pipeline_report (victoria)",
+   "seo_audit (victoria)",
+   "geo_ranking_plan (victoria)",
+   "jsonld_preview (leonardo)",
+   "openapi_spec (leonardo)",
+   "site_health (ada)",
+   "architecture_map (thomas)",
+   "env_status (webb)",
+   "deploy_checklist (webb)",
+   "3 con confirmación expresa (MEDIUM)",
+   "move_stage - Mover oportunidad de etapa (marcus)",
+   "backup_db - Respaldar la base de datos (webb)",
+   "escalate_case - Escalar caso urgente (grace)"
+  ]
+ },
+ {
+  "title": "Política de confirmación (riesgo MEDIUM)",
+  "items": [
+   "He delegado esto a Marcus. Esta acción modifica datos reales",
+   "(Mover oportunidad de etapa, riesgo MEDIUM).",
+   "Marcus la ejecutará solo con su confirmación expresa, Jefe Maestro.",
+   "Botones: CONFIRMAR, EJECUTAR / CANCELAR",
+   "Nada se modifica sin aprobación",
+   "Tras confirmar: Banco General Nuevo Lead -> En negociación",
+   "Auditoría: agente, herramienta, hora y estado"
+  ]
+ },
+ {
+  "title": "Fortress - Auditoría de seguridad real",
+  "items": [
+   "FORTRESS - Seguridad",
+   "Comprueba encabezados reales del servidor",
+   "Detecta cuentas pendientes de aprobación",
+   "Recomienda 2FA y HSTS como pendientes",
+   "Honesto: reporta lo que falta, sin prometer"
+  ]
+ },
+ {
+  "title": "Victoria - SEO y GEO con datos medibles",
+  "items": [
+   "Audita cada página: título, descripción, H1, canonical, JSON-LD, alt",
+   "Puntaje técnico calculado sobre páginas reales",
+   "No mide posiciones: honestidad explícita",
+   "Detecta brechas: teléfono validado, NAP, licencias",
+   "llms.txt, robots para bots de IA y knowledge.json"
+  ]
+ },
+ {
+  "title": "Leonardo - JSON-LD por ruta",
+  "items": [
+   "Previsualiza el JSON-LD real de cualquier ruta",
+   "Tipos: Organization, Service, FAQPage, BreadcrumbList, ImageGallery",
+   "/servicios/soporte-industrial verificado",
+   "Datos estructurados para Google y para GPTs"
+  ]
+ },
+ {
+  "title": "Marcus - Plan de prospección por sector",
+  "items": [
+   "Plan para bancos, hoteles, PH, eventos e industria",
+   "Segmenta por provincia de Panamá",
+   "Acciones concretas de captación",
+   "Sin promesas de resultados garantizados"
+  ]
+ },
+ {
+  "title": "Políticas de verdad (adaptado a DISPRON)",
+  "items": [
+   "Nada inventado: sin clientes, premios, certificaciones ni primer lugar ficticio",
+   "Contacto, licencias, NAP y SLA: PENDIENTE_DE_VALIDAR hasta que los valide el cliente",
+   "Ebanistería usa fotos de acabados interiores hasta recibir fotos propias de carpintería",
+   "Victoria declara explícitamente que no mide posiciones de Google",
+   "Fortress reporta lo que falta (2FA, HSTS) en lugar de afirmar que esta listo",
+   "Toda habilidad ejecuta contra datos reales; si algo no existe, Alfred lo dice",
+   "Registro de auditoría inmutable por ejecución",
+   "Acceso restringido: usuarios pendientes no pueden usar Alfred"
+  ]
+ }
+]

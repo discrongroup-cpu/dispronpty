@@ -92,6 +92,10 @@ with sync_playwright() as p:
         hud.first.click()
         pg.wait_for_timeout(800)
         pg.screenshot(path=str(SHOTS / "alfred.png"))
+        pg.locator(".alf button", has_text="Guía de la plataforma").first.click()
+        pg.wait_for_selector(".tool.guide", timeout=5000)
+        check(pg.locator(".tool.guide").count() >= 8 and pg.locator("a.guide-dl").count() == 1, "Alfred: guía de la presentación visible con descarga PPTX")
+        pg.screenshot(path=str(SHOTS / "alfred-guia.png"))
     check(hud.count() > 0, "Alfred HUD disponible en CRM")
     b.close()
 

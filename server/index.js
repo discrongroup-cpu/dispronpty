@@ -35,8 +35,8 @@ app.use(express.json({ limit: '100kb' }));
 app.use(cookieParser());
 
 const hits = new Map();
-const limit = (max, ms) => (req, res, next) => {
-  const k = req.ip + req.path, now = Date.now();
+const limit = (max, ms, key = req => req.ip) => (req, res, next) => {
+  const k = key(req) + req.path, now = Date.now();
   const arr = (hits.get(k) || []).filter(t => now - t < ms); arr.push(now); hits.set(k, arr);
   if (arr.length > max) return res.status(429).json({ error: 'Demasiadas solicitudes. Intente en unos minutos.' });
   next();
@@ -121,8 +121,13 @@ app.get('/api/leads.csv', needUser, (req, res) => {
 
 const alfred = Alfred.create({ getDb: () => (db.tickets || (db.tickets = []), db.memory || (db.memory = []), db.alfredLog || (db.alfredLog = []), db.proposals || (db.proposals = []), db), save, port: PORT, root: __dirname });
 app.get('/api/alfred/meta', needUser, (req, res) => res.json({ agents: alfred.AGENTS, tools: alfred.tools(), policies: alfred.POLICIES, memory: alfred.memory().slice(0, 20), log: alfred.log().slice(0, 30), tickets: alfred.tickets().slice(0, 20) }));
-app.post('/api/alfred/chat', needUser, limit(60, 60000), async (req, res) => { try { res.json(await alfred.chat(clean(req.body.message, 2000), req.user.name, req.body.confirm)); } catch (e) { console.error(e); res.status(500).json({ reply: 'Error interno al procesar la solicitud.' }); } });
-app.post('/api/alfred/tool', needUser, limit(60, 60000), async (req, res) => { try { res.json(await alfred.run(clean(req.body.tool, 60), req.body.params || {}, !!req.body.confirmed, req.user.name)); } catch (e) { console.error(e); res.status(500).json({ status: 'ERROR', text: 'Error interno al ejecutar la herramienta.' }); } });
+const bySession = req => 'u:' + req.user.id;
+const GUIDE = require('./alfred/guide.json');
+const GUIDE_FILE = path.join(__dirname, 'docs', 'ALFRED_DISPRON_Plataforma_Completa.pptx');
+app.get('/api/alfred/guide', needUser, (req, res) => res.json({ sections: GUIDE, file: fs.existsSync(GUIDE_FILE) ? '/api/alfred/guide/pptx' : null }));
+app.get('/api/alfred/guide/pptx', needUser, (req, res) => res.download(GUIDE_FILE, 'ALFRED_DISPRON_Plataforma_Completa.pptx'));
+app.post('/api/alfred/chat', needUser, limit(60, 60000, bySession), async (req, res) => { try { res.json(await alfred.chat(clean(req.body.message, 2000), req.user.name, req.body.confirm)); } catch (e) { console.error(e); res.status(500).json({ reply: 'Error interno al procesar la solicitud.' }); } });
+app.post('/api/alfred/tool', needUser, limit(60, 60000, bySession), async (req, res) => { try { res.json(await alfred.run(clean(req.body.tool, 60), req.body.params || {}, !!req.body.confirmed, req.user.name)); } catch (e) { console.error(e); res.status(500).json({ status: 'ERROR', text: 'Error interno al ejecutar la herramienta.' }); } });
 app.get('/api/alfred/scores', needUser, (req, res) => res.json(Object.fromEntries(db.leads.map(l => [l.id, alfred.scoreLead(l)]))));
 app.get('/proposals/:f', needUser, (req, res) => { const p = path.join(__dirname, 'data', 'proposals', path.basename(req.params.f)); fs.existsSync(p) ? res.sendFile(p) : res.sendStatus(404); });
 app.use('/api', (req, res) => res.status(404).json({ error: 'Ruta no encontrada' }));

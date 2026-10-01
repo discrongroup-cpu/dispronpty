@@ -1,11 +1,11 @@
 // ALFRED dentro del CRM: HUD + chat con 12 sub-agentes + habilidades + políticas + memoria. Cargado por crm.js al existir sesión activa.
 window.AlfredHUD = (function () {
   const E = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  let meta = null, root, tab = 'chat', busy = false, hist = [], sel = null, rec = null;
+  let meta = null, guide = null, root, tab = 'chat', busy = false, hist = [], sel = null, rec = null;
   const api = async (u, o) => { const r = await fetch(u, o); const j = await r.json().catch(() => ({})); if (!r.ok) throw new Error(j.error || j.reply || 'Error'); return j; };
   const post = (u, b) => api(u, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(b) });
   const hour = () => { const h = new Date().getHours(); return h < 12 ? 'Buenos días' : h < 19 ? 'Buenas tardes' : 'Buenas noches'; };
-  const CHIPS = ['Reporte del pipeline', 'Califica mis leads', '¿Cuál es la próxima mejor acción?', 'Plan para buscar más clientes', 'Auditoría SEO y GEO del sitio', '¿Cómo llegamos al primer lugar?', 'Salud del sitio', 'Auditoría de seguridad', 'Checklist de lanzamiento'];
+  const CHIPS = ['Reporte del pipeline', 'Califica mis leads', '¿Cuál es la próxima mejor acción?', 'Plan para buscar más clientes', 'Auditoría SEO y GEO del sitio', '¿Cómo llegamos al primer lugar?', 'Salud del sitio', 'Auditoría de seguridad', 'Checklist de lanzamiento', 'Show me the pipeline report', 'Introduce DISPRON in English'];
 
   function speak(t) { try { if (!speechSynthesis) return; const u = new SpeechSynthesisUtterance(t.replace(/```[\s\S]*?```/g, '').slice(0, 400)); u.lang = 'es-PA'; const v = speechSynthesis.getVoices().find(x => /^es/i.test(x.lang) && /male|hombre|jorge|diego|pablo|raul|alvaro/i.test(x.name)) || speechSynthesis.getVoices().find(x => /^es/i.test(x.lang)); if (v) u.voice = v; speechSynthesis.speak(u); } catch (e) { } }
 
@@ -21,12 +21,12 @@ window.AlfredHUD = (function () {
   async function refresh() { try { meta = await api('/api/alfred/meta'); } catch (e) { } }
 
   function render() {
-    const tabs = [['chat', 'Consola'], ['skills', 'Habilidades'], ['agents', 'Sub-agentes'], ['policies', 'Políticas'], ['memory', 'Memoria y registro']];
+    const tabs = [['chat', 'Consola'], ['skills', 'Habilidades'], ['agents', 'Sub-agentes'], ['policies', 'Políticas'], ['memory', 'Memoria y registro'], ['guide', 'Guía de la plataforma']];
     root.innerHTML = `<div class="alf-hd"><img src="/img/logo-dispron-horizontal.png" alt="DISPRON GROUP"><div class="alf-t">ALFRED<small>CENTRO DE MANDO COMERCIAL · DISPRON</small></div><nav class="alf-tabs" role="tablist">${tabs.map(([k, l]) => `<button role="tab" aria-selected="${tab === k}" data-t="${k}">${l}</button>`).join('')}</nav><span class="alf-sp"></span><button id="alf-x" aria-label="Cerrar Alfred">Cerrar ✕</button></div><div class="alf-body" id="alf-b"></div>`;
     root.querySelectorAll('[data-t]').forEach(b => b.onclick = () => { tab = b.dataset.t; render(); });
     root.querySelector('#alf-x').onclick = close;
     const b = root.querySelector('#alf-b');
-    if (tab === 'chat') chatView(b); else if (tab === 'skills') skillsView(b); else if (tab === 'agents') agentsView(b); else if (tab === 'policies') polView(b); else memView(b);
+    if (tab === 'chat') chatView(b); else if (tab === 'skills') skillsView(b); else if (tab === 'agents') agentsView(b); else if (tab === 'policies') polView(b); else if (tab === 'guide') guideView(b); else memView(b);
   }
 
   function side() { return `<aside class="alf-card alf-side" data-sec="SEC-CORE"><div class="core ${busy ? 'busy' : ''}"><span class="ring r3"></span><span class="ring r1"></span><span class="ring r2"></span><b>A</b></div><h3>Sub-agentes</h3><div class="alf-scroll">${meta.agents.map(a => `<button class="ag ${sel === a.id ? 'on' : ''}" style="--c:${a.color}" data-ag="${a.id}"><i></i><span><b>${a.name}</b><small>${E(a.role)}</small></span></button>`).join('')}</div></aside>`; }
@@ -72,6 +72,10 @@ window.AlfredHUD = (function () {
     b.innerHTML = `<section class="alf-card alf-full" data-sec="SEC-AGENTS"><h3>Los 12 sub-agentes de Alfred, adaptados a DISPRON</h3><div class="grid3">${meta.agents.map(a => `<div class="tool" style="border-left:3px solid ${a.color}"><h4 style="color:${a.color}">${a.name}</h4><small style="color:#e8d9b5">${E(a.role)} · ${E(a.category)}</small><p>${E(a.desc)}</p><small style="color:#8aa0b8">${meta.tools.filter(t => t.agentId === a.id).map(t => E(t.name)).join(' · ')}</small></div>`).join('')}</div></section>`;
   }
   function polView(b) { b.innerHTML = `<section class="alf-card alf-full" data-sec="SEC-POLICY"><h3>Políticas y salvaguardas</h3>${meta.policies.map(p => `<div class="pol"><div><b style="color:#fff">${E(p.title)}</b> <small>${E(p.code)}</small><small>${E(p.desc)}</small></div><span class="pa ${p.action}">${p.action.replace('_', ' ')}</span></div>`).join('')}<p style="color:#8aa0b8;font-size:.8rem">Alfred siempre le llama «Jefe Maestro», no usa emojis y nunca afirma haber hecho algo que no ejecutó.</p></section>`; }
+  async function guideView(b) {
+    if (!guide) { b.innerHTML = '<section class="alf-card alf-full"><p>Cargando guía…</p></section>'; try { guide = await api('/api/alfred/guide'); } catch (e) { b.innerHTML = '<section class="alf-card alf-full"><p>' + E(e.message) + '</p></section>'; return; } if (tab !== 'guide') return; }
+    b.innerHTML = `<section class="alf-card alf-full" data-sec="SEC-GUIDE"><div class="guide-hd"><h3>Guía oficial · ALFRED DISPRON, plataforma completa</h3>${guide.file ? `<a class="guide-dl" href="${guide.file}" download>Descargar presentación (PPTX)</a>` : ''}</div><div class="grid3">${guide.sections.map(s => `<div class="tool guide"><h4>${E(s.title)}</h4><ul>${s.items.map(i => `<li>${E(i)}</li>`).join('')}</ul></div>`).join('')}</div></section>`;
+  }
   function memView(b) {
     b.innerHTML = `<section class="alf-card" data-sec="SEC-MEMORY"><h3>Memoria de Minerva</h3><div class="alf-scroll">${meta.memory.map(m => `<div class="note" style="background:#0a1a2e;color:#d6e2ef;margin:.3rem 0;padding:.5rem;font-size:.85rem"><small>${m.at.slice(0, 10)}</small><br>${E(m.text)}</div>`).join('') || '<small style="color:#8aa0b8">Vacía. Diga: «recuerda que …».</small>'}</div></section><section class="alf-card" data-sec="SEC-LOG"><h3>Registro de ejecuciones</h3><div class="alf-scroll">${meta.log.map(l => `<div style="font-size:.8rem;margin:.3rem 0;border-bottom:1px solid #12263a;padding-bottom:.3rem"><b style="color:#e8d9b5">${E(l.agent)}</b> · ${E(l.tool)} · ${E(l.status || '')}<br><span style="color:#8aa0b8">${new Date(l.at).toLocaleString('es-PA')} · ${E(l.by)} · ${l.ms} ms</span></div>`).join('') || '<small style="color:#8aa0b8">Sin ejecuciones.</small>'}</div></section><section class="alf-card" data-sec="SEC-TICKETS"><h3>Tickets</h3><div class="alf-scroll">${meta.tickets.map(t => `<div style="font-size:.82rem;margin:.3rem 0"><b style="color:#C5A059">${t.id}</b> ${E(t.text)}</div>`).join('') || '<small style="color:#8aa0b8">Sin tickets.</small>'}</div></section>`;
   }
